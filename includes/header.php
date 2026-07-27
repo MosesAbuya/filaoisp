@@ -213,6 +213,9 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         </ul>
 
         <div style="margin-top:2rem;">
+            <button type="button" class="theme-toggle btn-filao d-flex align-items-center justify-content-center gap-2 mb-3" style="width:100%; background:rgba(255,255,255,0.08); border:1px solid var(--clr-border); color:#fff; font-weight:600; padding:0.75rem;" aria-label="Toggle Light/Dark Mode">
+                <i class="fa-solid fa-moon"></i> <span>Toggle Light / Dark Mode</span>
+            </button>
             <a href="<?= $root ?>company/contact" class="btn-filao btn-primary-filao d-block text-center"
                 style="width:100%;">
                 Get a Free Quote &rarr;
@@ -645,8 +648,8 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                         </a>
                     </li>
                 </ul><!-- /.nav-links -->
-                <!-- THEME TOGGLE -->
-                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle Light/Dark Mode">
+                <!-- THEME TOGGLE (desktop only; mobile toggle is inside hamburger menu) -->
+                <button type="button" class="theme-toggle d-none d-lg-inline-flex" id="themeToggle" aria-label="Toggle Light/Dark Mode">
                     <i class="fa-solid fa-moon"></i>
                 </button>
 

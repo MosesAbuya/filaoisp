@@ -26,42 +26,52 @@ handleNavbarScroll(); // Run on init
 /* =====================================================================
    3. MOBILE MENU
    ===================================================================== */
-const mobileToggler  = document.getElementById('mobile-toggler');
-const mobileMenu     = document.getElementById('mobile-menu');
-const mobileOverlay  = document.getElementById('mobile-overlay');
-const mobileClose    = document.getElementById('mobile-close');
+let closeMobileMenu;
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggler  = document.getElementById('mobile-toggler');
+    const mobileMenu     = document.getElementById('mobile-menu');
+    const mobileOverlay  = document.getElementById('mobile-overlay');
+    const mobileClose    = document.getElementById('mobile-close');
 
-function openMobileMenu() {
-    mobileMenu?.classList.add('open');
-    mobileOverlay?.classList.add('open');
-    mobileToggler?.classList.add('open');
-    document.body.style.overflow = 'hidden';
-}
+    function openMobileMenu() {
+        mobileMenu?.classList.add('open');
+        mobileOverlay?.classList.add('open');
+        mobileToggler?.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
 
-function closeMobileMenu() {
-    mobileMenu?.classList.remove('open');
-    mobileOverlay?.classList.remove('open');
-    mobileToggler?.classList.remove('open');
-    document.body.style.overflow = '';
-}
+    closeMobileMenu = function() {
+        mobileMenu?.classList.remove('open');
+        mobileOverlay?.classList.remove('open');
+        mobileToggler?.classList.remove('open');
+        document.body.style.overflow = '';
+    };
 
-mobileToggler?.addEventListener('click', openMobileMenu);
-mobileClose?.addEventListener('click', closeMobileMenu);
-mobileOverlay?.addEventListener('click', closeMobileMenu);
+    mobileToggler?.addEventListener('click', openMobileMenu);
+    mobileClose?.addEventListener('click', closeMobileMenu);
+    mobileOverlay?.addEventListener('click', closeMobileMenu);
 
-// Mobile sub-menu toggles
-document.querySelectorAll('.mobile-nav-link[data-toggle]').forEach(link => {
-    link.addEventListener('click', (e) => {
-        const target = document.getElementById(link.dataset.toggle);
-        if (!target) return;
-        const isOpen = target.classList.contains('open');
-        // Close all open sub-menus
-        document.querySelectorAll('.mobile-sub-menu.open').forEach(m => m.classList.remove('open'));
-        document.querySelectorAll('.mobile-nav-link .chevron.rotate').forEach(c => c.classList.remove('rotate'));
-        if (!isOpen) {
-            target.classList.add('open');
-            link.querySelector('.chevron')?.classList.add('rotate');
+    // Document-level fallback so clicking X or overlay always closes menu
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('#mobile-close') || e.target.closest('.mobile-menu-close') || e.target.id === 'mobile-overlay') {
+            closeMobileMenu();
         }
+    });
+
+    // Mobile sub-menu toggles
+    document.querySelectorAll('.mobile-nav-link[data-toggle]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const target = document.getElementById(link.dataset.toggle);
+            if (!target) return;
+            const isOpen = target.classList.contains('open');
+            // Close all open sub-menus
+            document.querySelectorAll('.mobile-sub-menu.open').forEach(m => m.classList.remove('open'));
+            document.querySelectorAll('.mobile-nav-link .chevron.rotate').forEach(c => c.classList.remove('rotate'));
+            if (!isOpen) {
+                target.classList.add('open');
+                link.querySelector('.chevron')?.classList.add('rotate');
+            }
+        });
     });
 });
 
@@ -468,33 +478,40 @@ console.log('%cBuilt with precision. Delivered with speed.', 'color:#8b8ba8;font
    THEME TOGGLE LOGIC (LIGHT / DARK MODE)
    ===================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('themeToggle');
-    if (!themeToggle) return;
+    const themeToggles = document.querySelectorAll('.theme-toggle');
+    if (!themeToggles.length) return;
 
-    const icon = themeToggle.querySelector('i');
-
-    // Function to update icon based on current theme
-    const updateIcon = () => {
-        if (document.body.classList.contains('light-mode')) {
-            icon.classList.replace('fa-moon', 'fa-sun');
-        } else {
-            icon.classList.replace('fa-sun', 'fa-moon');
-        }
+    // Function to update icons on all toggle buttons based on current theme
+    const updateIcons = () => {
+        const isLight = document.body.classList.contains('light-mode');
+        themeToggles.forEach(btn => {
+            const icon = btn.querySelector('i');
+            if (!icon) return;
+            if (isLight) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
     };
 
     // Initialize icon on load
-    updateIcon();
+    updateIcons();
 
-    // Toggle event listener
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-        updateIcon();
+    // Attach click event to all theme toggle buttons
+    themeToggles.forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            updateIcons();
 
-        // Save preference
-        if (document.body.classList.contains('light-mode')) {
-            localStorage.setItem('filao_theme', 'light');
-        } else {
-            localStorage.removeItem('filao_theme');
-        }
+            // Save preference
+            if (document.body.classList.contains('light-mode')) {
+                localStorage.setItem('filao_theme', 'light');
+            } else {
+                localStorage.removeItem('filao_theme');
+            }
+        });
     });
 });

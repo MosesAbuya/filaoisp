@@ -99,6 +99,13 @@ body.light-mode .theme-toggle:hover {
    ------------------------------------------------------------------ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    position: relative;
+    width: 100%;
+}
+
 html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
@@ -106,8 +113,12 @@ body {
     background-color: var(--clr-bg-dark);
     color: var(--clr-off-white);
     line-height: 1.65;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure sections and rows never cause horizontal overflow gap */
+section, header, footer, main, .hero-section, .navbar-main-inner {
+    max-width: 100%;
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -1936,10 +1947,29 @@ body.light-mode #main-navbar.scrolled {
 
 @media (max-width: 991px) {
     :root { --navbar-h: 70px; }
-    .nav-links, .nav-cta { display: none; }
-    .navbar-toggler { display: flex; }
+    .nav-links, .nav-cta { display: none !important; }
+    .navbar-toggler { display: flex !important; }
     .infographic-grid { grid-template-columns: repeat(2, 1fr); }
     .security-feature-grid { grid-template-columns: 1fr; }
+
+    /* Make whole mobile navbar have a white background */
+    #main-navbar,
+    #main-navbar.scrolled {
+        background: #ffffff !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+    }
+    #main-navbar .navbar-toggler {
+        border-color: rgba(9, 2, 56, 0.25) !important;
+    }
+    #main-navbar .navbar-toggler span {
+        background: #090238 !important;
+    }
+    .mobile-menu-close {
+        z-index: 999999 !important;
+        padding: 12px !important;
+        cursor: pointer !important;
+    }
 }
 
 @media (max-width: 767px) {
