@@ -8,8 +8,9 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 ?>
 
 <!-- =====================================================================
-     COOKIE BANNER
+     COOKIE BANNER (HOMEPAGE ONLY)
      ===================================================================== -->
+<?php if (!empty($is_homepage)): ?>
 <div id="cookie-banner" style="
     position:fixed;
     bottom:0;left:0;right:0;
@@ -38,6 +39,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         <button id="cookie-decline" class="btn-ghost-filao" style="font-size:0.78rem;">Decline</button>
     </div>
 </div>
+<?php endif; ?>
 
 <!-- =====================================================================
      SITE FOOTER

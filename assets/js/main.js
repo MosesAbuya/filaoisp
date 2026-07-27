@@ -343,17 +343,20 @@ const cookieAccept = document.getElementById('cookie-accept');
 const cookieDecline = document.getElementById('cookie-decline');
 
 function checkCookie() {
-    if (cookieBanner && !localStorage.getItem('filao_cookies_accepted')) {
-        setTimeout(() => { cookieBanner.style.transform = 'translateY(0)'; }, 2000);
+    if (cookieBanner && !localStorage.getItem('filao_cookies_accepted') && !localStorage.getItem('filao_cookie_consent')) {
+        setTimeout(() => { cookieBanner.style.transform = 'translateY(0)'; }, 1500);
     }
 }
 
 cookieAccept?.addEventListener('click', () => {
     localStorage.setItem('filao_cookies_accepted', 'true');
+    localStorage.setItem('filao_cookie_consent', 'accepted');
     cookieBanner.style.transform = 'translateY(120%)';
 });
 
 cookieDecline?.addEventListener('click', () => {
+    localStorage.setItem('filao_cookies_accepted', 'false');
+    localStorage.setItem('filao_cookie_consent', 'declined');
     cookieBanner.style.transform = 'translateY(120%)';
 });
 
