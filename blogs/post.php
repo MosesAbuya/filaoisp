@@ -13,7 +13,7 @@ if (!$blog) {
     $page_class = 'page-404';
     $root = '../';
     include '../includes/header.php';
-    echo '<main style="padding:10rem 0; text-align:center;"><div class="container-fluid"><h1 class="text-white">Post Not Found</h1><a href="index.php" class="btn-filao btn-primary-filao mt-4">Back to Blogs</a></div></main>';
+    echo '<main style="padding:10rem 0; text-align:center;"><div class="container-fluid"><h1 class="text-white">Post Not Found</h1><a href="' . $root . 'blogs" class="btn-filao btn-primary-filao mt-4">Back to Blogs</a></div></main>';
     include '../includes/footer.php';
     exit;
 }
@@ -64,7 +64,7 @@ include '../includes/header.php';
                 <div style="border-top:1px solid var(--clr-border); margin:4rem 0;"></div>
                 
                 <div class="text-center">
-                    <a href="index.php" class="btn-filao btn-outline-filao"><i class="fa-solid fa-arrow-left me-2"></i> Back to All Articles</a>
+                    <a href="<?= $root ?>blogs" class="btn-filao btn-outline-filao"><i class="fa-solid fa-arrow-left me-2"></i> Back to All Articles</a>
                 </div>
             </div>
         </div>

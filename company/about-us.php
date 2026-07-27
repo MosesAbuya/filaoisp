@@ -21,7 +21,7 @@ include "../includes/header.php";
                 <p class="hero-subtitle">Over a decade of connecting, securing, and empowering businesses and homes
                     across Kenya and beyond.</p>
                 <div class="hero-cta-group">
-                    <a href="../company/contact.php" class="btn-filao btn-primary-filao">Get in Touch &rarr;</a>
+                    <a href="../company/contact" class="btn-filao btn-primary-filao">Get in Touch &rarr;</a>
                     <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i
                             class="fa-solid fa-phone"></i>&nbsp; +254 757 139239</a>
                 </div>
@@ -545,8 +545,8 @@ include "../includes/header.php";
         <p class="section-desc mx-auto mb-5">Whether you are a potential client, a prospective team member, or a
             technology partner we want to hear from you.</p>
         <div class="d-flex gap-3 justify-content-center flex-wrap">
-            <a href="../company/contact.php" class="btn-filao btn-primary-filao">Contact Us &rarr;</a>
-            <a href="../company/careers.php" class="btn-filao btn-outline-filao"><i
+            <a href="../company/contact" class="btn-filao btn-primary-filao">Contact Us &rarr;</a>
+            <a href="../company/careers" class="btn-filao btn-outline-filao"><i
                     class="fa-solid fa-briefcase"></i>&nbsp; View Open Roles</a>
         </div>
     </div>

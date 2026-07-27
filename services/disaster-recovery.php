@@ -23,7 +23,7 @@ include "../includes/header.php";
         <p class="hero-subtitle">Automated failover, off-site backup, and tested business continuity plans to keep your
           operations running through any disruption.</p>
         <div class="hero-cta-group">
-          <a href="../company/quote.php" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
+          <a href="../company/quote" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
           <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
             757 139239</a>
         </div>
@@ -331,7 +331,7 @@ include "../includes/header.php";
     <p class="section-desc mx-auto mb-5">Talk to our engineers today. We offer free site surveys and no-obligation
       quotes for all services.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap">
-      <a href="../company/quote.php" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
+      <a href="../company/quote" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
       <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
         757 139239</a>
     </div>

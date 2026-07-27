@@ -35,7 +35,7 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
             <?php foreach($blogs as $blog): ?>
             <div class="col-lg-4 col-md-6">
                 <article style="background:var(--clr-bg-card); border:1px solid var(--clr-border); height:100%; display:flex; flex-direction:column; overflow:hidden;">
-                    <a href="post.php?slug=<?= urlencode($blog['slug']) ?>" style="display:block; overflow:hidden; position:relative; aspect-ratio:16/9;">
+                    <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" style="display:block; overflow:hidden; position:relative; aspect-ratio:16/9;">
                         <img src="<?= htmlspecialchars($blog['image_url']) ?>" alt="<?= htmlspecialchars($blog['title']) ?>" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                     </a>
                     <div style="padding:2rem; flex:1; display:flex; flex-direction:column;">
@@ -43,14 +43,14 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
                             <?= date('F j, Y', strtotime($blog['created_at'])) ?>
                         </div>
                         <h3 style="color:#fff; font-size:1.3rem; margin-bottom:1rem; font-family:var(--font-heading);">
-                            <a href="post.php?slug=<?= urlencode($blog['slug']) ?>" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--clr-red)'" onmouseout="this.style.color='inherit'">
+                            <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--clr-red)'" onmouseout="this.style.color='inherit'">
                                 <?= htmlspecialchars($blog['title']) ?>
                             </a>
                         </h3>
                         <p style="color:var(--clr-steel); font-size:0.9rem; line-height:1.6; flex:1;">
                             <?= htmlspecialchars($blog['excerpt']) ?>
                         </p>
-                        <a href="post.php?slug=<?= urlencode($blog['slug']) ?>" style="display:inline-flex; align-items:center; color:var(--clr-red); font-size:0.85rem; font-weight:700; text-decoration:none; text-transform:uppercase; letter-spacing:0.05em; margin-top:1.5rem;">
+                        <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" style="display:inline-flex; align-items:center; color:var(--clr-red); font-size:0.85rem; font-weight:700; text-decoration:none; text-transform:uppercase; letter-spacing:0.05em; margin-top:1.5rem;">
                             Read More <i class="fa-solid fa-arrow-right ms-2"></i>
                         </a>
                     </div>

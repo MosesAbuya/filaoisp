@@ -6,25 +6,8 @@
 'use strict';
 
 /* =====================================================================
-   1. PAGE LOADER (Ultra-fast & Fail-safe)
+   1. PAGE LOADER (Removed per user request for instant display)
    ===================================================================== */
-function hidePageLoader() {
-    const loader = document.getElementById('page-loader');
-    if (loader && !loader.classList.contains('loaded')) {
-        loader.classList.add('loaded');
-    }
-}
-
-window.addEventListener('load', () => {
-    setTimeout(hidePageLoader, 200);
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(hidePageLoader, 400);
-});
-
-// Fail-safe timeout so loader never hangs on live servers
-setTimeout(hidePageLoader, 1200);
 
 /* =====================================================================
    2. NAVBAR   SCROLL BEHAVIOR

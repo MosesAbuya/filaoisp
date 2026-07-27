@@ -3,7 +3,8 @@
  * Filao Networks Solutions   Footer
  * Include on every page: <?php include 'includes/footer.php'; ?>
  */
-$root = $root ?? './';
+$script_name = $_SERVER['SCRIPT_NAME'] ?? '';
+$root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 ?>
 
 <!-- =====================================================================
@@ -28,8 +29,8 @@ $root = $root ?? './';
     <p style="font-size:0.85rem;color:var(--clr-steel);margin:0;flex:1;min-width:220px;">
         <i class="fa-solid fa-cookie-bite" style="color:var(--clr-red);margin-right:0.5rem;"></i>
         We use cookies to enhance your experience. See our
-        <a href="<?= $root ?>compliance/cookie-policy.php" style="color:var(--clr-red);">Cookie Policy</a> and
-        <a href="<?= $root ?>compliance/privacy-policy.php" style="color:var(--clr-red);">Privacy Policy</a>.
+        <a href="<?= $root ?>compliance/cookie-policy" style="color:var(--clr-red);">Cookie Policy</a> and
+        <a href="<?= $root ?>compliance/privacy-policy" style="color:var(--clr-red);">Privacy Policy</a>.
     </p>
     <div style="display:flex;gap:0.8rem;flex-shrink:0;">
         <button id="cookie-accept" class="btn-filao btn-primary-filao"
@@ -54,7 +55,7 @@ $root = $root ?? './';
                         across Kenya with an iron-clad SLA.</p>
                 </div>
                 <div class="col-lg-4 d-flex flex-wrap gap-3 justify-content-lg-end">
-                    <a href="<?= $root ?>company/quote.php" class="btn-filao btn-primary-filao">Get a Free Quote
+                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao">Get a Free Quote
                         &rarr;</a>
                     <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i
                             class="fa-solid fa-phone me-2"></i>Call Us</a>
@@ -118,29 +119,29 @@ $root = $root ?? './';
                         <div class="col-sm-4">
                             <div class="footer-col-title">Services</div>
                             <ul class="footer-links">
-                                <li><a href="<?= $root ?>services/internet-solutions.php" class="footer-link">Internet
+                                <li><a href="<?= $root ?>services/internet-solutions" class="footer-link">Internet
                                         Solutions</a></li>
-                                <li><a href="<?= $root ?>services/residential-fiber.php" class="footer-link">Residential
+                                <li><a href="<?= $root ?>services/residential-fiber" class="footer-link">Residential
                                         Fiber</a></li>
-                                <li><a href="<?= $root ?>services/wireless-internet.php" class="footer-link">Wireless
+                                <li><a href="<?= $root ?>services/wireless-internet" class="footer-link">Wireless
                                         Internet</a></li>
-                                <li><a href="<?= $root ?>services/dedicated-internet.php" class="footer-link">Dedicated
+                                <li><a href="<?= $root ?>services/dedicated-internet" class="footer-link">Dedicated
                                         Internet</a></li>
-                                <li><a href="<?= $root ?>services/street-hotspots.php" class="footer-link">Street
+                                <li><a href="<?= $root ?>services/street-hotspots" class="footer-link">Street
                                         Hotspots</a></li>
-                                <li><a href="<?= $root ?>services/network-design.php" class="footer-link">Network
+                                <li><a href="<?= $root ?>services/network-design" class="footer-link">Network
                                         Design</a></li>
-                                <li><a href="<?= $root ?>services/network-security.php" class="footer-link">Network
+                                <li><a href="<?= $root ?>services/network-security" class="footer-link">Network
                                         Security</a></li>
-                                <li><a href="<?= $root ?>services/managed-services.php" class="footer-link">Managed
+                                <li><a href="<?= $root ?>services/managed-services" class="footer-link">Managed
                                         Services</a></li>
-                                <li><a href="<?= $root ?>services/cloud-solutions.php" class="footer-link">Cloud
+                                <li><a href="<?= $root ?>services/cloud-solutions" class="footer-link">Cloud
                                         Solutions</a></li>
-                                <li><a href="<?= $root ?>services/cctv-security.php" class="footer-link">CCTV
+                                <li><a href="<?= $root ?>services/cctv-security" class="footer-link">CCTV
                                         Security</a></li>
-                                <li><a href="<?= $root ?>services/iot-integration.php" class="footer-link">IoT
+                                <li><a href="<?= $root ?>services/iot-integration" class="footer-link">IoT
                                         Integration</a></li>
-                                <li><a href="<?= $root ?>services/disaster-recovery.php" class="footer-link">Disaster
+                                <li><a href="<?= $root ?>services/disaster-recovery" class="footer-link">Disaster
                                         Recovery</a></li>
                             </ul>
                         </div>
@@ -149,28 +150,28 @@ $root = $root ?? './';
                         <div class="col-sm-4">
                             <div class="footer-col-title">Company</div>
                             <ul class="footer-links">
-                                <li><a href="<?= $root ?>company/about-us.php" class="footer-link">About Us</a></li>
-                                <li><a href="<?= $root ?>company/careers.php" class="footer-link">Careers</a></li>
-                                <li><a href="<?= $root ?>company/coverage-map.php" class="footer-link">Coverage Map</a>
+                                <li><a href="<?= $root ?>company/about-us" class="footer-link">About Us</a></li>
+                                <li><a href="<?= $root ?>company/careers" class="footer-link">Careers</a></li>
+                                <li><a href="<?= $root ?>company/coverage-map" class="footer-link">Coverage Map</a>
                                 </li>
-                                <li><a href="<?= $root ?>company/support.php" class="footer-link">Support Centre</a>
+                                <li><a href="<?= $root ?>company/support" class="footer-link">Support Centre</a>
                                 </li>
-                                <li><a href="<?= $root ?>company/contact.php" class="footer-link">Contact Us</a></li>
+                                <li><a href="<?= $root ?>company/contact" class="footer-link">Contact Us</a></li>
                             </ul>
                             <div class="footer-col-title mt-4">Legal</div>
                             <ul class="footer-links">
-                                <li><a href="<?= $root ?>compliance/terms-of-service.php" class="footer-link">Terms of
+                                <li><a href="<?= $root ?>compliance/terms-of-service" class="footer-link">Terms of
                                         Service</a></li>
-                                <li><a href="<?= $root ?>compliance/privacy-policy.php" class="footer-link">Privacy
+                                <li><a href="<?= $root ?>compliance/privacy-policy" class="footer-link">Privacy
                                         Policy</a></li>
-                                <li><a href="<?= $root ?>compliance/refund-policy.php" class="footer-link">Refund
+                                <li><a href="<?= $root ?>compliance/refund-policy" class="footer-link">Refund
                                         Policy</a></li>
-                                <li><a href="<?= $root ?>compliance/sla.php" class="footer-link">SLA Agreement</a></li>
-                                <li><a href="<?= $root ?>compliance/acceptable-use.php" class="footer-link">Acceptable
+                                <li><a href="<?= $root ?>compliance/sla" class="footer-link">SLA Agreement</a></li>
+                                <li><a href="<?= $root ?>compliance/acceptable-use" class="footer-link">Acceptable
                                         Use</a></li>
-                                <li><a href="<?= $root ?>compliance/cookie-policy.php" class="footer-link">Cookie
+                                <li><a href="<?= $root ?>compliance/cookie-policy" class="footer-link">Cookie
                                         Policy</a></li>
-                                <li><a href="<?= $root ?>compliance/data-protection.php" class="footer-link">Data
+                                <li><a href="<?= $root ?>compliance/data-protection" class="footer-link">Data
                                         Protection</a></li>
                             </ul>
                         </div>
@@ -253,7 +254,7 @@ $root = $root ?? './';
                             <div id="newsletter-message" style="display:none; font-size:0.8rem; margin-top:0.5rem;">
                             </div>
                             <p style="font-size:0.7rem;color:var(--clr-steel);margin-top:0.5rem;">
-                                No spam. See our <a href="<?= $root ?>compliance/privacy-policy.php"
+                                No spam. See our <a href="<?= $root ?>compliance/privacy-policy"
                                     style="color:var(--clr-red);">Privacy Policy</a>.
                             </p>
                         </div>
@@ -275,10 +276,10 @@ $root = $root ?? './';
                     ISP
                 </div>
                 <div class="footer-bottom-links">
-                    <a href="<?= $root ?>compliance/terms-of-service.php" class="footer-bottom-link">Terms</a>
-                    <a href="<?= $root ?>compliance/privacy-policy.php" class="footer-bottom-link">Privacy</a>
-                    <a href="<?= $root ?>compliance/sla.php" class="footer-bottom-link">SLA</a>
-                    <a href="<?= $root ?>compliance/cookie-policy.php" class="footer-bottom-link">Cookies</a>
+                    <a href="<?= $root ?>compliance/terms-of-service" class="footer-bottom-link">Terms</a>
+                    <a href="<?= $root ?>compliance/privacy-policy" class="footer-bottom-link">Privacy</a>
+                    <a href="<?= $root ?>compliance/sla" class="footer-bottom-link">SLA</a>
+                    <a href="<?= $root ?>compliance/cookie-policy" class="footer-bottom-link">Cookies</a>
                 </div>
             </div>
             <!-- Developer Credit -->

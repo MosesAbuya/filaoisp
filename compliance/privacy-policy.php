@@ -63,7 +63,7 @@ include '../includes/header.php';
     <div class="container">
         <h2 class="section-title mb-4">Ready to Upgrade?</h2>
         <p class="section-desc mx-auto mb-5">Contact our technical team for a free site survey and specialized quote tailored to your exact requirements.</p>
-        <a href="<?= $root ?>company/quote.php" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
+        <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
     </div>
 </section>
 

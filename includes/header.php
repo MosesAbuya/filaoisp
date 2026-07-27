@@ -12,8 +12,9 @@ $page_title = $page_title ?? 'Filao Networks Solutions   Connecting Kenya at Spe
 $page_desc = $page_desc ?? 'Filao Networks Solutions provides enterprise-grade internet, networking, CCTV security, cloud, and IoT services across Kenya.';
 $page_class = $page_class ?? '';
 
-// Determine root path (for assets)
-$root = $root ?? './';
+// Determine root path (for assets and links)
+$script_name = $_SERVER['SCRIPT_NAME'] ?? '';
+$root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,18 +87,6 @@ $root = $root ?? './';
         }
     </script>
 
-    <!-- =====================================================================
-     PAGE LOADER
-     ===================================================================== -->
-    <div id="page-loader" aria-hidden="true">
-        <!-- Logo in loader -->
-        <img src="<?= $root ?>assets/images/logos/fn-logo-combined.png" alt="Filao Networks" style="height:120px; width:auto; filter: brightness(0) invert(1); margin-bottom: 20px;">
-        <div class="loader-bar-wrap">
-            <div class="loader-bar"></div>
-        </div>
-        <span class="loader-label">Loading&hellip;</span>
-    </div>
-
     <!-- Mobile overlay backdrop -->
     <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
 
@@ -132,15 +121,15 @@ $root = $root ?? './';
                     </svg>
                 </div>
                 <ul id="mob-internet" class="mobile-sub-menu">
-                    <li><a href="<?= $root ?>services/internet-solutions.php" class="mobile-sub-link">Internet Solutions
+                    <li><a href="<?= $root ?>services/internet-solutions" class="mobile-sub-link">Internet Solutions
                             Overview</a></li>
-                    <li><a href="<?= $root ?>services/residential-fiber.php" class="mobile-sub-link">Residential
+                    <li><a href="<?= $root ?>services/residential-fiber" class="mobile-sub-link">Residential
                             Fiber</a></li>
-                    <li><a href="<?= $root ?>services/wireless-internet.php" class="mobile-sub-link">Wireless
+                    <li><a href="<?= $root ?>services/wireless-internet" class="mobile-sub-link">Wireless
                             Internet</a></li>
-                    <li><a href="<?= $root ?>services/dedicated-internet.php" class="mobile-sub-link">Dedicated
+                    <li><a href="<?= $root ?>services/dedicated-internet" class="mobile-sub-link">Dedicated
                             Internet</a></li>
-                    <li><a href="<?= $root ?>services/street-hotspots.php" class="mobile-sub-link">Street Hotspots</a>
+                    <li><a href="<?= $root ?>services/street-hotspots" class="mobile-sub-link">Street Hotspots</a>
                     </li>
                 </ul>
             </li>
@@ -155,11 +144,11 @@ $root = $root ?? './';
                     </svg>
                 </div>
                 <ul id="mob-network" class="mobile-sub-menu">
-                    <li><a href="<?= $root ?>services/network-design.php" class="mobile-sub-link">Network Design &
+                    <li><a href="<?= $root ?>services/network-design" class="mobile-sub-link">Network Design &
                             Installation</a></li>
-                    <li><a href="<?= $root ?>services/network-security.php" class="mobile-sub-link">Network Security</a>
+                    <li><a href="<?= $root ?>services/network-security" class="mobile-sub-link">Network Security</a>
                     </li>
-                    <li><a href="<?= $root ?>services/managed-services.php" class="mobile-sub-link">Managed Network
+                    <li><a href="<?= $root ?>services/managed-services" class="mobile-sub-link">Managed Network
                             Services</a></li>
                 </ul>
             </li>
@@ -174,13 +163,13 @@ $root = $root ?? './';
                     </svg>
                 </div>
                 <ul id="mob-security" class="mobile-sub-menu">
-                    <li><a href="<?= $root ?>services/cctv-security.php" class="mobile-sub-link">CCTV & Security
+                    <li><a href="<?= $root ?>services/cctv-security" class="mobile-sub-link">CCTV & Security
                             Solutions</a></li>
-                    <li><a href="<?= $root ?>services/smart-doorbell.php" class="mobile-sub-link">Smart Doorbell</a>
+                    <li><a href="<?= $root ?>services/smart-doorbell" class="mobile-sub-link">Smart Doorbell</a>
                     </li>
-                    <li><a href="<?= $root ?>services/access-control.php" class="mobile-sub-link">Access Control</a>
+                    <li><a href="<?= $root ?>services/access-control" class="mobile-sub-link">Access Control</a>
                     </li>
-                    <li><a href="<?= $root ?>services/biometric-fencing.php" class="mobile-sub-link">Biometric
+                    <li><a href="<?= $root ?>services/biometric-fencing" class="mobile-sub-link">Biometric
                             Fencing</a></li>
                 </ul>
             </li>
@@ -195,11 +184,11 @@ $root = $root ?? './';
                     </svg>
                 </div>
                 <ul id="mob-cloud" class="mobile-sub-menu">
-                    <li><a href="<?= $root ?>services/cloud-solutions.php" class="mobile-sub-link">Cloud Network
+                    <li><a href="<?= $root ?>services/cloud-solutions" class="mobile-sub-link">Cloud Network
                             Solutions</a></li>
-                    <li><a href="<?= $root ?>services/iot-integration.php" class="mobile-sub-link">IoT Integration</a>
+                    <li><a href="<?= $root ?>services/iot-integration" class="mobile-sub-link">IoT Integration</a>
                     </li>
-                    <li><a href="<?= $root ?>services/disaster-recovery.php" class="mobile-sub-link">Disaster Recovery &
+                    <li><a href="<?= $root ?>services/disaster-recovery" class="mobile-sub-link">Disaster Recovery &
                             BC</a></li>
                 </ul>
             </li>
@@ -214,17 +203,17 @@ $root = $root ?? './';
                     </svg>
                 </div>
                 <ul id="mob-company" class="mobile-sub-menu">
-                    <li><a href="<?= $root ?>company/about-us.php" class="mobile-sub-link">About Us</a></li>
-                    <li><a href="<?= $root ?>company/careers.php" class="mobile-sub-link">Careers</a></li>
-                    <li><a href="<?= $root ?>company/coverage-map.php" class="mobile-sub-link">Coverage Map</a></li>
-                    <li><a href="<?= $root ?>company/support.php" class="mobile-sub-link">Support</a></li>
-                    <li><a href="<?= $root ?>company/contact.php" class="mobile-sub-link">Contact Us</a></li>
+                    <li><a href="<?= $root ?>company/about-us" class="mobile-sub-link">About Us</a></li>
+                    <li><a href="<?= $root ?>company/careers" class="mobile-sub-link">Careers</a></li>
+                    <li><a href="<?= $root ?>company/coverage-map" class="mobile-sub-link">Coverage Map</a></li>
+                    <li><a href="<?= $root ?>company/support" class="mobile-sub-link">Support</a></li>
+                    <li><a href="<?= $root ?>company/contact" class="mobile-sub-link">Contact Us</a></li>
                 </ul>
             </li>
         </ul>
 
         <div style="margin-top:2rem;">
-            <a href="<?= $root ?>company/contact.php" class="btn-filao btn-primary-filao d-block text-center"
+            <a href="<?= $root ?>company/contact" class="btn-filao btn-primary-filao d-block text-center"
                 style="width:100%;">
                 Get a Free Quote &rarr;
             </a>
@@ -304,7 +293,7 @@ $root = $root ?? './';
 
                     <!-- ① INTERNET SOLUTIONS -->
                     <li role="none">
-                        <a href="<?= $root ?>services/internet-solutions.php" role="menuitem" aria-haspopup="true"
+                        <a href="<?= $root ?>services/internet-solutions" role="menuitem" aria-haspopup="true"
                             aria-expanded="false">
                             Internet
                             <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -316,21 +305,21 @@ $root = $root ?? './';
                             <!-- Col 1: Overview -->
                             <div class="mega-col">
                                 <div class="mega-col-header">Internet Solutions</div>
-                                <a href="<?= $root ?>services/internet-solutions.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/internet-solutions" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-globe"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Solutions Overview</div>
                                         <div class="mega-link-desc">All connectivity products</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/residential-fiber.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/residential-fiber" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-house-signal"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Residential Fiber</div>
                                         <div class="mega-link-desc">100Mbps – 1Gbps home fiber</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/wireless-internet.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/wireless-internet" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-satellite-dish"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Wireless Internet</div>
@@ -341,14 +330,14 @@ $root = $root ?? './';
                             <!-- Col 2 -->
                             <div class="mega-col">
                                 <div class="mega-col-header">Enterprise</div>
-                                <a href="<?= $root ?>services/dedicated-internet.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/dedicated-internet" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-building"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Dedicated Internet</div>
                                         <div class="mega-link-desc">Uncontended leased lines, SLA-backed</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/street-hotspots.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/street-hotspots" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-wifi"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Street Hotspots</div>
@@ -359,21 +348,21 @@ $root = $root ?? './';
                             <!-- Col 3: Plans -->
                             <div class="mega-col">
                                 <div class="mega-col-header">Quick Links</div>
-                                <a href="<?= $root ?>company/coverage-map.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/coverage-map" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-map-location-dot"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Check Coverage</div>
                                         <div class="mega-link-desc">Is your area connected?</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/contact.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/contact" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-comments"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Get a Quote</div>
                                         <div class="mega-link-desc">Free site survey</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>compliance/sla.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/sla" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-clipboard-list"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">SLA Guarantee</div>
@@ -385,7 +374,7 @@ $root = $root ?? './';
                             <div class="mega-featured">
                                 <div class="mega-featured-label">New</div>
                                 <div class="mega-featured-title">1 Gbps<br>Fiber Now<br>in Nairobi</div>
-                                <a href="<?= $root ?>services/residential-fiber.php"
+                                <a href="<?= $root ?>services/residential-fiber"
                                     class="btn-filao btn-primary-filao">See Plans &rarr;</a>
                             </div>
                         </div>
@@ -393,7 +382,7 @@ $root = $root ?? './';
 
                     <!-- ② NETWORKING -->
                     <li role="none">
-                        <a href="<?= $root ?>services/network-design.php" role="menuitem" aria-haspopup="true">
+                        <a href="<?= $root ?>services/network-design" role="menuitem" aria-haspopup="true">
                             Networking
                             <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5">
@@ -403,21 +392,21 @@ $root = $root ?? './';
                         <div class="mega-menu cols-3" role="menu">
                             <div class="mega-col">
                                 <div class="mega-col-header">Infrastructure</div>
-                                <a href="<?= $root ?>services/network-design.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/network-design" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-wrench"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Network Design & Install</div>
                                         <div class="mega-link-desc">Structured cabling, LAN, WAN</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/network-security.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/network-security" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-shield-halved"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Network Security</div>
                                         <div class="mega-link-desc">Firewalls, VPN, intrusion prevention</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/managed-services.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/managed-services" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-gears"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Managed Network Services</div>
@@ -431,7 +420,7 @@ $root = $root ?? './';
                                     Certified Cisco, Mikrotik, and Ubiquiti engineers designing resilient, scalable
                                     networks for businesses of all sizes across Kenya.
                                 </div>
-                                <a href="<?= $root ?>company/about-us.php" class="mega-link mt-2" role="menuitem">
+                                <a href="<?= $root ?>company/about-us" class="mega-link mt-2" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-trophy"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Our Certifications</div>
@@ -443,7 +432,7 @@ $root = $root ?? './';
                                 <div class="mega-featured-label">Case Study</div>
                                 <div class="mega-featured-title" style="font-size:1.2rem;">Enterprise LAN for<br>500+
                                     Users</div>
-                                <a href="<?= $root ?>company/about-us.php" class="btn-filao btn-primary-filao"
+                                <a href="<?= $root ?>company/about-us" class="btn-filao btn-primary-filao"
                                     style="font-size:0.7rem;">Read More &rarr;</a>
                             </div>
                         </div>
@@ -451,7 +440,7 @@ $root = $root ?? './';
 
                     <!-- ③ SECURITY -->
                     <li role="none">
-                        <a href="<?= $root ?>services/cctv-security.php" role="menuitem" aria-haspopup="true">
+                        <a href="<?= $root ?>services/cctv-security" role="menuitem" aria-haspopup="true">
                             Security
                             <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5">
@@ -461,14 +450,14 @@ $root = $root ?? './';
                         <div class="mega-menu cols-4" role="menu">
                             <div class="mega-col">
                                 <div class="mega-col-header">Surveillance</div>
-                                <a href="<?= $root ?>services/cctv-security.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/cctv-security" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-video"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">CCTV Solutions</div>
                                         <div class="mega-link-desc">IP cameras, NVR, remote view</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/smart-doorbell.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/smart-doorbell" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-bell"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Smart Doorbell</div>
@@ -478,14 +467,14 @@ $root = $root ?? './';
                             </div>
                             <div class="mega-col">
                                 <div class="mega-col-header">Access Control</div>
-                                <a href="<?= $root ?>services/access-control.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/access-control" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-door-open"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Access Control</div>
                                         <div class="mega-link-desc">Card readers, boom barriers</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/biometric-fencing.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/biometric-fencing" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-hand-paper"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Biometric Fencing</div>
@@ -495,14 +484,14 @@ $root = $root ?? './';
                             </div>
                             <div class="mega-col">
                                 <div class="mega-col-header">Get Started</div>
-                                <a href="<?= $root ?>company/contact.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/contact" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-phone"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Free Security Audit</div>
                                         <div class="mega-link-desc">On-site assessment</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/support.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/support" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-shield"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">24/7 Monitoring</div>
@@ -514,7 +503,7 @@ $root = $root ?? './';
                                 <div class="mega-featured-label">Featured</div>
                                 <div class="mega-featured-title" style="font-size:1.2rem;">4K CCTV<br>from<br>Ksh 25K
                                 </div>
-                                <a href="<?= $root ?>services/cctv-security.php"
+                                <a href="<?= $root ?>services/cctv-security"
                                     class="btn-filao btn-primary-filao">View Packages &rarr;</a>
                             </div>
                         </div>
@@ -522,7 +511,7 @@ $root = $root ?? './';
 
                     <!-- ④ CLOUD & IoT -->
                     <li role="none">
-                        <a href="<?= $root ?>services/cloud-solutions.php" role="menuitem" aria-haspopup="true">
+                        <a href="<?= $root ?>services/cloud-solutions" role="menuitem" aria-haspopup="true">
                             Cloud & IoT
                             <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5">
@@ -532,14 +521,14 @@ $root = $root ?? './';
                         <div class="mega-menu cols-3" role="menu">
                             <div class="mega-col">
                                 <div class="mega-col-header">Cloud</div>
-                                <a href="<?= $root ?>services/cloud-solutions.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/cloud-solutions" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-cloud"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Cloud Network Solutions</div>
                                         <div class="mega-link-desc">SD-WAN, cloud connectivity</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/disaster-recovery.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/disaster-recovery" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-rotate"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Disaster Recovery</div>
@@ -549,14 +538,14 @@ $root = $root ?? './';
                             </div>
                             <div class="mega-col">
                                 <div class="mega-col-header">IoT</div>
-                                <a href="<?= $root ?>services/iot-integration.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/iot-integration" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-plug"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">IoT Integration</div>
                                         <div class="mega-link-desc">Smart buildings & automation</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>services/managed-services.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>services/managed-services" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-chart-simple"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Managed Services</div>
@@ -568,7 +557,7 @@ $root = $root ?? './';
                                 <div class="mega-featured-label">New</div>
                                 <div class="mega-featured-title" style="font-size:1.1rem;">Smart<br>Building<br>IoT Kits
                                 </div>
-                                <a href="<?= $root ?>services/iot-integration.php"
+                                <a href="<?= $root ?>services/iot-integration"
                                     class="btn-filao btn-primary-filao">Explore &rarr;</a>
                             </div>
                         </div>
@@ -576,7 +565,7 @@ $root = $root ?? './';
 
                     <!-- ⑤ COMPANY -->
                     <li role="none">
-                        <a href="<?= $root ?>company/about-us.php" role="menuitem" aria-haspopup="true">
+                        <a href="<?= $root ?>company/about-us" role="menuitem" aria-haspopup="true">
                             Company
                             <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2.5">
@@ -586,35 +575,35 @@ $root = $root ?? './';
                         <div class="mega-menu cols-2" role="menu" style="min-width:440px;">
                             <div class="mega-col">
                                 <div class="mega-col-header">Company</div>
-                                <a href="<?= $root ?>company/about-us.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/about-us" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-building"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">About Filao</div>
                                         <div class="mega-link-desc">Our story, mission, team</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/careers.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/careers" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-briefcase"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Careers</div>
                                         <div class="mega-link-desc">Join our growing team</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/coverage-map.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/coverage-map" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-map-location-dot"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Coverage Map</div>
                                         <div class="mega-link-desc">Where we operate</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/support.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/support" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-headset"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Support Centre</div>
                                         <div class="mega-link-desc">Help desk & tickets</div>
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>company/contact.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>company/contact" class="mega-link" role="menuitem">
                                     <div class="mega-link-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
                                     <div class="mega-link-text">
                                         <div class="mega-link-title">Contact Us</div>
@@ -624,23 +613,23 @@ $root = $root ?? './';
                             </div>
                             <div class="mega-col">
                                 <div class="mega-col-header">Legal & Compliance</div>
-                                <a href="<?= $root ?>compliance/terms-of-service.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/terms-of-service" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Terms of Service</div>
                                 </a>
-                                <a href="<?= $root ?>compliance/privacy-policy.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/privacy-policy" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Privacy Policy</div>
                                 </a>
-                                <a href="<?= $root ?>compliance/refund-policy.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/refund-policy" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Refund Policy</div>
                                 </a>
-                                <a href="<?= $root ?>compliance/sla.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/sla" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Service Level Agreement
                                     </div>
                                 </a>
-                                <a href="<?= $root ?>compliance/acceptable-use.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/acceptable-use" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Acceptable Use Policy</div>
                                 </a>
-                                <a href="<?= $root ?>compliance/cookie-policy.php" class="mega-link" role="menuitem">
+                                <a href="<?= $root ?>compliance/cookie-policy" class="mega-link" role="menuitem">
                                     <div class="mega-link-title" style="font-size:0.83rem;">Cookie Policy</div>
                                 </a>
                             </div>
@@ -649,7 +638,7 @@ $root = $root ?? './';
 
                     <!-- ⑥ BLOGS -->
                     <li role="none">
-                        <a href="<?= $root ?>blogs/index.php" role="menuitem"
+                        <a href="<?= $root ?>blogs/index" role="menuitem"
                             style="padding:1.5rem 1rem; color:#fff; text-decoration:none; font-weight:600; font-size:0.9rem; transition:color 0.2s;"
                             onmouseover="this.style.color='var(--clr-red)'" onmouseout="this.style.color='#fff'">
                             Blogs
@@ -662,7 +651,7 @@ $root = $root ?? './';
                 </button>
 
                 <!-- CTA BUTTON -->
-                <a href="<?= $root ?>company/quote.php" class="nav-cta" aria-label="Get a free quote">
+                <a href="<?= $root ?>company/quote" class="nav-cta" aria-label="Get a free quote">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M20 12V22H4V12" />
                         <path d="M22 7H2v5h20V7z" />

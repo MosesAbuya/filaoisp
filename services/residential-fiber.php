@@ -24,7 +24,7 @@ include "../includes/header.php";
         <p class="hero-subtitle">Ultra-fast, uncontended fiber optic internet for homes and apartments speeds from
           10Mbps right up to 1Gbps.</p>
         <div class="hero-cta-group">
-          <a href="../company/quote.php" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
+          <a href="../company/quote" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
           <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
             757 139239</a>
         </div>
@@ -246,7 +246,7 @@ include "../includes/header.php";
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Free Router</li>
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Free Installation</li>
             </ul>
-            <a href="../company/quote.php" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
+            <a href="../company/quote" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -267,7 +267,7 @@ include "../includes/header.php";
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Wi-Fi 6 Router</li>
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Priority Support</li>
             </ul>
-            <a href="../company/quote.php" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
+            <a href="../company/quote" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -285,7 +285,7 @@ include "../includes/header.php";
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Mesh Wi-Fi System</li>
               <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i>Dedicated Engineer</li>
             </ul>
-            <a href="../company/quote.php" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
+            <a href="../company/quote" class="btn-filao btn-primary-filao d-block text-center mt-3">Get Started</a>
           </div>
         </div>
       </div>
@@ -455,7 +455,7 @@ include "../includes/header.php";
     <p class="section-desc mx-auto mb-5">Talk to our engineers today. We offer free site surveys and no-obligation
       quotes for all services.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap">
-      <a href="../company/quote.php" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
+      <a href="../company/quote" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
       <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
         757 139239</a>
     </div>

@@ -6,8 +6,8 @@
 
 $page_title = 'Filao Networks Solutions   Connecting Kenya at Speed';
 $page_desc  = 'Filao Networks Solutions offers enterprise-grade fiber internet, networking, CCTV security, cloud, and IoT solutions across Kenya. Request a free quote today.';
-$page_class = 'page-home';
-$root       = './';
+$script_name = $_SERVER['SCRIPT_NAME'] ?? '';
+$root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 
 include 'includes/db_connect.php';
 include 'includes/header.php';
@@ -39,11 +39,11 @@ include 'includes/header.php';
                     Enterprise-grade internet, networking, CCTV security, cloud, and IoT solutions   engineered for businesses and homes across Kenya.
                 </p>
                 <div class="hero-cta-group reveal delay-2">
-                    <a href="<?= $root ?>company/quote.php" class="btn-filao btn-primary-filao" id="hero-quote-btn">
+                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" id="hero-quote-btn">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         Get a Free Quote
                     </a>
-                    <a href="<?= $root ?>company/coverage-map.php" class="btn-filao btn-outline-filao" id="hero-coverage-btn">
+                    <a href="<?= $root ?>company/coverage-map" class="btn-filao btn-outline-filao" id="hero-coverage-btn">
                         Check Coverage
                     </a>
                 </div>
@@ -143,7 +143,7 @@ include 'includes/header.php';
                 <p class="section-desc">
                     From lightning-fast fiber internet to intelligent CCTV security and IoT integration   one partner for all your technology needs.
                 </p>
-                <a href="<?= $root ?>services/internet-solutions.php" class="btn-ghost-filao mt-3 d-inline-block">View All Services &rarr;</a>
+                <a href="<?= $root ?>services/internet-solutions" class="btn-ghost-filao mt-3 d-inline-block">View All Services &rarr;</a>
             </div>
         </div>
 
@@ -161,7 +161,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-globe"></i></div>
                     <h3 class="service-card-title">Internet Solutions</h3>
                     <p class="service-card-desc">Residential fiber, wireless, dedicated leased lines, and street hotspot infrastructure for homes and enterprises.</p>
-                    <a href="<?= $root ?>services/internet-solutions.php" class="service-card-link">
+                    <a href="<?= $root ?>services/internet-solutions" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -180,7 +180,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-wrench"></i></div>
                     <h3 class="service-card-title">Network Design & Installation</h3>
                     <p class="service-card-desc">Structured cabling, LAN/WAN design, server room setup, and wireless deployment by certified Cisco engineers.</p>
-                    <a href="<?= $root ?>services/network-design.php" class="service-card-link">
+                    <a href="<?= $root ?>services/network-design" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -199,7 +199,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
                     <h3 class="service-card-title">Network Security</h3>
                     <p class="service-card-desc">Next-gen firewalls, VPN, intrusion detection, and penetration testing to protect your critical infrastructure.</p>
-                    <a href="<?= $root ?>services/network-security.php" class="service-card-link">
+                    <a href="<?= $root ?>services/network-security" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -218,7 +218,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-gears"></i></div>
                     <h3 class="service-card-title">Managed Network Services</h3>
                     <p class="service-card-desc">24/7 NOC monitoring, proactive maintenance, helpdesk support, and SLA-backed managed network operations.</p>
-                    <a href="<?= $root ?>services/managed-services.php" class="service-card-link">
+                    <a href="<?= $root ?>services/managed-services" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -237,7 +237,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-cloud"></i></div>
                     <h3 class="service-card-title">Cloud Network Solutions</h3>
                     <p class="service-card-desc">SD-WAN, cloud connectivity, hybrid infrastructure, and multi-cloud network architecture for modern businesses.</p>
-                    <a href="<?= $root ?>services/cloud-solutions.php" class="service-card-link">
+                    <a href="<?= $root ?>services/cloud-solutions" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -256,7 +256,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-video"></i></div>
                     <h3 class="service-card-title">CCTV & Security Solutions</h3>
                     <p class="service-card-desc">4K IP cameras, NVR systems, smart doorbells, access control, and biometric fencing for homes and enterprises.</p>
-                    <a href="<?= $root ?>services/cctv-security.php" class="service-card-link">
+                    <a href="<?= $root ?>services/cctv-security" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -275,7 +275,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-plug"></i></div>
                     <h3 class="service-card-title">IoT Integration</h3>
                     <p class="service-card-desc">Smart building automation, environmental sensors, energy monitoring, and connected device management platforms.</p>
-                    <a href="<?= $root ?>services/iot-integration.php" class="service-card-link">
+                    <a href="<?= $root ?>services/iot-integration" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -294,7 +294,7 @@ include 'includes/header.php';
                     <div class="service-card-icon"><i class="fa-solid fa-rotate"></i></div>
                     <h3 class="service-card-title">Disaster Recovery & BC</h3>
                     <p class="service-card-desc">Business continuity planning, redundant failover links, data backup, and rapid recovery solutions with tested RPO/RTO.</p>
-                    <a href="<?= $root ?>services/disaster-recovery.php" class="service-card-link">
+                    <a href="<?= $root ?>services/disaster-recovery" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -397,7 +397,7 @@ include 'includes/header.php';
                     </div>
                 </div>
                 <div class="mt-4">
-                    <a href="<?= $root ?>company/about-us.php" class="btn-filao btn-primary-filao">
+                    <a href="<?= $root ?>company/about-us" class="btn-filao btn-primary-filao">
                         About Our Company &rarr;
                     </a>
                 </div>
@@ -463,7 +463,7 @@ include 'includes/header.php';
                         <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> Static IP</li>
                         <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> SLA Guarantee</li>
                     </ul>
-                    <a href="<?= $root ?>company/quote.php" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
+                    <a href="<?= $root ?>company/quote" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
                 </div>
             </div>
 
@@ -487,7 +487,7 @@ include 'includes/header.php';
                         <li class="plan-feature included"><span class="check">▶</span> Static IP (optional)</li>
                         <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> Enterprise SLA</li>
                     </ul>
-                    <a href="<?= $root ?>company/quote.php" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Get Started</a>
+                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Get Started</a>
                 </div>
             </div>
 
@@ -511,7 +511,7 @@ include 'includes/header.php';
                         <li class="plan-feature included"><span class="check">▶</span> Static IP Included</li>
                         <li class="plan-feature included"><span class="check">▶</span> 99.5% SLA</li>
                     </ul>
-                    <a href="<?= $root ?>company/quote.php" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
+                    <a href="<?= $root ?>company/quote" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
                 </div>
             </div>
 
@@ -534,14 +534,14 @@ include 'includes/header.php';
                         <li class="plan-feature included"><span class="check">▶</span> Multiple Static IPs</li>
                         <li class="plan-feature included"><span class="check">▶</span> 99.9% SLA + Credits</li>
                     </ul>
-                    <a href="<?= $root ?>company/quote.php" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Request Quote</a>
+                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Request Quote</a>
                 </div>
             </div>
         </div>
 
         <p class="text-center mt-4" style="font-size:0.82rem;color:var(--clr-steel);">
             All prices are exclusive of VAT. Prices subject to change.
-            <a href="<?= $root ?>compliance/terms-of-service.php" style="color:var(--clr-red);">Terms & Conditions</a> apply.
+            <a href="<?= $root ?>compliance/terms-of-service" style="color:var(--clr-red);">Terms & Conditions</a> apply.
         </p>
     </div>
 </section><!-- /plans -->
@@ -640,7 +640,7 @@ include 'includes/header.php';
                     </div>
                 </div>
 
-                <a href="<?= $root ?>services/cctv-security.php" class="btn-filao btn-primary-filao mt-4 d-inline-flex">
+                <a href="<?= $root ?>services/cctv-security" class="btn-filao btn-primary-filao mt-4 d-inline-flex">
                     Explore Security Solutions &rarr;
                 </a>
             </div>
@@ -727,7 +727,7 @@ include 'includes/header.php';
                 <div style="font-family:var(--font-display);font-weight:800;font-size:1.1rem;text-transform:uppercase;margin-bottom:0.3rem;">Ready to Modernise Your Infrastructure?</div>
                 <p style="font-size:0.85rem;color:var(--clr-steel);margin:0;">Talk to a Filao technology consultant   free, no obligation.</p>
             </div>
-            <a href="<?= $root ?>company/contact.php" class="btn-filao btn-primary-filao" style="flex-shrink:0;">Book a Consultation &rarr;</a>
+            <a href="<?= $root ?>company/contact" class="btn-filao btn-primary-filao" style="flex-shrink:0;">Book a Consultation &rarr;</a>
         </div>
     </div>
 </section><!-- /iot-cloud -->
@@ -763,7 +763,7 @@ include 'includes/header.php';
                         </div>
                     </div>
                 </div>
-                <a href="<?= $root ?>company/coverage-map.php" class="btn-filao btn-primary-filao">
+                <a href="<?= $root ?>company/coverage-map" class="btn-filao btn-primary-filao">
                     Check Your Coverage &rarr;
                 </a>
             </div>
@@ -810,7 +810,7 @@ include 'includes/header.php';
                     What Our <span class="text-red">Clients</span> Say
                 </h2>
             </div>
-            <a href="<?= $root ?>company/about-us.php" class="btn-ghost-filao">See All Reviews &rarr;</a>
+            <a href="<?= $root ?>company/about-us" class="btn-ghost-filao">See All Reviews &rarr;</a>
         </div>
 
         <div class="row g-4">
@@ -911,7 +911,7 @@ include 'includes/header.php';
                     News & <span class="text-red">Insights</span>
                 </h2>
             </div>
-            <a href="<?= $root ?>blogs/index.php" class="btn-ghost-filao">View All Articles &rarr;</a>
+            <a href="<?= $root ?>blogs/index" class="btn-ghost-filao">View All Articles &rarr;</a>
         </div>
 
         <div class="row g-4">
@@ -933,7 +933,7 @@ include 'includes/header.php';
                         <div class="news-date">📅 <?= date('F j, Y', strtotime($blog['created_at'])) ?></div>
                         <h3 class="news-title"><?= htmlspecialchars($blog['title']) ?></h3>
                         <p class="news-excerpt"><?= htmlspecialchars($blog['excerpt']) ?></p>
-                        <a href="<?= $root ?>blogs/post.php?slug=<?= urlencode($blog['slug']) ?>" class="news-read-more">
+                        <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" class="news-read-more">
                             Read More
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
@@ -971,7 +971,7 @@ include 'includes/header.php';
                     Free site survey. Same-day quotes. Expert installation. Backed by our 99.9% uptime SLA. Contact our team now   we respond within 1 business hour.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="<?= $root ?>company/quote.php" class="btn-filao" id="cta-quote-btn"
+                    <a href="<?= $root ?>company/quote" class="btn-filao" id="cta-quote-btn"
                        style="background:#fff;color:var(--clr-red);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 100%,12px 100%);padding:0.85rem 2.2rem;font-family:var(--font-display);font-weight:800;font-size:0.95rem;letter-spacing:0.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;">
                         Get a Free Quote &rarr;
                     </a>
