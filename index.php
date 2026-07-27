@@ -7,7 +7,7 @@
 $page_title = 'Filao Networks Solutions   Connecting Kenya at Speed';
 $page_desc  = 'Filao Networks Solutions offers enterprise-grade fiber internet, networking, CCTV security, cloud, and IoT solutions across Kenya. Request a free quote today.';
 $page_class = 'page-home';
-$root       = '/filaoisp/';
+$root       = './';
 
 include 'includes/db_connect.php';
 include 'includes/header.php';

@@ -13,7 +13,7 @@ $page_desc = $page_desc ?? 'Filao Networks Solutions provides enterprise-grade i
 $page_class = $page_class ?? '';
 
 // Determine root path (for assets)
-$root = '/filaoisp/';
+$root = $root ?? './';
 ?>
 <!DOCTYPE html>
 <html lang="en">

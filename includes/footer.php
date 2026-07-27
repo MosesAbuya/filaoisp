@@ -3,7 +3,7 @@
  * Filao Networks Solutions   Footer
  * Include on every page: <?php include 'includes/footer.php'; ?>
  */
-$root = $root ?? '/filaoisp/';
+$root = $root ?? './';
 ?>
 
 <!-- =====================================================================
@@ -304,7 +304,7 @@ $root = $root ?? '/filaoisp/';
 </button>
 
 <!-- Bootstrap 5 JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 <!-- Custom JS -->
 <script src="<?= $root ?>assets/js/main.js"></script>
 </body>
