@@ -4,8 +4,8 @@
  * Connects to the MySQL database using PDO.
  */
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'faridagi_filaoisp');
-define('DB_USER', 'faridagi_filaoisp');
+define('DB_NAME', 'filaonet_filaoisp');
+define('DB_USER', 'filaonet_filaoisp');
 define('DB_PASS', 'Filao@2026');
 define('DB_CHARSET', 'utf8mb4');
 
