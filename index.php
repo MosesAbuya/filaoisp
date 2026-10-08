@@ -11,6 +11,15 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 $is_homepage = true;
 
 include 'includes/db_connect.php';
+
+// Fetch Wi-Fi Packages
+$wifi_packages = [];
+try {
+    $wifi_packages = $pdo->query("SELECT * FROM wifi_packages ORDER BY sort_order ASC, id DESC")->fetchAll();
+} catch (Exception $e) {
+    // Silently ignore if table doesn't exist yet
+}
+
 include 'includes/header.php';
 ?>
 
@@ -256,8 +265,8 @@ include 'includes/header.php';
                 <div class="service-card-body">
                     <div class="service-card-icon"><i class="fa-solid fa-video"></i></div>
                     <h3 class="service-card-title">CCTV & Security Solutions</h3>
-                    <p class="service-card-desc">4K IP cameras, NVR systems, smart doorbells, access control, and biometric fencing for homes and enterprises.</p>
-                    <a href="<?= $root ?>services/cctv-security" class="service-card-link">
+                    <p class="service-card-desc">We offer professional CCTV installation and security services. Feel free to request a quote tailored to your needs.</p>
+                    <a href="<?= $root ?>company/quote" class="service-card-link">
                         Learn More
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -444,100 +453,55 @@ include 'includes/header.php';
         </div>
 
         <div class="row g-4">
-            <!-- Home Basic -->
-            <div class="col-xl-3 col-md-6">
-                <div class="plan-card reveal delay-1" style="height:100%;">
-                    <div class="plan-type">Residential</div>
-                    <div class="plan-name">Home Basic</div>
-                    <div class="plan-speed">20<span class="plan-speed-unit">Mbps</span></div>
-                    <div class="plan-price-row">
-                        <span class="plan-currency">KSh</span>
-                        <span class="plan-amount">2,499</span>
-                        <span class="plan-period">/month</span>
+            <?php if (!empty($wifi_packages)): ?>
+                <?php foreach ($wifi_packages as $index => $pkg): 
+                    $delay = $index + 1;
+                    $features = json_decode($pkg['features'], true) ?? [];
+                    $isFeatured = $pkg['is_featured'] ? 'featured' : '';
+                    $isEnterprise = (strtolower($pkg['type']) === 'enterprise');
+                    $bgStyle = $isEnterprise ? 'style="height:100%;background:linear-gradient(135deg,rgba(11,1,117,0.3) 0%,rgba(73,65,140,0.2) 100%);border-color:rgba(73,65,140,0.4);"' : 'style="height:100%;"';
+                    $typeColor = $isEnterprise ? 'color:var(--clr-indigo);' : '';
+                    $btnClass = $pkg['is_featured'] ? 'btn-filao btn-primary-filao' : 'btn-ghost-filao';
+                    if($isEnterprise) $btnClass = 'btn-filao btn-primary-filao';
+                ?>
+                <div class="col-xl-3 col-md-6">
+                    <div class="plan-card <?= $isFeatured ?> reveal delay-<?= $delay ?>" <?= $bgStyle ?>>
+                        <div class="plan-type" style="<?= $typeColor ?>"><?= htmlspecialchars($pkg['type']) ?></div>
+                        <div class="plan-name"><?= htmlspecialchars($pkg['name']) ?>
+                            <?php if ($pkg['is_popular']): ?><span class="badge bg-danger ms-2" style="font-size:0.6rem;vertical-align:middle;">POPULAR</span><?php endif; ?>
+                        </div>
+                        <div class="plan-speed"><?= htmlspecialchars($pkg['speed']) ?><span class="plan-speed-unit"><?= htmlspecialchars($pkg['speed_unit']) ?></span></div>
+                        <div class="plan-price-row">
+                            <?php if ($isEnterprise): ?>
+                                <span class="plan-currency" style="font-size:0.9rem;color:var(--clr-steel);">From</span>
+                                <span class="plan-amount" style="font-size:2rem;">Custom</span>
+                            <?php else: ?>
+                                <span class="plan-currency">KSh</span>
+                                <span class="plan-amount"><?= number_format($pkg['price']) ?></span>
+                                <span class="plan-period"><?= htmlspecialchars($pkg['period']) ?></span>
+                            <?php endif; ?>
+                        </div>
+                        <ul class="plan-features">
+                            <?php foreach ($features as $f): 
+                                $isIncluded = $f['included'];
+                                $featClass = $isIncluded ? 'plan-feature included' : 'plan-feature';
+                                $featOpacity = $isIncluded ? '' : 'style="opacity:0.4;"';
+                                $checkIcon = $isIncluded ? '▶' : ' ';
+                            ?>
+                            <li class="<?= $featClass ?>" <?= $featOpacity ?>><span class="check"><?= $checkIcon ?></span> <?= htmlspecialchars($f['text']) ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                        <a href="<?= $root ?>company/quote" class="<?= $btnClass ?>" style="width:100%;text-align:center;justify-content:center;display:block;">
+                            <?= $isEnterprise ? 'Request Quote' : 'Get Started' ?>
+                        </a>
                     </div>
-                    <ul class="plan-features">
-                        <li class="plan-feature included"><span class="check">▶</span> 20Mbps Download</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 10Mbps Upload</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Unlimited Data</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Free Router</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Email Support</li>
-                        <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> Static IP</li>
-                        <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> SLA Guarantee</li>
-                    </ul>
-                    <a href="<?= $root ?>company/quote" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
                 </div>
-            </div>
-
-            <!-- Home Pro (featured) -->
-            <div class="col-xl-3 col-md-6">
-                <div class="plan-card featured reveal delay-2" style="height:100%;">
-                    <div class="plan-type">Residential</div>
-                    <div class="plan-name">Home Pro</div>
-                    <div class="plan-speed">100<span class="plan-speed-unit">Mbps</span></div>
-                    <div class="plan-price-row">
-                        <span class="plan-currency">KSh</span>
-                        <span class="plan-amount">4,999</span>
-                        <span class="plan-period">/month</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li class="plan-feature included"><span class="check">▶</span> 100Mbps Download</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 50Mbps Upload</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Unlimited Data</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Free Router + ONT</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Priority Support</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Static IP (optional)</li>
-                        <li class="plan-feature" style="opacity:0.4;"><span class="check"> </span> Enterprise SLA</li>
-                    </ul>
-                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Get Started</a>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <div class="col-12 text-center text-muted">
+                    <p>Packages are currently being updated. Please check back shortly.</p>
                 </div>
-            </div>
-
-            <!-- Business -->
-            <div class="col-xl-3 col-md-6">
-                <div class="plan-card reveal delay-3" style="height:100%;">
-                    <div class="plan-type">Business</div>
-                    <div class="plan-name">Business Plus</div>
-                    <div class="plan-speed">500<span class="plan-speed-unit">Mbps</span></div>
-                    <div class="plan-price-row">
-                        <span class="plan-currency">KSh</span>
-                        <span class="plan-amount">12,500</span>
-                        <span class="plan-period">/month</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li class="plan-feature included"><span class="check">▶</span> 500Mbps Download</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 250Mbps Upload</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Unlimited Data</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Enterprise Router</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 24/7 Phone Support</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Static IP Included</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 99.5% SLA</li>
-                    </ul>
-                    <a href="<?= $root ?>company/quote" class="btn-ghost-filao" style="width:100%;text-align:center;display:block;">Get Started</a>
-                </div>
-            </div>
-
-            <!-- Enterprise Dedicated -->
-            <div class="col-xl-3 col-md-6">
-                <div class="plan-card reveal delay-4" style="height:100%;background:linear-gradient(135deg,rgba(11,1,117,0.3) 0%,rgba(73,65,140,0.2) 100%);border-color:rgba(73,65,140,0.4);">
-                    <div class="plan-type" style="color:var(--clr-indigo);">Enterprise</div>
-                    <div class="plan-name">Dedicated Leased Line</div>
-                    <div class="plan-speed">1<span class="plan-speed-unit">Gbps</span></div>
-                    <div class="plan-price-row">
-                        <span class="plan-currency" style="font-size:0.9rem;color:var(--clr-steel);">From</span>
-                        <span class="plan-amount" style="font-size:2rem;">Custom</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li class="plan-feature included"><span class="check">▶</span> 1Gbps Dedicated Uncontended</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Symmetric Up/Down</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Unlimited Data</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Managed CPE</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Named Account Manager</li>
-                        <li class="plan-feature included"><span class="check">▶</span> Multiple Static IPs</li>
-                        <li class="plan-feature included"><span class="check">▶</span> 99.9% SLA + Credits</li>
-                    </ul>
-                    <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" style="width:100%;text-align:center;justify-content:center;">Request Quote</a>
-                </div>
-            </div>
+            <?php endif; ?>
         </div>
 
         <p class="text-center mt-4" style="font-size:0.82rem;color:var(--clr-steel);">
@@ -593,7 +557,7 @@ include 'includes/header.php';
                     See Everything.<br>Miss <span class="text-red">Nothing.</span>
                 </h2>
                 <p class="section-desc mb-4">
-                    From 4K IP cameras and AI-powered analytics to biometric access control   Filao Networks delivers complete physical security infrastructure for homes, estates, and commercial properties across Kenya.
+                    We offer comprehensive physical security infrastructure including 4K IP cameras, AI-powered analytics, and access control. Contact us today for a personalized quote tailored to your specific security needs.
                 </p>
 
                 <div class="security-feature-grid">
@@ -748,7 +712,7 @@ include 'includes/header.php';
                     Nationwide <span class="text-red">Coverage</span>
                 </h2>
                 <p class="section-desc mb-4">
-                    Filao Networks is expanding rapidly across Kenya. We currently serve 47+ counties with fiber, wireless, and enterprise connectivity solutions.
+                    Our high-speed Wi-Fi network is currently available in <strong>Utawala, Mihango, Embakasi, Ruai, Joska, Kitengela, and Chokaa</strong>. All our other enterprise solutions (CCTV, Networking, IoT, and Cloud) are fully supported and available countrywide across Kenya.
                 </p>
                 <div class="row g-3 mb-4">
                     <div class="col-6">

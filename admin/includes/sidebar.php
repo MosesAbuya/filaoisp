@@ -41,6 +41,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
             </a>
         </li>
         <li class="nav-item">
+            <a href="packages.php" class="nav-link <?= ($current_page === 'packages.php') ? 'active' : '' ?>">
+                <i class="fa-solid fa-wifi nav-icon"></i>
+                <span>Wi-Fi Packages</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="blogs.php" class="nav-link <?= ($current_page === 'blogs.php') ? 'active' : '' ?>">
                 <i class="fa-solid fa-newspaper nav-icon"></i>
                 <span>Blog Posts</span>
