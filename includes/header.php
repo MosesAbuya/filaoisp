@@ -87,22 +87,8 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
     <!-- =====================================================================
      MOBILE MENU (off-canvas)
      ===================================================================== -->
+
     <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation">
-        <button id="mobile-close" class="mobile-menu-close" aria-label="Close menu">&times;</button>
-
-        <!-- Logo in mobile menu -->
-        <a href="<?= $root ?>" class="nav-logo mb-4 d-block" style="text-decoration:none;">
-            <svg width="36" height="36" viewBox="0 0 80 80" fill="none">
-                <polygon points="0,80 20,0 80,0 60,80" fill="#0b0175" />
-                <polygon points="15,80 35,0 50,0 30,80" fill="#ec1c24" />
-                <polygon points="35,80 55,0 60,0 40,80" fill="#090238" />
-            </svg>
-            <div>
-                <div class="logo-wordmark">FILAO <span>NETWORKS</span></div>
-                <div class="logo-tagline">Solutions</div>
-            </div>
-        </a>
-
         <ul style="list-style:none;padding:0;margin:0;">
 
             <!-- Internet Solutions -->

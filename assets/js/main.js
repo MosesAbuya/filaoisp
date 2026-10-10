@@ -26,37 +26,63 @@ handleNavbarScroll(); // Run on init
 /* =====================================================================
    3. MOBILE MENU
    ===================================================================== */
-let closeMobileMenu;
+window.FilaoNav = {
+    open: function() {
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-overlay');
+        const toggler = document.getElementById('mobile-toggler');
+        if (menu) menu.classList.add('open');
+        if (overlay) overlay.classList.add('open');
+        if (toggler) toggler.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    },
+    close: function() {
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-overlay');
+        const toggler = document.getElementById('mobile-toggler');
+        if (menu) menu.classList.remove('open');
+        if (overlay) overlay.classList.remove('open');
+        if (toggler) toggler.classList.remove('open');
+        document.body.style.overflow = '';
+    },
+    toggle: function() {
+        const menu = document.getElementById('mobile-menu');
+        if (menu && menu.classList.contains('open')) {
+            this.close();
+        } else {
+            this.open();
+        }
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const mobileToggler  = document.getElementById('mobile-toggler');
-    const mobileMenu     = document.getElementById('mobile-menu');
-    const mobileOverlay  = document.getElementById('mobile-overlay');
     const mobileClose    = document.getElementById('mobile-close');
+    const mobileOverlay  = document.getElementById('mobile-overlay');
 
-    function openMobileMenu() {
-        mobileMenu?.classList.add('open');
-        mobileOverlay?.classList.add('open');
-        mobileToggler?.classList.add('open');
-        document.body.style.overflow = 'hidden';
+    if (mobileToggler) {
+        mobileToggler.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.FilaoNav.toggle();
+        });
     }
 
-    closeMobileMenu = function() {
-        mobileMenu?.classList.remove('open');
-        mobileOverlay?.classList.remove('open');
-        mobileToggler?.classList.remove('open');
-        document.body.style.overflow = '';
-    };
+    if (mobileClose) {
+        mobileClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.FilaoNav.close();
+        });
+    }
 
-    mobileToggler?.addEventListener('click', openMobileMenu);
-    mobileClose?.addEventListener('click', closeMobileMenu);
-    mobileOverlay?.addEventListener('click', closeMobileMenu);
-
-    // Document-level fallback so clicking X or overlay always closes menu
-    document.addEventListener('click', (e) => {
-        if (e.target.closest('#mobile-close') || e.target.closest('.mobile-menu-close') || e.target.id === 'mobile-overlay') {
-            closeMobileMenu();
-        }
-    });
+    if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.FilaoNav.close();
+        });
+    }
 
     // Mobile sub-menu toggles
     document.querySelectorAll('.mobile-nav-link[data-toggle]').forEach(link => {
