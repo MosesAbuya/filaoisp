@@ -3,17 +3,29 @@
  * Filao Networks Solutions - Database Connection
  * Connects to the MySQL database using PDO.
  */
-// define('DB_HOST', 'localhost');
-// define('DB_NAME', 'filaonet_filaoisp');
-// define('DB_USER', 'filaonet_filaoisp');
-// define('DB_PASS', 'Filao@2026');
-// define('DB_CHARSET', 'utf8mb4');
+// Check if running on localhost (local development)
+$is_localhost = false;
+if (isset($_SERVER['HTTP_HOST'])) {
+    $host = $_SERVER['HTTP_HOST'];
+    if (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false) {
+        $is_localhost = true;
+    }
+}
 
+if ($is_localhost) {
+    // Local Credentials
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'filaoisp');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+} else {
+    // Live Server Credentials
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'filaonet_filaoisp');
+    define('DB_USER', 'filaonet_filaoisp');
+    define('DB_PASS', 'Filao@2026');
+}
 
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'filaoisp');
-define('DB_USER', 'root');
-define('DB_PASS', '');
 define('DB_CHARSET', 'utf8mb4');
 
 $options = [
