@@ -32,7 +32,7 @@ include '../includes/header.php';
         <div style="background:var(--clr-bg-card); padding:4rem; border:1px solid var(--clr-border);">
             <h2 class="mb-4" style="color:var(--text-main); font-family:var(--font-heading);">Support Centre</h2>
             <p style="color:var(--clr-steel); line-height:1.8;">This document provides detailed information regarding our Support Centre. Filao Networks is committed to transparency and operational excellence across all our service offerings.</p>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-top:1.5rem;">For specific inquiries regarding these policies, please reach out to our legal and compliance team via info@filaoadventures.co.ke.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-top:1.5rem;">For specific inquiries regarding these policies, please reach out to our legal and compliance team via info@filaonetworks.com.</p>
             <hr style="border-color:var(--clr-border); margin:3rem 0;">
             <h4 style="color:var(--text-main);">1. General Provisions</h4>
             <p style="color:var(--clr-steel); line-height:1.8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

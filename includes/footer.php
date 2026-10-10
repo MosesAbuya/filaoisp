@@ -206,8 +206,8 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                                         <div
                                             style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--clr-steel);">
                                             Email</div>
-                                        <a href="mailto:info@filaoadventures.co.ke" class="footer-link"
-                                            style="font-size:0.88rem;font-weight:600;">info@filaoadventures.co.ke</a>
+                                        <a href="mailto:info@filaonetworks.com" class="footer-link"
+                                            style="font-size:0.88rem;font-weight:600;">info@filaonetworks.com</a>
                                     </div>
                                 </div>
                                 <div style="display:flex;align-items:flex-start;gap:1rem;">

@@ -63,7 +63,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         "url": "https://filaonetworks.co.ke",
         "logo": "https://filaonetworks.co.ke/assets/images/logo.png",
         "telephone": "+254757139239",
-        "email": "info@filaoadventures.co.ke",
+        "email": "info@filaonetworks.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Ambank House",
@@ -204,7 +204,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
             <p style="font-size:0.75rem;color:var(--clr-steel);margin-bottom:0.4rem;"><i class="fa-solid fa-phone"></i>
                 +254 757 139239</p>
             <p style="font-size:0.75rem;color:var(--clr-steel);margin-bottom:0.4rem;"><i
-                    class="fa-solid fa-envelope"></i> info@filaoadventures.co.ke</p>
+                    class="fa-solid fa-envelope"></i> info@filaonetworks.com</p>
             <p style="font-size:0.75rem;color:var(--clr-steel);"><i class="fa-solid fa-location-dot"></i> Ambank House,
                 Nairobi</p>
         </div>
@@ -227,7 +227,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                         <span style="color:var(--clr-border);">|</span>
                         <span class="top-contact">
                             <span><i class="fa-solid fa-envelope"></i></span>
-                            <a href="mailto:info@filaoadventures.co.ke">info@filaoadventures.co.ke</a>
+                            <a href="mailto:info@filaonetworks.com">info@filaonetworks.com</a>
                         </span>
                     </div>
                     <div class="d-flex align-items-center gap-3">
@@ -645,4 +645,4 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
             </div><!-- /.navbar-main-inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /#main-navbar -->
-
+

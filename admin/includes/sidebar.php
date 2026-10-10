@@ -75,6 +75,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <div class="sidebar-menu-title mt-4">SYSTEM</div>
     <ul class="sidebar-nav list-unstyled mb-0">
         <li class="nav-item">
+            <a href="settings.php" class="nav-link <?= ($current_page === 'settings.php') ? 'active' : '' ?>">
+                <i class="fa-solid fa-gear nav-icon"></i>
+                <span>Settings (SMTP)</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a href="../" target="_blank" class="nav-link">
                 <i class="fa-solid fa-globe nav-icon"></i>
                 <span>View Live Website</span>

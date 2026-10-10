@@ -18,12 +18,12 @@ $pdo->exec("CREATE TABLE IF NOT EXISTS admin_users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
 
-// 2. Check if default admin account exists, if not seed it (Username: admin, Password: admin123)
+// 2. Check if default admin account exists, if not seed it (Username: admin, Password: Secure@Filaonetworks@2026)
 $stmt = $pdo->prepare("SELECT COUNT(*) FROM admin_users WHERE username = ?");
 $stmt->execute(['admin']);
 if ($stmt->fetchColumn() == 0) {
     $defaultUser = 'admin';
-    $defaultPassHash = password_hash('admin123', PASSWORD_DEFAULT);
+    $defaultPassHash = password_hash('Secure@Filaonetworks@2026', PASSWORD_DEFAULT);
     $insertStmt = $pdo->prepare("INSERT INTO admin_users (username, password_hash) VALUES (?, ?)");
     $insertStmt->execute([$defaultUser, $defaultPassHash]);
 }

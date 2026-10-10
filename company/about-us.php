@@ -523,7 +523,7 @@ include "../includes/header.php";
                 <div class="col-md-3">
                     <i class="fa-solid fa-envelope"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
-                    <div style="font-weight:600;color:var(--text-main);">info@filaoadventures.co.ke</div>
+                    <div style="font-weight:600;color:var(--text-main);">info@filaonetworks.com</div>
                     <div style="color:var(--clr-steel);font-size:0.9rem;">We respond within 2 hours</div>
                 </div>
             </div>

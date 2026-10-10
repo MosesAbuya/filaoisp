@@ -50,7 +50,7 @@ include '../includes/header.php';
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
                 <div style="font-size:1.5rem; color:var(--clr-red); margin-bottom:1rem;"><i class="fa-solid fa-envelope"></i></div>
                 <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem;">Email Us</h4>
-                <p style="color:var(--clr-steel); margin:0;">info@filaoadventures.co.ke</p>
+                <p style="color:var(--clr-steel); margin:0;">info@filaonetworks.com</p>
             </div>
         </div>
         

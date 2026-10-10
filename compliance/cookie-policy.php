@@ -48,7 +48,7 @@ include '../includes/header.php';
             <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">You have the right to accept or decline cookies. Most web browsers automatically accept cookies, but you can modify your browser settings to decline non-essential cookies. Please note that disabling essential cookies may impact the functionality of our client portal (e.g., maintaining your login session).</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">5. Contact Us</h4>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions about our use of cookies, please contact us at <strong>info@filaoadventures.co.ke</strong>.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions about our use of cookies, please contact us at <strong>info@filaonetworks.com</strong>.</p>
 
         </div>
     </div>
