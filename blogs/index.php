@@ -42,7 +42,7 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
                         <div style="font-size:0.75rem; color:var(--clr-red); text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-bottom:1rem;">
                             <?= date('F j, Y', strtotime($blog['created_at'])) ?>
                         </div>
-                        <h3 style="color:#fff; font-size:1.3rem; margin-bottom:1rem; font-family:var(--font-heading);">
+                        <h3 style="color:var(--text-main); font-size:1.3rem; margin-bottom:1rem; font-family:var(--font-heading);">
                             <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" style="color:inherit; text-decoration:none; transition:color 0.2s;" onmouseover="this.style.color='var(--clr-red)'" onmouseout="this.style.color='inherit'">
                                 <?= htmlspecialchars($blog['title']) ?>
                             </a>

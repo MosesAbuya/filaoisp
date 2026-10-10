@@ -29,14 +29,12 @@ include 'includes/header.php';
 <section class="hero-section" id="home" aria-label="Hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-grid"   aria-hidden="true"></div>
-    <div class="hero-slash"  aria-hidden="true"></div>
 
-    <div class="container-fluid px-4 py-5" style="position:relative;z-index:2;">
-        <div class="row align-items-center g-5" style="min-height:calc(100vh - var(--navbar-h));">
+    <div class="container-fluid px-4 py-5" style="position:relative;z-index:2;padding-top:calc(var(--navbar-h) + 3rem) !important;">
+        <div class="row align-items-center g-5" style="min-height:calc(100vh - var(--navbar-h) - 3rem);">
 
-            <!-- Left: Content -->
-            <div class="col-lg-6 col-xl-5">
+            <!-- Content -->
+            <div class="col-lg-8 col-xl-6">
                 <div class="hero-eyebrow">
                     Kenya's Fastest Growing ISP
                 </div>
@@ -46,7 +44,7 @@ include 'includes/header.php';
                     <span class="line-outline">Uptime.</span>
                 </h1>
                 <p class="hero-subtitle reveal delay-1">
-                    Enterprise-grade internet, networking, CCTV security, cloud, and IoT solutions   engineered for businesses and homes across Kenya.
+                    Enterprise-grade internet, networking, CCTV security, cloud, and IoT solutions engineered for businesses and homes across Kenya.
                 </p>
                 <div class="hero-cta-group reveal delay-2">
                     <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao" id="hero-quote-btn">
@@ -87,28 +85,7 @@ include 'includes/header.php';
                 </div>
             </div><!-- /col left -->
 
-            <!-- Right: Hero Image -->
-            <div class="col-lg-6 col-xl-7 d-none d-lg-block hero-image-wrap" aria-hidden="true">
-                <img
-                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80"
-                    alt="Fiber optic data center infrastructure"
-                    class="hero-img-main reveal-right"
-                    loading="eager"
-                    width="900" height="700"
-                >
-                <div class="hero-img-badge">
-                    <div class="badge-num">1Gbps</div>
-                    <div class="badge-label">Fiber Speed</div>
-                </div>
-            </div>
-
         </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator" aria-hidden="true" onclick="document.getElementById('ticker').scrollIntoView({behavior:'smooth'})">
-        <div class="scroll-mouse"></div>
-        <span>Scroll</span>
     </div>
 </section><!-- /hero -->
 
@@ -296,7 +273,7 @@ include 'includes/header.php';
             <div class="service-card reveal delay-4">
                 <span class="service-num">08</span>
                 <div style="overflow:hidden;height:200px;">
-                    <img src="https://images.unsplash.com/photo-1600267185393-1b14dbc5e4fb?w=600&q=70"
+                    <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=600&q=70"
                          alt="Disaster recovery business continuity backup"
                          class="service-card-img" loading="lazy">
                 </div>
@@ -459,13 +436,12 @@ include 'includes/header.php';
                     $features = json_decode($pkg['features'], true) ?? [];
                     $isFeatured = $pkg['is_featured'] ? 'featured' : '';
                     $isEnterprise = (strtolower($pkg['type']) === 'enterprise');
-                    $bgStyle = $isEnterprise ? 'style="height:100%;background:linear-gradient(135deg,rgba(11,1,117,0.3) 0%,rgba(73,65,140,0.2) 100%);border-color:rgba(73,65,140,0.4);"' : 'style="height:100%;"';
                     $typeColor = $isEnterprise ? 'color:var(--clr-indigo);' : '';
                     $btnClass = $pkg['is_featured'] ? 'btn-filao btn-primary-filao' : 'btn-ghost-filao';
                     if($isEnterprise) $btnClass = 'btn-filao btn-primary-filao';
                 ?>
                 <div class="col-xl-3 col-md-6">
-                    <div class="plan-card <?= $isFeatured ?> reveal delay-<?= $delay ?>" <?= $bgStyle ?>>
+                    <div class="plan-card <?= $isFeatured ?> reveal delay-<?= $delay ?>">
                         <div class="plan-type" style="<?= $typeColor ?>"><?= htmlspecialchars($pkg['type']) ?></div>
                         <div class="plan-name"><?= htmlspecialchars($pkg['name']) ?>
                             <?php if ($pkg['is_popular']): ?><span class="badge bg-danger ms-2" style="font-size:0.6rem;vertical-align:middle;">POPULAR</span><?php endif; ?>
@@ -617,7 +593,7 @@ include 'includes/header.php';
                         loading="lazy"
                         style="width:100%;clip-path:polygon(8% 0,100% 0,92% 100%,0 100%);box-shadow:0 20px 60px rgba(0,0,0,0.7);"
                     >
-                    <div style="position:absolute;top:1.5rem;right:-1rem;background:var(--clr-deep);border:1px solid var(--clr-border);border-left:3px solid var(--clr-red);padding:1rem 1.4rem;">
+                    <div style="position:absolute;top:1.5rem;right:-1rem;background:#fff;border:1px solid var(--clr-border);border-left:3px solid var(--clr-red);padding:1rem 1.4rem;color:var(--text-main);">
                         <div style="font-family:var(--font-display);font-weight:900;font-size:2rem;color:var(--clr-red);line-height:1;">
                             4K
                         </div>
@@ -786,7 +762,6 @@ include 'includes/header.php';
                         "Filao Networks transformed our office connectivity. We went from a flaky DSL line to a 500Mbps dedicated link with zero downtime in 18 months. The account management is exceptional."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=8" alt="Client photo" class="testimonial-avatar" loading="lazy">
                         <div>
                             <div class="testimonial-name">David Mwangi</div>
                             <div class="testimonial-role">IT Director, Acme Finance Ltd</div>
@@ -801,7 +776,6 @@ include 'includes/header.php';
                         "The CCTV and access control system installed by Filao Networks gave our estate residents peace of mind. Professional installation, clean cabling, and excellent post-sales support."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=47" alt="Client photo" class="testimonial-avatar" loading="lazy">
                         <div>
                             <div class="testimonial-name">Amina Hassan</div>
                             <div class="testimonial-role">Estate Manager, Serene Gardens</div>
@@ -816,7 +790,6 @@ include 'includes/header.php';
                         "We chose Filao for our disaster recovery solution and they exceeded expectations. When our primary link failed during flooding, the failover activated in under 90 seconds. Invaluable."
                     </p>
                     <div class="testimonial-author">
-                        <img src="https://i.pravatar.cc/150?img=33" alt="Client photo" class="testimonial-avatar" loading="lazy">
                         <div>
                             <div class="testimonial-name">James Ochieng</div>
                             <div class="testimonial-role">CTO, Nairobi Logistics Group</div>
@@ -895,7 +868,7 @@ include 'includes/header.php';
                         <span class="news-cat">Insights</span>
                     </div>
                     <div class="news-card-body">
-                        <div class="news-date">📅 <?= date('F j, Y', strtotime($blog['created_at'])) ?></div>
+                        <div class="news-date"><i class="fa-regular fa-calendar" style="color:var(--clr-red); margin-right:5px;"></i> <?= date('F j, Y', strtotime($blog['created_at'])) ?></div>
                         <h3 class="news-title"><?= htmlspecialchars($blog['title']) ?></h3>
                         <p class="news-excerpt"><?= htmlspecialchars($blog['excerpt']) ?></p>
                         <a href="<?= $root ?>blogs/<?= urlencode($blog['slug']) ?>" class="news-read-more">
@@ -924,13 +897,13 @@ include 'includes/header.php';
     <div class="container-fluid px-4 cta-banner-content">
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
-                <div style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;opacity:0.8;margin-bottom:0.8rem;">
+                <div style="font-family:var(--font-display);font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:0.8rem;color:#000000;">
                     Start Today   No Lock-in Contracts
                 </div>
                 <h2 class="cta-banner-title reveal">
                     Power Your Business<br>
                     with Filao<br>
-                    <span style="-webkit-text-stroke:2px rgba(255,255,255,0.4);color:transparent;">Networks.</span>
+                    <span style="-webkit-text-stroke:2px #000000;color:transparent;">Networks.</span>
                 </h2>
                 <p class="cta-banner-desc">
                     Free site survey. Same-day quotes. Expert installation. Backed by our 99.9% uptime SLA. Contact our team now   we respond within 1 business hour.
@@ -941,7 +914,7 @@ include 'includes/header.php';
                         Get a Free Quote &rarr;
                     </a>
                     <a href="tel:+254757139239" class="btn-filao btn-outline-filao" id="cta-call-btn"
-                       style="border-color:rgba(255,255,255,0.5);color:#fff;">
+                       style="border-color:rgba(255,255,255,0.5);color:#ffffff;">
                         <i class="fa-solid fa-phone"></i> +254 757 139239
                     </a>
                 </div>

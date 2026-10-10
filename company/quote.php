@@ -41,23 +41,23 @@ include '../includes/header.php';
                     <div class="row g-4">
                         <div class="col-md-6">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Full Name *</label>
-                            <input type="text" name="name" class="form-control" placeholder="Jane Doe" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="text" name="name" class="form-control" placeholder="Jane Doe" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Email Address *</label>
-                            <input type="email" name="email" class="form-control" placeholder="jane@company.com" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="email" name="email" class="form-control" placeholder="jane@company.com" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Phone Number *</label>
-                            <input type="tel" name="phone" class="form-control" placeholder="+254 7XX XXX XXX" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="tel" name="phone" class="form-control" placeholder="+254 7XX XXX XXX" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-md-6">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Company Name</label>
-                            <input type="text" name="company" class="form-control" placeholder="Optional" style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="text" name="company" class="form-control" placeholder="Optional" style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-12">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Service Required *</label>
-                            <select name="service" class="form-select" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <select name="service" class="form-select" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                                 <option value="" disabled selected>Select a service...</option>
                                 <option value="Internet Solutions (Enterprise)">Internet Solutions (Enterprise)</option>
                                 <option value="Residential Fiber">Residential Fiber</option>
@@ -75,7 +75,7 @@ include '../includes/header.php';
                         </div>
                         <div class="col-12">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Project Details *</label>
-                            <textarea name="message" class="form-control" rows="6" placeholder="Please provide details about your project, location, and specific requirements..." required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;"></textarea>
+                            <textarea name="message" class="form-control" rows="6" placeholder="Please provide details about your project, location, and specific requirements..." required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;"></textarea>
                         </div>
                         <div class="col-12 mt-4 text-center">
                             <button type="submit" class="btn-filao btn-primary-filao px-5 py-3" style="font-size:1.1rem;">Submit Request <i class="fa-solid fa-arrow-right ms-2"></i></button>

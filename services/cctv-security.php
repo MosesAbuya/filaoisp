@@ -61,32 +61,32 @@ include "../includes/header.php";
         <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=400&q=80" alt="Dome Camera"
           style="width:100%;height:180px;object-fit:cover;border-bottom:3px solid var(--clr-red);">
         <div style="background:var(--clr-bg-card);padding:1rem;">
-          <div style="font-size:0.8rem;color:#fff;font-weight:600;">Dome Cameras</div>
+          <div style="font-size:0.8rem;color:var(--text-main);font-weight:600;">Dome Cameras</div>
         </div>
       </div>
       <div class="col-md-3 col-6 text-center">
         <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=400&q=80" alt="Bullet Camera"
           style="width:100%;height:180px;object-fit:cover;border-bottom:3px solid var(--clr-red);">
         <div style="background:var(--clr-bg-card);padding:1rem;">
-          <div style="font-size:0.8rem;color:#fff;font-weight:600;">Bullet Cameras</div>
+          <div style="font-size:0.8rem;color:var(--text-main);font-weight:600;">Bullet Cameras</div>
         </div>
       </div>
       <div class="col-md-3 col-6 text-center">
         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&q=80" alt="PTZ Camera"
           style="width:100%;height:180px;object-fit:cover;border-bottom:3px solid var(--clr-red);">
         <div style="background:var(--clr-bg-card);padding:1rem;">
-          <div style="font-size:0.8rem;color:#fff;font-weight:600;">PTZ Cameras</div>
+          <div style="font-size:0.8rem;color:var(--text-main);font-weight:600;">PTZ Cameras</div>
         </div>
       </div>
       <div class="col-md-3 col-6 text-center">
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80" alt="NVR System"
           style="width:100%;height:180px;object-fit:cover;border-bottom:3px solid var(--clr-red);">
         <div style="background:var(--clr-bg-card);padding:1rem;">
-          <div style="font-size:0.8rem;color:#fff;font-weight:600;">NVR / DVR Systems</div>
+          <div style="font-size:0.8rem;color:var(--text-main);font-weight:600;">NVR / DVR Systems</div>
         </div>
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+    <div style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
       <div class="container-fluid px-4">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
@@ -139,7 +139,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-camera" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               4K Ultra HD Resolution</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Our IP cameras capture footage in 4K
               (3840×2160) with WDR (Wide Dynamic Range) for crisp clarity even in bright sunlight or low-light
@@ -156,7 +156,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-brain" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               AI Video Analytics</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Detect people, vehicles, and objects
               automatically. Receive instant alerts for unusual movement, loitering, facial recognition, and licence
@@ -173,7 +173,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-moon" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Full-Color Night Vision</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Advanced infrared and full-color night
               vision technology ensures 24-hour surveillance without compromising on image quality.</p>
@@ -189,7 +189,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-mobile-screen" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Remote Access Anywhere</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">View live and recorded footage in real
               time from your smartphone, tablet, or PC using our secure mobile app from anywhere in the world.</p>
@@ -205,7 +205,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-cloud-arrow-up" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Cloud Backup Storage</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Critical footage is automatically
               replicated to our secure cloud servers to prevent loss in the event of on-site hardware theft or damage.
@@ -222,7 +222,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-plug" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               PoE Installation</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Power over Ethernet (PoE) eliminates
               the need for separate power cables reducing installation cost, improving aesthetics, and increasing
@@ -246,7 +246,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cctv-0"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     many cameras do I need for my premises?</span>
@@ -262,7 +262,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cctv-1"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Can
                     I view my cameras from my phone while travelling?</span>
@@ -278,7 +278,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cctv-2"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     long is footage stored?</span>
@@ -294,7 +294,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cctv-3"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Do
                     your cameras work at night?</span>
@@ -310,7 +310,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cctv-4"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Will
                     the CCTV system work during a power outage?</span>

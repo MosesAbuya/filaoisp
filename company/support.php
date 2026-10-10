@@ -30,13 +30,13 @@ include '../includes/header.php';
     <div class="container-fluid px-4">
 
         <div style="background:var(--clr-bg-card); padding:4rem; border:1px solid var(--clr-border);">
-            <h2 class="mb-4" style="color:#fff; font-family:var(--font-heading);">Support Centre</h2>
+            <h2 class="mb-4" style="color:var(--text-main); font-family:var(--font-heading);">Support Centre</h2>
             <p style="color:var(--clr-steel); line-height:1.8;">This document provides detailed information regarding our Support Centre. Filao Networks is committed to transparency and operational excellence across all our service offerings.</p>
             <p style="color:var(--clr-steel); line-height:1.8; margin-top:1.5rem;">For specific inquiries regarding these policies, please reach out to our legal and compliance team via info@filaoadventures.co.ke.</p>
             <hr style="border-color:var(--clr-border); margin:3rem 0;">
-            <h4 style="color:#fff;">1. General Provisions</h4>
+            <h4 style="color:var(--text-main);">1. General Provisions</h4>
             <p style="color:var(--clr-steel); line-height:1.8;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h4 style="color:#fff; margin-top:2rem;">2. Compliance & Regulations</h4>
+            <h4 style="color:var(--text-main); margin-top:2rem;">2. Compliance & Regulations</h4>
             <p style="color:var(--clr-steel); line-height:1.8;">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     
@@ -44,7 +44,7 @@ include '../includes/header.php';
 </main>
 
 <!-- CALL TO ACTION -->
-<section style="background:var(--clr-deep); padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
+<section style="background:#f0f4ff; padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
     <div class="container">
         <h2 class="section-title mb-4">Ready to Upgrade?</h2>
         <p class="section-desc mx-auto mb-5">Contact our technical team for a free site survey and specialized quote tailored to your exact requirements.</p>

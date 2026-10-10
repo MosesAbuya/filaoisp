@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <div class="login-card">
     <div class="login-logo">
-        <h4 class="fw-bold mb-1" style="color:#fff;"><i class="fa-solid fa-shield-halved me-2" style="color:var(--clr-red);"></i>Filao Admin Portal</h4>
+        <h4 class="fw-bold mb-1" style="color:var(--text-main);"><i class="fa-solid fa-shield-halved me-2" style="color:var(--clr-red);"></i>Filao Admin Portal</h4>
         <p class="text-white-50 small mb-0">Sign in to manage coverage pins, quotes & content</p>
     </div>
 

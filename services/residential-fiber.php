@@ -75,7 +75,7 @@ include "../includes/header.php";
             style="width:100%;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);box-shadow:-20px 20px 0 var(--clr-red);">
           <div
             style="position:absolute;bottom:-20px;left:-20px;background:var(--clr-red);padding:1.5rem 2rem;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 100%,10px 100%);">
-            <div style="font-family:var(--font-display);font-size:2rem;font-weight:900;color:#fff;line-height:1;">99.9%
+            <div style="font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--text-main);line-height:1;">99.9%
             </div>
             <div style="font-size:0.7rem;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:1px;">
               Uptime SLA</div>
@@ -83,7 +83,7 @@ include "../includes/header.php";
         </div>
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+    <div style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
       <div class="container-fluid px-4">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
@@ -137,7 +137,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-bolt" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Symmetrical Speeds</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Unlike cable internet, our fiber
               delivers equal upload and download speeds perfect for video calls, cloud uploads, and gaming.</p>
@@ -153,7 +153,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-infinity" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Unlimited Data</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">All our residential plans come with
               truly unlimited data. No caps, no throttling, no surprise bills at the end of the month.</p>
@@ -169,7 +169,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-wifi" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Premium Wi-Fi Router Included</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Every installation includes a
               dual-band Wi-Fi 6 router configured by our certified technicians no extra charge.</p>
@@ -185,7 +185,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-headset" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               24/7 Technical Support</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Our helpdesk is available around the
               clock via phone, WhatsApp, and email. Average response time is under 15 minutes.</p>
@@ -201,7 +201,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-shield-halved" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Built-in Cybersecurity</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">All residential plans include
               DNS-level security filtering to block malware, phishing, and harmful sites by default.</p>
@@ -217,7 +217,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-calendar-check" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               No Lock-in Contracts</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">We offer monthly, quarterly, and
               annual plans with no forced contracts. Cancel or upgrade anytime without penalty fees.</p>
@@ -303,22 +303,22 @@ include "../includes/header.php";
               <div
                 style="position:absolute;left:-8px;width:18px;height:18px;background:var(--clr-red);border-radius:50%;top:0;">
               </div>
-              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.4rem;">1. Check Coverage</h4>
+              <h4 style="color:var(--text-main);font-size:1rem;margin-bottom:0.4rem;">1. Check Coverage</h4>
               <p style="color:var(--clr-steel);font-size:0.9rem;">Visit our Coverage Map or call us to confirm your
                 address is within our service area.</p>
             </div>
             <div class="mb-4" style="margin-top:2rem;">
-              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.4rem;">2. Site Survey</h4>
+              <h4 style="color:var(--text-main);font-size:1rem;margin-bottom:0.4rem;">2. Site Survey</h4>
               <p style="color:var(--clr-steel);font-size:0.9rem;">Our engineer visits to assess the best cable routing
                 and equipment placement.</p>
             </div>
             <div class="mb-4" style="margin-top:2rem;">
-              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.4rem;">3. Installation</h4>
+              <h4 style="color:var(--text-main);font-size:1rem;margin-bottom:0.4rem;">3. Installation</h4>
               <p style="color:var(--clr-steel);font-size:0.9rem;">Fiber cable is professionally laid and terminated.
                 Router is configured and tested.</p>
             </div>
             <div style="margin-top:2rem;">
-              <h4 style="color:#fff;font-size:1rem;margin-bottom:0.4rem;">4. Go Live!</h4>
+              <h4 style="color:var(--text-main);font-size:1rem;margin-bottom:0.4rem;">4. Go Live!</h4>
               <p style="color:var(--clr-steel);font-size:0.9rem;">You are connected. Enjoy the fastest internet of your
                 life.</p>
             </div>
@@ -345,7 +345,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-0"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     speeds do your residential fiber plans offer?</span>
@@ -361,7 +361,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-1"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Is
                     there a data cap on your residential plans?</span>
@@ -377,7 +377,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-2"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     long does installation take?</span>
@@ -393,7 +393,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-3"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     happens if my internet goes down?</span>
@@ -409,7 +409,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-4"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Do
                     I own the router, or is it rented?</span>
@@ -425,7 +425,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-rf-5"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Can
                     I share my fiber connection via Wi-Fi in my apartment?</span>

@@ -58,7 +58,7 @@ include "../includes/header.php";
                     <div
                         style="position:absolute;bottom:-20px;left:-20px;background:var(--clr-red);padding:1.5rem 2rem;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 100%,10px 100%);">
                         <div
-                            style="font-family:var(--font-display);font-size:2rem;font-weight:900;color:#fff;line-height:1;">
+                            style="font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--text-main);line-height:1;">
                             2010</div>
                         <div
                             style="font-size:0.7rem;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:1px;">
@@ -71,7 +71,7 @@ include "../includes/header.php";
         <!-- STATS -->
 
         <div
-            style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+            style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
             <div class="container-fluid px-4">
                 <div class="row g-4 text-center">
                     <div class="col-6 col-md-3">
@@ -122,7 +122,7 @@ include "../includes/header.php";
                     <div style="font-size:2.5rem;color:var(--clr-red);margin-bottom:1.5rem;"><i
                             class="fa-solid fa-rocket"></i></div>
                     <h3
-                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:#fff;margin-bottom:1rem;">
+                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:var(--text-main);margin-bottom:1rem;">
                         Our Mission</h3>
                     <p style="color:var(--clr-steel);line-height:1.85;">To empower individuals, businesses, and
                         communities across East Africa with reliable, high-speed, and secure digital infrastructure
@@ -135,7 +135,7 @@ include "../includes/header.php";
                     <div style="font-size:2.5rem;color:var(--clr-indigo);margin-bottom:1.5rem;"><i
                             class="fa-solid fa-eye"></i></div>
                     <h3
-                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:#fff;margin-bottom:1rem;">
+                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:var(--text-main);margin-bottom:1rem;">
                         Our Vision</h3>
                     <p style="color:var(--clr-steel);line-height:1.85;">To become the most trusted, innovative, and
                         impactful technology company in East Africa building the digital infrastructure that powers the
@@ -148,17 +148,17 @@ include "../includes/header.php";
                     <div style="font-size:2.5rem;color:var(--clr-steel);margin-bottom:1.5rem;"><i
                             class="fa-solid fa-gem"></i></div>
                     <h3
-                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:#fff;margin-bottom:1rem;">
+                        style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;color:var(--text-main);margin-bottom:1rem;">
                         Our Values</h3>
                     <ul style="list-style:none;padding:0;color:var(--clr-steel);">
                         <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i><strong
-                                style="color:#fff;">Reliability</strong> We deliver on every promise.</li>
+                                style="color:var(--text-main);">Reliability</strong> We deliver on every promise.</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i><strong
-                                style="color:#fff;">Innovation</strong> We embrace new technology.</li>
+                                style="color:var(--text-main);">Innovation</strong> We embrace new technology.</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i><strong
-                                style="color:#fff;">Integrity</strong> We operate with transparency.</li>
+                                style="color:var(--text-main);">Integrity</strong> We operate with transparency.</li>
                         <li class="mb-2"><i class="fa-solid fa-check text-red me-2"></i><strong
-                                style="color:#fff;">Impact</strong> We measure success by client outcomes.</li>
+                                style="color:var(--text-main);">Impact</strong> We measure success by client outcomes.</li>
                     </ul>
                 </div>
             </div>
@@ -179,11 +179,11 @@ include "../includes/header.php";
                         <div class="mb-5">
                             <div
                                 style="position:absolute;left:0.35rem;width:24px;height:24px;background:var(--clr-red);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa-solid fa-flag" style="font-size:10px;color:#fff;"></i></div>
+                                <i class="fa-solid fa-flag" style="font-size:10px;color:var(--text-main);"></i></div>
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 2010</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Founded in Nairobi</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Founded in Nairobi</h4>
                             <p style="color:var(--clr-steel);">Filao Networks Solutions established by a group of
                                 network engineers with a vision to bring enterprise-grade connectivity to Kenyan
                                 businesses. First 50 clients connected via wireless broadband in Westlands.</p>
@@ -195,7 +195,7 @@ include "../includes/header.php";
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 2013</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Fiber Network Launch</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Fiber Network Launch</h4>
                             <p style="color:var(--clr-steel);">We deployed our first fiber optic backbone covering key
                                 commercial areas of Nairobi. Our ISP license from the Communications Authority of Kenya
                                 (CA-KE) was granted, enabling direct internet transit provision.</p>
@@ -207,7 +207,7 @@ include "../includes/header.php";
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 2016</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Security Division Launched</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Security Division Launched</h4>
                             <p style="color:var(--clr-steel);">Responding to growing demand, we established our
                                 dedicated Physical Security and Network Security division. The first large-scale CCTV
                                 deployments for commercial complexes and the first enterprise firewall managed service
@@ -220,7 +220,7 @@ include "../includes/header.php";
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 2019</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Cloud & IoT Division</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Cloud & IoT Division</h4>
                             <p style="color:var(--clr-steel);">We expanded into cloud network services and IoT
                                 integration, securing partnerships with AWS and Microsoft Azure. Our first smart
                                 building deployments were completed for leading corporate campuses in Nairobi.</p>
@@ -232,7 +232,7 @@ include "../includes/header.php";
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 2022</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Regional Expansion</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Regional Expansion</h4>
                             <p style="color:var(--clr-steel);">Network infrastructure extended to Mombasa, Kisumu, and
                                 Nakuru. The NOC (Network Operations Centre) was upgraded to 24/7 staffing with real-time
                                 monitoring of over 10,000 connected devices across all client sites.</p>
@@ -240,11 +240,11 @@ include "../includes/header.php";
                         <div style="margin-top:2rem;">
                             <div
                                 style="position:absolute;left:0.35rem;width:24px;height:24px;background:var(--clr-red);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                                <i class="fa-solid fa-star" style="font-size:10px;color:#fff;"></i></div>
+                                <i class="fa-solid fa-star" style="font-size:10px;color:var(--text-main);"></i></div>
                             <div
                                 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;color:var(--clr-red);">
                                 Today</div>
-                            <h4 style="color:#fff;margin-bottom:0.5rem;">Over 50,000 Connected Users</h4>
+                            <h4 style="color:var(--text-main);margin-bottom:0.5rem;">Over 50,000 Connected Users</h4>
                             <p style="color:var(--clr-steel);">Serving clients across Kenya and East Africa with a full
                                 portfolio spanning internet, networking, security, cloud, and IoT. Headquartered at
                                 Ambank House, Nairobi, with a team of 80+ professionals delivering technology excellence
@@ -270,8 +270,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">Data Centre & NOC</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">Data Centre & NOC</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">24/7 staffed network operations</div>
                         </div>
                     </div>
@@ -284,8 +284,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">Fiber Backbone</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">Fiber Backbone</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">Metropolitan fiber ring network</div>
                         </div>
                     </div>
@@ -298,8 +298,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">Security Systems</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">Security Systems</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">2000+ cameras under management</div>
                         </div>
                     </div>
@@ -312,8 +312,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">Wireless Network</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">Wireless Network</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">Hundreds of base stations across Kenya
                             </div>
                         </div>
@@ -327,8 +327,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">Cloud Platform</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">Cloud Platform</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">Multi-cloud managed infrastructure
                             </div>
                         </div>
@@ -342,8 +342,8 @@ include "../includes/header.php";
                             onmouseover="this.style.transform='scale(1.05)'"
                             onmouseout="this.style.transform='scale(1)'">
                         <div
-                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(9,2,56,0.9));padding:2rem 1.5rem;">
-                            <div style="color:#fff;font-weight:700;font-size:1rem;">IoT & Automation</div>
+                            style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(16,83,245,0.88));padding:2rem 1.5rem;">
+                            <div style="color:var(--text-main);font-weight:700;font-size:1rem;">IoT & Automation</div>
                             <div style="color:var(--clr-steel);font-size:0.8rem;">Smart building deployments</div>
                         </div>
                     </div>
@@ -364,7 +364,7 @@ include "../includes/header.php";
                     <div style="background:var(--clr-bg-card);padding:2rem;border:1px solid var(--clr-border);">
                         <i class="fa-solid fa-network-wired"
                             style="font-size:3rem;color:var(--clr-red);margin-bottom:1rem;display:block;"></i>
-                        <div style="font-weight:700;color:#fff;font-size:0.95rem;">Cisco</div>
+                        <div style="font-weight:700;color:var(--text-main);font-size:0.95rem;">Cisco</div>
                         <div style="color:var(--clr-steel);font-size:0.8rem;">CCNA / CCNP Certified</div>
                     </div>
                 </div>
@@ -372,7 +372,7 @@ include "../includes/header.php";
                     <div style="background:var(--clr-bg-card);padding:2rem;border:1px solid var(--clr-border);">
                         <i class="fa-solid fa-router"
                             style="font-size:3rem;color:var(--clr-red);margin-bottom:1rem;display:block;"></i>
-                        <div style="font-weight:700;color:#fff;font-size:0.95rem;">MikroTik</div>
+                        <div style="font-weight:700;color:var(--text-main);font-size:0.95rem;">MikroTik</div>
                         <div style="color:var(--clr-steel);font-size:0.8rem;">MTCNA / MTCRE Certified</div>
                     </div>
                 </div>
@@ -380,7 +380,7 @@ include "../includes/header.php";
                     <div style="background:var(--clr-bg-card);padding:2rem;border:1px solid var(--clr-border);">
                         <i class="fa-solid fa-cloud"
                             style="font-size:3rem;color:var(--clr-red);margin-bottom:1rem;display:block;"></i>
-                        <div style="font-weight:700;color:#fff;font-size:0.95rem;">AWS</div>
+                        <div style="font-weight:700;color:var(--text-main);font-size:0.95rem;">AWS</div>
                         <div style="color:var(--clr-steel);font-size:0.8rem;">Solutions Architect Partner</div>
                     </div>
                 </div>
@@ -388,7 +388,7 @@ include "../includes/header.php";
                     <div style="background:var(--clr-bg-card);padding:2rem;border:1px solid var(--clr-border);">
                         <i class="fa-solid fa-shield-halved"
                             style="font-size:3rem;color:var(--clr-red);margin-bottom:1rem;display:block;"></i>
-                        <div style="font-weight:700;color:#fff;font-size:0.95rem;">CA-KE Licensed</div>
+                        <div style="font-weight:700;color:var(--text-main);font-size:0.95rem;">CA-KE Licensed</div>
                         <div style="color:var(--clr-steel);font-size:0.8rem;">Registered Kenyan ISP</div>
                     </div>
                 </div>
@@ -411,7 +411,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-clock" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             Always On</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">24/7 NOC staffed by senior
                             engineers. Most faults detected automatically before clients notice and resolved within our
@@ -427,7 +427,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-handshake" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             True Partnership</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">We are not just a vendor
                             we are an extension of your IT team. Our account managers are contactable directly by every
@@ -443,7 +443,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-trophy" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             Award-Winning Service</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Recognized by the Kenya
                             ICT Authority and multiple industry bodies for service excellence and network innovation.
@@ -459,7 +459,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-leaf" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             Locally Rooted</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Fully Kenyan-owned and
                             operated. Our profits reinvest into local infrastructure, local jobs, and local community
@@ -475,7 +475,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-wallet" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             Transparent Pricing</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">No hidden fees. No
                             surprise bills. Every quotation is itemized and every invoice explained clearly guaranteed.
@@ -491,7 +491,7 @@ include "../includes/header.php";
                             <i class="fa-solid fa-arrows-rotate" style="color:var(--clr-red);font-size:1.4rem;"></i>
                         </div>
                         <h3
-                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+                            style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
                             Constant Innovation</h3>
                         <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">We actively trial and
                             deploy emerging technologies 5G, Wi-Fi 7, quantum-safe VPNs keeping your network
@@ -511,19 +511,19 @@ include "../includes/header.php";
                 <div class="col-md-3">
                     <i class="fa-solid fa-location-dot"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
-                    <div style="font-weight:600;color:#fff;">Ambank House</div>
+                    <div style="font-weight:600;color:var(--text-main);">Ambank House</div>
                     <div style="color:var(--clr-steel);font-size:0.9rem;">Nairobi, Kenya, East Africa</div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa-solid fa-phone"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
-                    <div style="font-weight:600;color:#fff;">+254 757 139239</div>
+                    <div style="font-weight:600;color:var(--text-main);">+254 757 139239</div>
                     <div style="color:var(--clr-steel);font-size:0.9rem;">Mon–Fri, 8am–6pm EAT</div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa-solid fa-envelope"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
-                    <div style="font-weight:600;color:#fff;">info@filaoadventures.co.ke</div>
+                    <div style="font-weight:600;color:var(--text-main);">info@filaoadventures.co.ke</div>
                     <div style="color:var(--clr-steel);font-size:0.9rem;">We respond within 2 hours</div>
                 </div>
             </div>
@@ -538,7 +538,7 @@ include "../includes/header.php";
 </main>
 
 <section
-    style="background:linear-gradient(105deg,var(--clr-deep) 0%,var(--clr-navy) 100%);padding:5rem 0;border-top:3px solid var(--clr-red);">
+    style="background:linear-gradient(105deg,#1053f5 0%,#0b3cd8 100%);padding:5rem 0;border-top:3px solid var(--clr-red);">
     <div class="container text-center">
         <div class="section-label mb-3"><i class="fa-solid fa-rocket"></i>&nbsp; Join Our Journey</div>
         <h2 class="section-title mb-4">Become Part of the <span class="text-red">Filao Story</span></h2>

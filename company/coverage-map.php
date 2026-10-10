@@ -224,7 +224,7 @@ include "../includes/header.php";
                 </div>
                 <div style="position:relative; width: 280px;">
                     <input type="text" id="searchAreaInput" class="form-control" placeholder="Search town or estate (e.g. Kasarani)..."
-                           style="background:rgba(255,255,255,0.05); border:1px solid var(--clr-border); color:#fff; border-radius:30px; padding:0.45rem 1.25rem; font-size:0.85rem;">
+                           style="background:rgba(255,255,255,0.05); border:1px solid var(--clr-border); color:var(--text-main); border-radius:30px; padding:0.45rem 1.25rem; font-size:0.85rem;">
                     <i class="fa-solid fa-magnifying-glass" style="position:absolute; right:15px; top:50%; transform:translateY(-50%); color:var(--clr-steel); font-size:0.8rem;"></i>
                 </div>
             </div>
@@ -245,7 +245,7 @@ include "../includes/header.php";
         <div class="mt-5 pt-3">
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <div>
-                    <h2 style="color:#fff; font-family:var(--font-heading); font-size:1.8rem;">Nairobi Region Coverage Directory</h2>
+                    <h2 style="color:var(--text-main); font-family:var(--font-heading); font-size:1.8rem;">Nairobi Region Coverage Directory</h2>
                     <p style="color:var(--clr-steel); font-size:0.95rem; margin-bottom:0;">Click any location card to focus the map and view service availability.</p>
                 </div>
                 <span class="badge" id="directoryCountBadge" style="background:var(--clr-navy-light); border:1px solid var(--clr-border); font-size:0.85rem; padding:0.5rem 1rem;">
@@ -264,7 +264,7 @@ include "../includes/header.php";
 <!-- =====================================================================
      CALL TO ACTION
      ===================================================================== -->
-<section style="background:var(--clr-deep); padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
+<section style="background:#f0f4ff; padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
     <div class="container">
         <h2 class="section-title mb-3">Need Fiber in Your Building or Gated Community?</h2>
         <p class="section-desc mx-auto mb-4" style="max-width:600px;">
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="coverage-card-desc mt-2">${pin.description || 'High-speed fiber and networking available.'}</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid var(--clr-border);">
-                        <span style="font-size:0.75rem; color:#fff; font-weight:700;"><i class="fa-solid fa-gauge-high me-1" style="color:var(--clr-red);"></i> ${pin.speed}</span>
+                        <span style="font-size:0.75rem; color:var(--text-main); font-weight:700;"><i class="fa-solid fa-gauge-high me-1" style="color:var(--clr-red);"></i> ${pin.speed}</span>
                         <span class="btn-locate"><i class="fa-solid fa-location-crosshairs me-1"></i> Locate</span>
                     </div>
                 </div>

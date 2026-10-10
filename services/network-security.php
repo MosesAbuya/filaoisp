@@ -74,7 +74,7 @@ include "../includes/header.php";
           style="width:100%;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);box-shadow:-20px 20px 0 var(--clr-red);">
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+    <div style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
       <div class="container-fluid px-4">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
@@ -127,7 +127,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-fire-flame-curved" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Next-Gen Firewalls (NGFW)</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Deep-packet inspection, application
               awareness, and real-time threat intelligence powered by Fortinet FortiGate and Cisco ASA.</p>
@@ -143,7 +143,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-eye" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Intrusion Detection & Prevention</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">IDS/IPS systems continuously monitor
               traffic patterns and automatically block suspicious activities before they escalate.</p>
@@ -159,7 +159,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-lock" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Site-to-Site VPN</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Encrypted tunnels connecting your
               branch offices, remote teams, and cloud environments over our secure backbone.</p>
@@ -175,7 +175,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-virus-slash" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Endpoint Protection</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Centrally managed antivirus, EDR
               (Endpoint Detection & Response), and mobile device management across all company devices.</p>
@@ -191,7 +191,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-magnifying-glass-chart" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               SIEM & Log Analysis</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Real-time collection and analysis of
               security events from all network devices with automated alerting and forensic capability.</p>
@@ -207,7 +207,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-file-shield" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Compliance & Auditing</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">We design networks to meet PCI-DSS,
               ISO 27001, and Kenya's Data Protection Act 2019 requirements, with audit reports on demand.</p>
@@ -230,7 +230,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-ns-0"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     types of businesses do you secure?</span>
@@ -246,7 +246,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-ns-1"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Do
                     you offer penetration testing?</span>
@@ -262,7 +262,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-ns-2"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     is a Security Operations Centre (SOC) and do I need one?</span>
@@ -279,7 +279,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-ns-3"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     quickly can you respond to a security incident?</span>
@@ -296,7 +296,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-ns-4"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Can
                     you help us become ISO 27001 compliant?</span>

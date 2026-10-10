@@ -28,7 +28,7 @@ include '../includes/header.php';
 <!-- HERO SECTION -->
 <section class="hero-section" style="min-height:60vh; align-items:flex-end; padding-bottom:4rem;">
     <div class="hero-bg" style="background-image:url('<?= htmlspecialchars($blog['image_url']) ?>');"></div>
-    <div class="hero-overlay" style="background:linear-gradient(to top, rgba(9,2,56,1) 0%, rgba(9,2,56,0.7) 50%, rgba(9,2,56,0.3) 100%);"></div>
+    <div class="hero-overlay" style="background:linear-gradient(to top, rgba(16,83,245,0.92) 0%, rgba(16,83,245,0.60) 50%, rgba(16,83,245,0.25) 100%);"></div>
     
     <div class="container-fluid px-4 hero-content">
         <div class="row justify-content-center text-center">

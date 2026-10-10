@@ -14,7 +14,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 <div id="cookie-banner" style="
     position:fixed;
     bottom:0;left:0;right:0;
-    background:rgba(9,2,56,0.97);
+    background:rgba(255,255,255,0.97);
     border-top:2px solid var(--clr-red);
     backdrop-filter:blur(16px);
     padding:1.2rem 2rem;
@@ -220,7 +220,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                                         <div
                                             style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--clr-steel);">
                                             Office</div>
-                                        <span style="color:#fff;font-size:0.9rem;font-weight:600;">Ambank House,
+                                        <span style="color:var(--text-main);font-size:0.9rem;font-weight:600;">Ambank House,
                                             Nairobi</span>
                                     </div>
                                 </div>
@@ -234,7 +234,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                                         <div
                                             style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--clr-steel);">
                                             Hours</div>
-                                        <span style="color:#fff;font-size:0.9rem;font-weight:600;">Mon&ndash;Fri:
+                                        <span style="color:var(--text-main);font-size:0.9rem;font-weight:600;">Mon&ndash;Fri:
                                             8am&ndash;6pm EAT</span>
                                     </div>
                                 </div>

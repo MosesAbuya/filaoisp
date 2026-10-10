@@ -37,39 +37,39 @@ include '../includes/header.php';
             
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
                 <div style="font-size:1.5rem; color:var(--clr-red); margin-bottom:1rem;"><i class="fa-solid fa-location-dot"></i></div>
-                <h4 style="color:#fff; font-size:1.1rem; margin-bottom:0.5rem;">Our Office</h4>
+                <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem;">Our Office</h4>
                 <p style="color:var(--clr-steel); margin:0;">Ambank House, Nairobi, Kenya<br>East Africa</p>
             </div>
             
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
                 <div style="font-size:1.5rem; color:var(--clr-red); margin-bottom:1rem;"><i class="fa-solid fa-phone"></i></div>
-                <h4 style="color:#fff; font-size:1.1rem; margin-bottom:0.5rem;">Call Us</h4>
+                <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem;">Call Us</h4>
                 <p style="color:var(--clr-steel); margin:0;">+254 757 139239<br>Mon - Fri: 8am to 6pm (EAT)</p>
             </div>
             
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
                 <div style="font-size:1.5rem; color:var(--clr-red); margin-bottom:1rem;"><i class="fa-solid fa-envelope"></i></div>
-                <h4 style="color:#fff; font-size:1.1rem; margin-bottom:0.5rem;">Email Us</h4>
+                <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem;">Email Us</h4>
                 <p style="color:var(--clr-steel); margin:0;">info@filaoadventures.co.ke</p>
             </div>
         </div>
         
         <div class="col-lg-8">
             <div style="background:var(--clr-bg-card); padding:3rem; border:1px solid var(--clr-border);">
-                <h3 class="mb-4" style="color:#fff; font-family:var(--font-heading);">Send a Message</h3>
+                <h3 class="mb-4" style="color:var(--text-main); font-family:var(--font-heading);">Send a Message</h3>
                 <form id="contact-form" data-validate action="../api/process_contact.php" method="POST">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-md-6">
-                            <input type="email" name="email" class="form-control" placeholder="Email Address" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-12">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-12">
-                            <textarea name="message" class="form-control" rows="5" placeholder="How can we help you?" required style="background:var(--clr-bg-dark); border:1px solid var(--clr-border); color:#fff; padding:1rem;"></textarea>
+                            <textarea name="message" class="form-control" rows="5" placeholder="How can we help you?" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;"></textarea>
                         </div>
                         <div class="col-12 mt-4">
                             <button type="submit" class="btn-filao btn-primary-filao w-100 justify-content-center">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
@@ -91,7 +91,7 @@ include '../includes/header.php';
 </main>
 
 <!-- CALL TO ACTION -->
-<section style="background:var(--clr-deep); padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
+<section style="background:#f0f4ff; padding:5rem 0; text-align:center; border-top:1px solid var(--clr-border);">
     <div class="container">
         <h2 class="section-title mb-4">Ready to Upgrade?</h2>
         <p class="section-desc mx-auto mb-5">Contact our technical team for a free site survey and specialized quote tailored to your exact requirements.</p>

@@ -80,12 +80,6 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 </head>
 
 <body class="<?= htmlspecialchars($page_class) ?>">
-    <!-- Theme Loader Script (Prevents flash of wrong theme) -->
-    <script>
-        if (localStorage.getItem('filao_theme') === 'light') {
-            document.body.classList.add('light-mode');
-        }
-    </script>
 
     <!-- Mobile overlay backdrop -->
     <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
@@ -213,9 +207,6 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         </ul>
 
         <div style="margin-top:2rem;">
-            <button type="button" class="theme-toggle btn-filao d-flex align-items-center justify-content-center gap-2 mb-3" style="width:100%; background:rgba(255,255,255,0.08); border:1px solid var(--clr-border); color:#fff; font-weight:600; padding:0.75rem;" aria-label="Toggle Light/Dark Mode">
-                <i class="fa-solid fa-moon"></i> <span>Toggle Light / Dark Mode</span>
-            </button>
             <a href="<?= $root ?>company/contact" class="btn-filao btn-primary-filao d-block text-center"
                 style="width:100%;">
                 Get a Free Quote &rarr;
@@ -641,17 +632,9 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 
                     <!-- ⑥ BLOGS -->
                     <li role="none">
-                        <a href="<?= $root ?>blogs/index" role="menuitem"
-                            style="padding:1.5rem 1rem; color:#fff; text-decoration:none; font-weight:600; font-size:0.9rem; transition:color 0.2s;"
-                            onmouseover="this.style.color='var(--clr-red)'" onmouseout="this.style.color='#fff'">
-                            Blogs
-                        </a>
+                        <a href="<?= $root ?>blogs/index" role="menuitem">Blogs</a>
                     </li>
                 </ul><!-- /.nav-links -->
-                <!-- THEME TOGGLE (desktop only; mobile toggle is inside hamburger menu) -->
-                <button type="button" class="theme-toggle d-none d-lg-inline-flex" id="themeToggle" aria-label="Toggle Light/Dark Mode">
-                    <i class="fa-solid fa-moon"></i>
-                </button>
 
                 <!-- CTA BUTTON -->
                 <a href="<?= $root ?>company/quote" class="nav-cta" aria-label="Get a free quote">
@@ -676,6 +659,4 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
             </div><!-- /.navbar-main-inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /#main-navbar -->
-
-    <!-- Spacer so page content clears the fixed navbar -->
-    <div style="height:var(--navbar-h);"></div>
+

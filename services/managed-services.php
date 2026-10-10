@@ -51,16 +51,16 @@ include "../includes/header.php";
           proposing any architecture. Our solutions are scalable designed to grow with your business without costly
           rip-and-replace cycles.</p>
         <ul style="list-style:none;padding:0;margin-top:2rem;">
-          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:#fff;"><i
+          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:var(--text-main);"><i
               class="fa-solid fa-check-circle" style="color:var(--clr-red);flex-shrink:0;"></i> Certified engineers with
             10+ years experience</li>
-          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:#fff;"><i
+          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:var(--text-main);"><i
               class="fa-solid fa-check-circle" style="color:var(--clr-red);flex-shrink:0;"></i> 99.9% uptime guaranteed
             under SLA</li>
-          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:#fff;"><i
+          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:var(--text-main);"><i
               class="fa-solid fa-check-circle" style="color:var(--clr-red);flex-shrink:0;"></i> Free site survey and
             no-obligation quote</li>
-          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:#fff;"><i
+          <li style="margin-bottom:1rem;display:flex;align-items:center;gap:1rem;color:var(--text-main);"><i
               class="fa-solid fa-check-circle" style="color:var(--clr-red);flex-shrink:0;"></i> 24/7 support via phone,
             WhatsApp & email</li>
         </ul>
@@ -70,7 +70,7 @@ include "../includes/header.php";
           style="width:100%;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);box-shadow:-20px 20px 0 var(--clr-red);">
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+    <div style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
       <div class="container-fluid px-4">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
@@ -123,7 +123,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-bolt" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               High Performance</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Enterprise-grade hardware and
               optimized configurations deliver consistently fast and responsive service.</p>
@@ -139,7 +139,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-shield" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Built-in Security</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Security is layered into every
               deployment from encrypted links to network segmentation and monitoring.</p>
@@ -155,7 +155,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-headset" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Dedicated Support</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Direct access to our Level 2 and Level
               3 engineering teams around the clock for fast issue resolution.</p>
@@ -171,7 +171,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-expand" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Scalable Design</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Solutions grow with your business
               adding capacity, locations, or features without rebuilding from scratch.</p>
@@ -187,7 +187,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-file-contract" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               SLA-Backed</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Formal service level agreements with
               financial penalties for non-compliance give you guaranteed assurance.</p>
@@ -203,7 +203,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-chart-bar" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Full Visibility</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Real-time dashboards and monthly
               reports keep you informed about every aspect of your service performance.</p>
@@ -226,7 +226,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-managed-services-0"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     is included in Managed Network Services?</span>
@@ -243,7 +243,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-managed-services-1"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Do
                     you manage networks you did not install?</span>
@@ -260,7 +260,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-managed-services-2"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     is the difference between break-fix support and managed services?</span>
@@ -277,7 +277,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-managed-services-3"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Can
                     I access monitoring dashboards as a customer?</span>
@@ -294,7 +294,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-managed-services-4"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     quickly do you respond to network outages under managed services?</span>

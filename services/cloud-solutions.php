@@ -57,7 +57,7 @@ include "../includes/header.php";
           style="width:100%;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);box-shadow:-20px 20px 0 var(--clr-red);">
       </div>
     </div>
-    <div style="background:linear-gradient(135deg,var(--clr-navy),var(--clr-deep));padding:4rem 0;margin:5rem -15px 0;">
+    <div style="background:#f0f4ff; border:1px solid var(--clr-border);padding:4rem 0;margin:5rem -15px 0;">
       <div class="container-fluid px-4">
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
@@ -110,7 +110,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-diagram-project" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               SD-WAN Deployment</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Software-defined WAN solutions that
               unify multiple internet links under a single, policy-driven overlay network for optimized performance.</p>
@@ -126,7 +126,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-cloud-arrow-up" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Hybrid Cloud Connectivity</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Dedicated private links to AWS Direct
               Connect, Azure ExpressRoute, and Google Cloud Interconnect for guaranteed, low-latency cloud access.</p>
@@ -142,7 +142,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-server" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Edge Computing</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Deploy compute resources closer to
               your data sources factories, retail outlets, warehouses for real-time processing without cloud round-trip
@@ -159,7 +159,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-shield" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Cloud Security (SASE)</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Secure Access Service Edge combining
               firewall, CASB, and zero-trust network access delivered as a cloud service.</p>
@@ -175,7 +175,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-chart-line" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Cloud Monitoring & Optimization</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Continuous performance monitoring,
               cost optimization, and capacity planning for your entire cloud and network estate.</p>
@@ -191,7 +191,7 @@ include "../includes/header.php";
               <i class="fa-solid fa-arrows-rotate" style="color:var(--clr-red);font-size:1.4rem;"></i>
             </div>
             <h3
-              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:#fff;margin-bottom:0.8rem;">
+              style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               Cloud DR & Failover</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Automatic failover to cloud-hosted
               backup systems ensures business continuity even during catastrophic on-site failures.</p>
@@ -214,7 +214,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cloud-0"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     is SD-WAN and how does it benefit my business?</span>
@@ -231,7 +231,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cloud-1"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Which
                     cloud providers do you work with?</span>
@@ -247,7 +247,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cloud-2"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>Can
                     you migrate our existing on-premise systems to the cloud?</span>
@@ -263,7 +263,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cloud-3"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>How
                     do you handle data sovereignty requirements under Kenyan law?</span>
@@ -280,7 +280,7 @@ include "../includes/header.php";
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#faq-cloud-4"
-                  style="background:transparent;color:#fff;font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
+                  style="background:transparent;color:var(--text-main);font-family:var(--font-heading);font-weight:700;font-size:1rem;border:none;width:100%;text-align:left;padding:1.4rem 1.8rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;">
                   <span><i class="fa-solid fa-chevron-right"
                       style="color:var(--clr-red);margin-right:1rem;font-size:0.8rem;transition:transform 0.3s;"></i>What
                     is the difference between hybrid cloud and multi-cloud?</span>
