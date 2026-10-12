@@ -51,6 +51,9 @@ include 'includes/header.php';
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         Get a Free Quote
                     </a>
+                    <button type="button" class="btn-filao btn-outline-filao" data-bs-toggle="modal" data-bs-target="#siteSurveyModal" style="border-color:rgba(255,255,255,0.35);color:#ffffff;">
+                        <i class="fa-solid fa-clipboard-check me-1"></i> Book Site Survey
+                    </button>
                     <a href="<?= $root ?>company/coverage-map" class="btn-filao btn-outline-filao" id="hero-coverage-btn">
                         Check Coverage
                     </a>
@@ -489,31 +492,434 @@ include 'includes/header.php';
 
 
 <!-- =====================================================================
-     SECTION 6: TECHNOLOGY PARTNERS
+     SECTION 6: TECHNOLOGY PARTNERS & INDUSTRY STANDARDS
      ===================================================================== -->
-<section class="partners-section" id="partners" aria-label="Technology partners">
-    <div class="container-fluid px-4 mb-4">
-        <div class="text-center">
-            <span class="section-label">Trusted Technology Ecosystem</span>
+<section class="partners-section" id="partners" aria-label="Technology partners and industry standards">
+    <div class="container-fluid px-4">
+        
+        <!-- Header -->
+        <div class="text-center max-w-700 mx-auto mb-4">
+            <span class="section-label">PARTNERS & ECOSYSTEM</span>
+            <h2 class="section-title mt-2 text-center">Engineered With Industry Leaders &amp; <span class="text-red">Global Standards</span></h2>
+            <p class="section-desc text-center mx-auto" style="max-width:680px;">
+                We design, deploy, and manage mission-critical fiber networks, Wi-Fi 6, IP surveillance, and cloud infrastructure around recognized global technology leaders and strict compliance frameworks.
+            </p>
         </div>
-    </div>
-    <div class="partners-track-wrapper">
-        <div class="partners-track" aria-hidden="true">
-            <div class="partner-logo"><span class="partner-logo-text">Cisco</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Hikvision</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Mikrotik</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Ubiquiti</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Dahua</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Huawei</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Fortinet</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Palo Alto</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">AWS</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Azure</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">Schneider</span></div>
-            <div class="partner-logo"><span class="partner-logo-text">ZTE</span></div>
+
+        <!-- Filter Category Tabs -->
+        <div class="partner-tabs" role="tablist" aria-label="Filter technology partners">
+            <button type="button" class="partner-tab-btn active" data-filter="all">
+                <i class="fa-solid fa-layer-group"></i> All Ecosystems <span class="partner-tab-count">13</span>
+            </button>
+            <button type="button" class="partner-tab-btn" data-filter="networking">
+                <i class="fa-solid fa-network-wired"></i> Networking &amp; Wi-Fi <span class="partner-tab-count">7</span>
+            </button>
+            <button type="button" class="partner-tab-btn" data-filter="security">
+                <i class="fa-solid fa-video"></i> Security &amp; Surveillance <span class="partner-tab-count">6</span>
+            </button>
         </div>
-    </div>
+
+        <!-- Brands Grid -->
+        <div class="brands-grid" id="brandsGrid">
+            
+            <!-- 1. Cisco -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/cisco.svg" alt="Cisco Systems" loading="lazy">
+                </div>
+                <div class="brand-card-name">Cisco</div>
+                <div class="brand-card-sub">Routing &amp; Switching</div>
+            </div>
+
+            <!-- 2. Huawei -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/huawei.svg" alt="Huawei Enterprise" loading="lazy">
+                </div>
+                <div class="brand-card-name">Huawei</div>
+                <div class="brand-card-sub">Optical &amp; Campus Wi-Fi</div>
+            </div>
+
+            <!-- 3. MikroTik -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/mikrotik.svg" alt="MikroTik" loading="lazy">
+                </div>
+                <div class="brand-card-name">MikroTik</div>
+                <div class="brand-card-sub">Carrier Edge &amp; Core</div>
+            </div>
+
+            <!-- 4. Ubiquiti -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/ubiquiti.svg" alt="Ubiquiti UniFi" loading="lazy">
+                </div>
+                <div class="brand-card-name">Ubiquiti</div>
+                <div class="brand-card-sub">UniFi Wireless &amp; Gateways</div>
+            </div>
+
+            <!-- 5. Aruba -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/aruba.png" alt="Aruba Networks (HPE)" loading="lazy">
+                </div>
+                <div class="brand-card-name">Aruba (HPE)</div>
+                <div class="brand-card-sub">Enterprise Wireless</div>
+            </div>
+
+            <!-- 6. TP-Link -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/tp-link.svg" alt="TP-Link Omada" loading="lazy">
+                </div>
+                <div class="brand-card-name">TP-Link</div>
+                <div class="brand-card-sub">Omada Cloud Networks</div>
+            </div>
+
+            <!-- 7. D-Link -->
+            <div class="brand-card" data-category="networking">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/dlink.svg" alt="D-Link" loading="lazy">
+                </div>
+                <div class="brand-card-name">D-Link</div>
+                <div class="brand-card-sub">Structured Connectivity</div>
+            </div>
+
+            <!-- 8. Hikvision -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/hikvision.svg" alt="Hikvision" loading="lazy">
+                </div>
+                <div class="brand-card-name">Hikvision</div>
+                <div class="brand-card-sub">AI CCTV &amp; Thermal NVR</div>
+            </div>
+
+            <!-- 9. Dahua -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/dahua.svg" alt="Dahua Technology" loading="lazy">
+                </div>
+                <div class="brand-card-name">Dahua</div>
+                <div class="brand-card-sub">Smart Video &amp; Biometrics</div>
+            </div>
+
+            <!-- 10. Axis -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/axis.png" alt="Axis Communications" loading="lazy" style="height:38px; width:auto; object-fit:contain;">
+                </div>
+                <div class="brand-card-name">Axis Communications</div>
+                <div class="brand-card-sub">Network Video &amp; Optics</div>
+            </div>
+
+            <!-- 11. Bosch -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/bosch.svg" alt="Bosch Security" loading="lazy">
+                </div>
+                <div class="brand-card-name">Bosch Security</div>
+                <div class="brand-card-sub">Intelligent Surveillance</div>
+            </div>
+
+            <!-- 12. Hanwha Vision -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/hanwha-vision.png" alt="Hanwha Vision" loading="lazy">
+                </div>
+                <div class="brand-card-name">Hanwha Vision</div>
+                <div class="brand-card-sub">Vision AI &amp; Analytics</div>
+            </div>
+
+            <!-- 13. Motorola Solutions -->
+            <div class="brand-card" data-category="security">
+                <div class="brand-card-img-wrap">
+                    <img src="<?= $root ?>assets/images/brands/motorola-solutions.svg" alt="Motorola Solutions" loading="lazy">
+                </div>
+                <div class="brand-card-name">Motorola Solutions</div>
+                <div class="brand-card-sub">Critical Security (Avigilon)</div>
+            </div>
+
+        </div><!-- /brands-grid -->
+
+        <!-- Trusted Industry Standards Panel (Modeled after GS TechGuard) -->
+        <div class="standards-panel">
+            <div class="text-center max-w-700 mx-auto mb-3">
+                <div class="d-inline-flex align-items-center gap-2 mb-2" style="background:rgba(236,28,36,0.08);color:var(--clr-red);padding:4px 14px;border-radius:20px;font-size:0.8rem;font-weight:700;">
+                    <i class="fa-solid fa-certificate"></i> TRUSTED INDUSTRY STANDARDS
+                </div>
+                <h3 class="fw-bold mb-2 text-center" style="color:#090238;font-size:1.6rem;">Built Around Recognised Quality, Safety &amp; <span class="text-red">Engineering Frameworks</span></h3>
+                <p class="text-muted small mb-0 text-center mx-auto" style="max-width:680px;">
+                    Every fiber deployment, server room setup, structured cabling backbone, and surveillance installation is engineered strictly according to approved international and national compliance standards:
+                </p>
+            </div>
+
+            <div class="standards-grid">
+                
+                <!-- 1. KEBS -->
+                <div class="standard-card">
+                    <div class="standard-logo-wrap">
+                        <img src="<?= $root ?>assets/images/brands/kebs.png" alt="Kenya Bureau of Standards (KEBS)" loading="lazy">
+                    </div>
+                    <div class="standard-title">KEBS</div>
+                    <div class="standard-domain">Kenya Standards</div>
+                    <p class="standard-desc">Type-approved hardware, telecommunication compliance, and strict adherence to Kenyan national technical guidelines.</p>
+                </div>
+
+                <!-- 2. ISO -->
+                <div class="standard-card">
+                    <div class="standard-logo-wrap">
+                        <img src="<?= $root ?>assets/images/brands/iso.svg" alt="ISO Quality and Security Standards" loading="lazy">
+                    </div>
+                    <div class="standard-title">ISO Certified</div>
+                    <div class="standard-domain">Quality &amp; InfoSec</div>
+                    <p class="standard-desc">Alighted with ISO 9001 (Quality Management) and ISO/IEC 27001 (Information Security Management Systems).</p>
+                </div>
+
+                <!-- 3. IEEE -->
+                <div class="standard-card">
+                    <div class="standard-logo-wrap">
+                        <img src="<?= $root ?>assets/images/brands/ieee.svg" alt="IEEE Network Standards" loading="lazy">
+                    </div>
+                    <div class="standard-title">IEEE</div>
+                    <div class="standard-domain">Network Standards</div>
+                    <p class="standard-desc">Strict compliance with IEEE 802.3 Ethernet, 802.11ax/be wireless, and fiber optic transmission protocols.</p>
+                </div>
+
+                <!-- 4. NFPA -->
+                <div class="standard-card">
+                    <div class="standard-logo-wrap">
+                        <img src="<?= $root ?>assets/images/brands/nfpa.svg" alt="NFPA Fire Protection Standards" loading="lazy">
+                    </div>
+                    <div class="standard-title">NFPA</div>
+                    <div class="standard-domain">Fire Protection</div>
+                    <p class="standard-desc">Server room fire barrier safety, plenum-rated network cabling, and life-safety alarm system integration.</p>
+                </div>
+
+                <!-- 5. OSHA -->
+                <div class="standard-card">
+                    <div class="standard-logo-wrap">
+                        <img src="<?= $root ?>assets/images/brands/osha.svg" alt="OSHA Workplace Safety" loading="lazy">
+                    </div>
+                    <div class="standard-title">OSHA</div>
+                    <div class="standard-domain">Workplace Safety</div>
+                    <p class="standard-desc">Comprehensive occupational health, certified tower rigging, and strict field safety practices across all project sites.</p>
+                </div>
+
+            </div><!-- /standards-grid -->
+        </div><!-- /standards-panel -->
+
+    </div><!-- /.container-fluid -->
 </section><!-- /partners -->
+
+<script>
+// Filter technology partner cards dynamically
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.partner-tab-btn');
+    const brandCards = document.querySelectorAll('#brandsGrid .brand-card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+            brandCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+
+
+<!-- =====================================================================
+     SECTION 6B: HOW WE WORK (Consultative 4-Step Engineering Process)
+     ===================================================================== -->
+<section class="workflow-section" id="how-we-work" aria-label="Our engineering delivery workflow">
+    <div class="container-fluid px-4">
+        
+        <div class="text-center max-w-700 mx-auto">
+            <span class="section-label text-red">HOW WE WORK</span>
+            <h2 class="section-title text-white mt-2 text-center">Engineered Project Delivery, <span class="text-red">From Survey to 24/7 Handover</span></h2>
+            <p class="section-desc text-slate-300 mx-auto text-center" style="max-width:720px;">
+                We follow a rigorous, consultative engineering methodology that guarantees seamless network cutovers, zero unmanaged downtime, and complete accountability for your commercial or residential premises.
+            </p>
+        </div>
+
+        <div class="workflow-grid">
+            
+            <!-- Step 1 -->
+            <div class="workflow-card">
+                <span class="workflow-step-num">01</span>
+                <div class="workflow-icon-wrap">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="workflow-card-title text-center">Scoped Site Survey &amp; Heatmapping</div>
+                <p class="workflow-card-desc text-center">
+                    Our field engineers conduct an on-site technical inspection across Nairobi &amp; Kenya to assess optical line-of-sight, RF interference, physical cable pathways, and security vulnerability zones.
+                </p>
+                <span class="workflow-tag">Phase 1: Discovery</span>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="workflow-card">
+                <span class="workflow-step-num">02</span>
+                <div class="workflow-icon-wrap">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div class="workflow-card-title text-center">Custom Architecture &amp; Transparent BOQ</div>
+                <p class="workflow-card-desc text-center">
+                    We design a comprehensive network topology, camera field-of-view diagrams, and an itemized Bill of Quantities (BOQ) built around recognized hardware with zero hidden costs.
+                </p>
+                <span class="workflow-tag">Phase 2: Architecture</span>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="workflow-card">
+                <span class="workflow-step-num">03</span>
+                <div class="workflow-icon-wrap">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <div class="workflow-card-title text-center">Turnkey Cabling &amp; Precision Deployment</div>
+                <p class="workflow-card-desc text-center">
+                    Our certified teams execute clean fiber fusion splicing, plenum-rated CAT6A cabling, server rack cable management, surge suppression, and online UPS power integration.
+                </p>
+                <span class="workflow-tag">Phase 3: Turnkey Build</span>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="workflow-card">
+                <span class="workflow-step-num">04</span>
+                <div class="workflow-icon-wrap">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="workflow-card-title text-center">Commissioning, Handover &amp; 24/7 SLA</div>
+                <p class="workflow-card-desc text-center">
+                    We perform end-to-end throughput stress testing, train your in-house administrators, and activate 24/7 proactive monitoring backed by our Nairobi NOC and rapid on-site emergency SLA.
+                </p>
+                <span class="workflow-tag">Phase 4: Commissioning</span>
+            </div>
+
+        </div><!-- /workflow-grid -->
+
+        <!-- Centered Action Banner inside Workflow -->
+        <div class="workflow-cta-banner">
+            <div style="width:52px;height:52px;border-radius:50%;background:rgba(236,28,36,0.2);display:flex;align-items:center;justify-content:center;color:var(--clr-red);font-size:1.35rem;margin-bottom:1rem;">
+                <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <h4 class="text-white fw-bold mb-2 text-center">Need a Technical Assessment of Your Premises?</h4>
+            <p class="small mb-4 text-center mx-auto" style="color:rgba(255,255,255,0.75);max-width:620px;">
+                Our senior field engineers conduct on-site technical inspections for commercial offices, estates, and institutions across Nairobi &amp; Kenya.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button type="button" class="btn-filao btn-primary-filao" data-bs-toggle="modal" data-bs-target="#siteSurveyModal">
+                    <i class="fa-solid fa-calendar-check me-1"></i> Book a Free Site Survey &rarr;
+                </button>
+                <a href="tel:+254790034459" class="btn-filao btn-outline-filao" style="border-color:rgba(255,255,255,0.35);color:#fff;">
+                    <i class="fa-solid fa-phone me-1"></i> +254 790 034459
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section><!-- /workflow-section -->
+
+
+<!-- =====================================================================
+     SECTION 6C: ALL-IN-ONE SOLUTION PACKAGES
+     ===================================================================== -->
+<section class="bundles-section" id="solution-bundles" aria-label="All-in-one technology solution packages">
+    <div class="container-fluid px-4">
+        
+        <div class="text-center max-w-700 mx-auto">
+            <span class="section-label">ALL-IN-ONE SOLUTION PACKAGES</span>
+            <h2 class="section-title mt-2 text-center">Complete Technology Packages for <span class="text-red">Your Space</span></h2>
+            <p class="section-desc text-center mx-auto" style="max-width:720px;">
+                Say goodbye to juggling different vendors. We combine dedicated fiber internet, enterprise Wi-Fi 6, 4K CCTV surveillance, and clean power backup into complete, ready-to-run solutions with single-source accountability.
+            </p>
+        </div>
+
+        <div class="bundles-grid">
+            
+            <!-- Bundle 1: Smart Office -->
+            <div class="bundle-card featured">
+                <span class="bundle-badge">Most Popular</span>
+                <div class="bundle-icon-wrap">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="bundle-title">Smart Office Suite</div>
+                <span class="bundle-ideal"><i class="fa-solid fa-check-circle me-1"></i> Best for Corporate Offices &amp; Hubs</span>
+                <div class="bundle-subtitle">Tailored for commercial offices, corporate headquarters &amp; co-working facilities.</div>
+                
+                <ul class="bundle-features">
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Dedicated 1:1 Fiber Internet</strong> with secondary link failover</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Enterprise Cloud Wi-Fi 6</strong> (Cisco / Aruba) with staff &amp; guest isolation</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>8x to 32x 4K AI IP Cameras</strong> with mobile &amp; central monitoring</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Biometric / RFID Touchless Access</strong> for server room &amp; main entry</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Online UPS Power Protection</strong> to keep network up during blackouts</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>2-Hour Rapid On-Site Emergency SLA</strong> &amp; 24/7 NOC monitoring</span></li>
+                </ul>
+
+                <button type="button" class="btn-bundle-quote btn-bundle-featured" data-bs-toggle="modal" data-bs-target="#siteSurveyModal" data-bundle="Smart Office Suite">
+                    <i class="fa-solid fa-calculator me-2"></i> Request a Free Quote &rarr;
+                </button>
+            </div>
+
+            <!-- Bundle 2: Gated Estate -->
+            <div class="bundle-card">
+                <div class="bundle-icon-wrap">
+                    <i class="fa-solid fa-city"></i>
+                </div>
+                <div class="bundle-title">Gated Estate Suite</div>
+                <span class="bundle-ideal"><i class="fa-solid fa-check-circle me-1"></i> Best for Residential Communities</span>
+                <div class="bundle-subtitle">Tailored for property developers, residential estates &amp; apartment blocks.</div>
+                
+                <ul class="bundle-features">
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>High-Density FTTH Distribution</strong> directly to each unit</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Street &amp; Clubhouse Wi-Fi Hotspots</strong> with self-service voucher portal</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>ANPR License Plate Recognition</strong> cameras at security gates</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Video Intercom &amp; Gate Automation</strong> with smartphone verification</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Perimeter Electric Fence Monitoring</strong> &amp; guardhouse integration</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Dedicated Resident Community Helpdesk</strong> for technical support</span></li>
+                </ul>
+
+                <button type="button" class="btn-bundle-quote btn-bundle-navy" data-bs-toggle="modal" data-bs-target="#siteSurveyModal" data-bundle="Gated Estate Suite">
+                    <i class="fa-solid fa-calculator me-2"></i> Request a Free Quote &rarr;
+                </button>
+            </div>
+
+            <!-- Bundle 3: Hospitality & Campus -->
+            <div class="bundle-card">
+                <div class="bundle-icon-wrap">
+                    <i class="fa-solid fa-hotel"></i>
+                </div>
+                <div class="bundle-title">Hospitality &amp; Campus Suite</div>
+                <span class="bundle-ideal"><i class="fa-solid fa-check-circle me-1"></i> Best for High-Traffic Public Venues</span>
+                <div class="bundle-subtitle">Built for hotels, conference centers, schools &amp; healthcare facilities.</div>
+                
+                <ul class="bundle-features">
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Ultra-High Throughput Optical Fiber</strong> for hundreds of concurrent users</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Branded Guest Captive Portal</strong> with room verification or SMS login</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Zero-Handoff Seamless Roaming</strong> across rooms, dining &amp; gardens</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>High-Density Banquet Hall APs</strong> for conferences &amp; video events</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Priority Traffic QoS</strong> for front-desk POS &amp; reservation systems</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span><strong>Discreet Corridor &amp; Perimeter CCTV</strong> with encrypted storage</span></li>
+                </ul>
+
+                <button type="button" class="btn-bundle-quote btn-bundle-navy" data-bs-toggle="modal" data-bs-target="#siteSurveyModal" data-bundle="Hospitality & Campus Suite">
+                    <i class="fa-solid fa-calculator me-2"></i> Request a Free Quote &rarr;
+                </button>
+            </div>
+
+        </div><!-- /bundles-grid -->
+
+    </div>
+</section><!-- /bundles-section -->
 
 
 <!-- =====================================================================
@@ -913,9 +1319,9 @@ include 'includes/header.php';
                        style="background:#fff;color:var(--clr-red);clip-path:polygon(0 0,calc(100% - 12px) 0,100% 100%,12px 100%);padding:0.85rem 2.2rem;font-family:var(--font-display);font-weight:800;font-size:0.95rem;letter-spacing:0.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.3s;">
                         Get a Free Quote &rarr;
                     </a>
-                    <a href="tel:+254757139239" class="btn-filao btn-outline-filao" id="cta-call-btn"
+                    <a href="tel:+254790034459" class="btn-filao btn-outline-filao" id="cta-call-btn"
                        style="border-color:rgba(255,255,255,0.5);color:#ffffff;">
-                        <i class="fa-solid fa-phone"></i> +254 757 139239
+                        <i class="fa-solid fa-phone"></i> +254 790 034459
                     </a>
                 </div>
             </div>
@@ -948,5 +1354,182 @@ include 'includes/header.php';
         </div>
     </div>
 </section><!-- /cta-banner -->
+
+<!-- =====================================================================
+     SITE SURVEY BOOKING MODAL (Modeled after GS TechGuard Conversion Engine)
+     ===================================================================== -->
+<div class="modal fade" id="siteSurveyModal" tabindex="-1" aria-labelledby="siteSurveyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered survey-modal-dialog">
+        <div class="modal-content survey-modal-content">
+            <div class="survey-modal-header text-center">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="d-inline-flex align-items-center gap-2 mb-1" style="background:rgba(236,28,36,0.2);color:var(--clr-red);padding:2px 12px;border-radius:12px;font-size:0.75rem;font-weight:700;">
+                    <i class="fa-solid fa-clipboard-check"></i> FREE TECHNICAL ASSESSMENT
+                </div>
+                <h5 class="modal-title fw-bold text-white mb-0 text-center" id="siteSurveyModalLabel">Book an On-Site Survey &amp; Wi-Fi Heatmap</h5>
+            </div>
+            <div class="modal-body p-4 bg-white">
+                <p class="text-muted small mb-4 text-center mx-auto" style="max-width:480px;">
+                    Our certified field engineers will inspect your premises in Nairobi or across Kenya, evaluate signal propagation, cable pathways, and provide an itemized engineering Bill of Quantities (BOQ).
+                </p>
+
+                <form id="siteSurveyForm">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Full Name *</label>
+                            <input type="text" name="name" class="form-control form-control-sm py-2" placeholder="e.g. David Mwangi" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Phone Number *</label>
+                            <input type="tel" name="phone" class="form-control form-control-sm py-2" placeholder="+254 7XX XXX XXX" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Email Address *</label>
+                            <input type="email" name="email" class="form-control form-control-sm py-2" placeholder="name@company.co.ke" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Company / Estate Name</label>
+                            <input type="text" name="company" class="form-control form-control-sm py-2" placeholder="e.g. Apex Towers / Greenpark Estate">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Premises Type *</label>
+                            <select name="premises_type" class="form-select form-select-sm py-2" required>
+                                <option value="" selected disabled>Select premises type...</option>
+                                <option value="Commercial Office / HQ">Commercial Office / HQ</option>
+                                <option value="Gated Estate / Residential Units">Gated Estate / Residential Units</option>
+                                <option value="School / College Campus">School / College Campus</option>
+                                <option value="Hotel / Restaurant / Hospitality">Hotel / Restaurant / Hospitality</option>
+                                <option value="Warehouse / Industrial Facility">Warehouse / Industrial Facility</option>
+                                <option value="Healthcare / Clinic">Healthcare / Clinic</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-dark">Premises Location *</label>
+                            <input type="text" name="location" class="form-control form-control-sm py-2" placeholder="e.g. Westlands, Nairobi" required>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label class="form-label small fw-bold text-dark mb-1">Services Needed for Assessment</label>
+                            <div class="d-flex flex-wrap gap-3 small text-muted pt-1">
+                                <label class="d-flex align-items-center gap-1 cursor-pointer">
+                                    <input type="checkbox" name="services[]" value="Dedicated Fiber"> Dedicated Fiber
+                                </label>
+                                <label class="d-flex align-items-center gap-1 cursor-pointer">
+                                    <input type="checkbox" name="services[]" value="Enterprise Wi-Fi 6"> Enterprise Wi-Fi
+                                </label>
+                                <label class="d-flex align-items-center gap-1 cursor-pointer">
+                                    <input type="checkbox" name="services[]" value="CCTV Security"> CCTV Security
+                                </label>
+                                <label class="d-flex align-items-center gap-1 cursor-pointer">
+                                    <input type="checkbox" name="services[]" value="Access Control"> Access Control
+                                </label>
+                                <label class="d-flex align-items-center gap-1 cursor-pointer">
+                                    <input type="checkbox" name="services[]" value="Power Backup UPS"> Clean Power UPS
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label class="form-label small fw-bold text-dark">Preferred Survey Date / Notes</label>
+                            <textarea name="notes" class="form-control form-control-sm" rows="2" placeholder="Specify your preferred inspection date, approximate floor count or existing setup details..."></textarea>
+                        </div>
+                    </div>
+
+                    <div id="surveyAlert" class="mt-3 d-none"></div>
+
+                    <div class="mt-4 pt-2 border-top d-flex align-items-center justify-content-between">
+                        <span class="small text-muted"><i class="fa-solid fa-lock text-success me-1"></i> Strictly confidential</span>
+                        <button type="submit" id="surveySubmitBtn" class="btn-filao btn-primary-filao px-4">
+                            Submit Survey Request &rarr;
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Handle Site Survey Form Submission via AJAX to existing process_contact.php
+document.addEventListener('DOMContentLoaded', function() {
+    // If a button has data-bundle, pre-populate notes
+    document.querySelectorAll('[data-bs-target="#siteSurveyModal"]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const bundle = this.getAttribute('data-bundle');
+            const notesField = document.querySelector('#siteSurveyModal textarea[name="notes"]');
+            if (bundle && notesField && !notesField.value) {
+                notesField.value = 'Interested in: ' + bundle + '. Please schedule a technical survey.';
+            }
+        });
+    });
+
+    const surveyForm = document.getElementById('siteSurveyForm');
+    if (surveyForm) {
+        surveyForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitBtn = document.getElementById('surveySubmitBtn');
+            const alertBox = document.getElementById('surveyAlert');
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-1"></i> Booking Survey...';
+
+            const formData = new FormData(surveyForm);
+            const services = [];
+            formData.getAll('services[]').forEach(s => services.push(s));
+            
+            const messageDetails = `
+SITE SURVEY BOOKING REQUEST
+===================================
+Company/Estate: ${formData.get('company') || 'N/A'}
+Premises Type: ${formData.get('premises_type') || 'N/A'}
+Location: ${formData.get('location') || 'N/A'}
+Phone: ${formData.get('phone')}
+Services Required: ${services.join(', ') || 'General Assessment'}
+Notes / Preferred Date: ${formData.get('notes') || 'None'}
+            `.trim();
+
+            const payload = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: 'Site Survey Request: ' + (formData.get('company') || formData.get('name')) + ' (' + formData.get('location') + ')',
+                message: messageDetails
+            };
+
+            fetch('<?= $root ?>api/process_contact.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(res => res.json())
+            .then(data => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                alertBox.classList.remove('d-none', 'alert-danger', 'alert-success');
+
+                if (data.status === 'success') {
+                    alertBox.className = 'mt-3 alert alert-success small py-2';
+                    alertBox.innerHTML = '<i class="fa-solid fa-circle-check me-1"></i> <strong>Survey Booked!</strong> Our engineering team will contact you shortly to confirm your site assessment.';
+                    surveyForm.reset();
+                    setTimeout(() => {
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('siteSurveyModal'));
+                        if (modal) modal.hide();
+                    }, 4000);
+                } else {
+                    alertBox.className = 'mt-3 alert alert-danger small py-2';
+                    alertBox.innerHTML = data.message || 'Error booking survey. Please call +254 790 034459.';
+                }
+            })
+            .catch(err => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+                alertBox.className = 'mt-3 alert alert-danger small py-2';
+                alertBox.innerHTML = 'Network error. Please call +254 790 034459 directly.';
+            });
+        });
+    }
+});
+</script>
 
 <?php include 'includes/footer.php'; ?>

@@ -52,7 +52,7 @@ include '../includes/header.php';
             &bull; Request deletion of false or misleading data about you.</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">5. Contacting the Data Protection Officer</h4>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions, concerns, or requests regarding your personal data, please contact our Data Protection Officer (DPO) at <strong>dpo@filaoadventures.co.ke</strong> or call us at <strong>+254 757 139239</strong>.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions, concerns, or requests regarding your personal data, please contact our Data Protection Officer (DPO) at <strong>dpo@filaoadventures.co.ke</strong> or call us at <strong>+254 790 034459</strong>.</p>
 
         </div>
     </div>

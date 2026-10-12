@@ -22,7 +22,12 @@ if (empty($data)) {
 $name    = trim($data['name'] ?? '');
 $email   = trim($data['email'] ?? '');
 $phone   = trim($data['phone'] ?? '');
-$service = trim($data['service'] ?? '');
+$rawService = $data['service'] ?? ($data['services'] ?? '');
+if (is_array($rawService)) {
+    $service = implode(', ', array_filter(array_map('trim', $rawService)));
+} else {
+    $service = trim((string)$rawService);
+}
 $company = trim($data['company'] ?? '');
 $message = trim($data['message'] ?? '');
 

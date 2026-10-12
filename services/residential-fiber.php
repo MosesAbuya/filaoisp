@@ -25,8 +25,8 @@ include "../includes/header.php";
           10Mbps right up to 1Gbps.</p>
         <div class="hero-cta-group">
           <a href="../company/quote" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
-          <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
-            757 139239</a>
+          <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
+            790 034459</a>
         </div>
       </div>
     </div>
@@ -401,7 +401,7 @@ include "../includes/header.php";
                 <div id="faq-rf-3" class="accordion-collapse collapse" data-bs-parent="#faq-rf">
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
-                    Contact our 24/7 support line at +254 757 139239 or WhatsApp us at the same number. Our NOC (Network
+                    Contact our 24/7 support line at +254 790 034459 or WhatsApp us at the same number. Our NOC (Network
                     Operations Centre) monitors all connections in real time. Most faults are resolved within 4 hours,
                     and our SLA guarantees restoration within 8 hours for residential customers.</div>
                 </div>
@@ -456,8 +456,8 @@ include "../includes/header.php";
       quotes for all services.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap">
       <a href="../company/quote" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
-      <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
-        757 139239</a>
+      <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
+        790 034459</a>
     </div>
   </div>
 </section>

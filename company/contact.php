@@ -44,7 +44,7 @@ include '../includes/header.php';
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
                 <div style="font-size:1.5rem; color:var(--clr-red); margin-bottom:1rem;"><i class="fa-solid fa-phone"></i></div>
                 <h4 style="color:var(--text-main); font-size:1.1rem; margin-bottom:0.5rem;">Call Us</h4>
-                <p style="color:var(--clr-steel); margin:0;">+254 757 139239<br>Mon - Fri: 8am to 6pm (EAT)</p>
+                <p style="color:var(--clr-steel); margin:0;">+254 790 034459<br>Mon - Fri: 8am to 6pm (EAT)</p>
             </div>
             
             <div class="mb-4 p-4" style="background:var(--clr-bg-card); border-left:4px solid var(--clr-red);">
@@ -64,6 +64,34 @@ include '../includes/header.php';
                         </div>
                         <div class="col-md-6">
                             <input type="email" name="email" class="form-control" placeholder="Email Address" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label text-steel small fw-bold mb-1" style="font-size:0.82rem; text-transform:uppercase; letter-spacing:0.05em;">
+                                Services Needed (Select One or More)
+                            </label>
+                            <div class="dropdown custom-multiselect w-100">
+                                <button class="form-control text-start d-flex justify-content-between align-items-center multiselect-toggle" type="button" id="contactServicesDropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:0.9rem 1rem;">
+                                    <span class="multiselect-label text-muted"><i class="fa-solid fa-layer-group text-danger me-2"></i> Select one or more services...</span>
+                                    <i class="fa-solid fa-chevron-down text-muted small ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100 p-2 shadow-lg border-0 multiselect-menu" aria-labelledby="contactServicesDropdown" style="max-height: 290px; overflow-y: auto; border-radius: 8px; z-index: 1050; border: 1px solid #e2e8f0 !important;">
+                                    <li class="px-2 py-1 mb-2 border-bottom d-flex justify-content-between align-items-center">
+                                        <span class="small fw-bold text-muted" style="font-size:0.75rem; text-transform:uppercase;">Select Multiple Services</span>
+                                        <button type="button" class="btn btn-link btn-sm text-decoration-none p-0 multiselect-clear-btn" style="font-size:0.75rem; color:var(--clr-red);">Clear all</button>
+                                    </li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Enterprise Dedicated Fiber"> <span>Enterprise Dedicated Fiber Internet</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Enterprise Wi-Fi 6 & Campus Wireless"> <span>Enterprise Wi-Fi 6 &amp; Campus Wireless</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="4K CCTV & AI Video Surveillance"> <span>4K CCTV &amp; AI Video Surveillance</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Biometric Access Control & Intercom"> <span>Biometric Access Control &amp; Video Intercom</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Structured Cabling & Server Racks"> <span>Structured Cabling &amp; Server Racks</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Online Clean Power UPS & Backup"> <span>Online Clean Power UPS &amp; Backup</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Residential / Estate FTTH Fiber"> <span>Residential / Estate FTTH Fiber</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Managed Network Operations (24/7 NOC)"> <span>Managed Network Operations (24/7 SLA)</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Cloud Solutions & Network Security"> <span>Cloud Solutions &amp; Network Security</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="multiselect-badges-container d-flex flex-wrap gap-2 mt-2"></div>
+                            <input type="hidden" name="services" class="multiselect-hidden-input" value="">
                         </div>
                         <div class="col-12">
                             <input type="text" name="subject" class="form-control" placeholder="Subject" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">

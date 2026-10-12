@@ -59,7 +59,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                 <div class="col-lg-4 d-flex flex-wrap gap-3 justify-content-lg-end">
                     <a href="<?= $root ?>company/quote" class="btn-filao btn-primary-filao">Get a Free Quote
                         &rarr;</a>
-                    <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i
+                    <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i
                             class="fa-solid fa-phone me-2"></i>Call Us</a>
                 </div>
             </div>
@@ -95,7 +95,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                         <a href="#" class="social-icon" aria-label="Instagram"><i
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://wa.me/254757139239" class="social-icon" aria-label="WhatsApp" target="_blank"
+                        <a href="https://wa.me/254790034459" class="social-icon" aria-label="WhatsApp" target="_blank"
                             rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                     <!-- Cert badge -->
@@ -192,8 +192,8 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                                         <div
                                             style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--clr-steel);">
                                             Call Us</div>
-                                        <a href="tel:+254757139239" class="footer-link"
-                                            style="font-size:0.92rem;font-weight:600;">+254 757 139239</a>
+                                        <a href="tel:+254790034459" class="footer-link"
+                                            style="font-size:0.92rem;font-weight:600;">+254 790 034459</a>
                                     </div>
                                 </div>
                                 <div style="display:flex;align-items:flex-start;gap:1rem;">
@@ -309,7 +309,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 <!-- Bootstrap 5 JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 <!-- Custom JS -->
-<script src="<?= $root ?>assets/js/main.js"></script>
+<script src="<?= $root ?>assets/js/main.js?v=<?= filemtime(__DIR__ . '/../assets/js/main.js') ?>"></script>
 </body>
 
 </html>

@@ -48,7 +48,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
     <!-- FontAwesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="<?= $root ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?= $root ?>assets/css/style.css?v=<?= filemtime(__DIR__ . '/../assets/css/style.css') ?>">
 
     <!-- Preconnect to Google Fonts (already embedded via CSS @import) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,7 +62,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         "name": "Filao Networks Solutions",
         "url": "https://filaonetworks.co.ke",
         "logo": "https://filaonetworks.co.ke/assets/images/logo.png",
-        "telephone": "+254757139239",
+        "telephone": "+254790034459",
         "email": "info@filaonetworks.com",
         "address": {
             "@type": "PostalAddress",
@@ -202,7 +202,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
         <!-- Footer contacts inside mobile menu -->
         <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--clr-border);">
             <p style="font-size:0.75rem;color:var(--clr-steel);margin-bottom:0.4rem;"><i class="fa-solid fa-phone"></i>
-                +254 757 139239</p>
+                +254 790 034459</p>
             <p style="font-size:0.75rem;color:var(--clr-steel);margin-bottom:0.4rem;"><i
                     class="fa-solid fa-envelope"></i> info@filaonetworks.com</p>
             <p style="font-size:0.75rem;color:var(--clr-steel);"><i class="fa-solid fa-location-dot"></i> Ambank House,
@@ -222,7 +222,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                     <div class="d-flex align-items-center gap-3">
                         <span class="top-contact">
                             <span><i class="fa-solid fa-phone"></i></span>
-                            <a href="tel:+254757139239">+254 757 139239</a>
+                            <a href="tel:+254790034459">+254 790 034459</a>
                         </span>
                         <span style="color:var(--clr-border);">|</span>
                         <span class="top-contact">

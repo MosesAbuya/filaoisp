@@ -26,6 +26,14 @@ $email = trim($data['email'] ?? '');
 $subject = trim($data['subject'] ?? '');
 $message = trim($data['message'] ?? '');
 
+$rawServices = $data['services'] ?? ($data['service'] ?? '');
+if (is_array($rawServices)) {
+    $servicesStr = implode(', ', array_filter(array_map('trim', $rawServices)));
+} else {
+    $servicesStr = trim((string)$rawServices);
+}
+$servicesSanitized = htmlspecialchars(strip_tags($servicesStr));
+
 // Basic validation
 if (empty($name) || empty($email) || empty($subject) || empty($message)) {
     http_response_code(400);
@@ -46,6 +54,8 @@ $subject = htmlspecialchars(strip_tags($subject));
 $message = htmlspecialchars(strip_tags($message));
 $ip_address = $_SERVER['REMOTE_ADDR'] ?? null;
 
+$messageToSave = (!empty($servicesSanitized) ? "Selected Services: " . $servicesSanitized . "\n\n" : "") . $message;
+
 // Insert using Prepared Statements to prevent SQL Injection
 try {
     $stmt = $pdo->prepare("INSERT INTO contact_messages (name, email, subject, message, ip_address) VALUES (:name, :email, :subject, :message, :ip)");
@@ -53,7 +63,7 @@ try {
         'name' => $name,
         'email' => $email,
         'subject' => $subject,
-        'message' => $message,
+        'message' => $messageToSave,
         'ip' => $ip_address
     ]);
     
@@ -113,11 +123,14 @@ try {
             $mail->isHTML(true);
             $mail->Subject = 'New Contact Form Submission: ' . $subject;
             
+            $servicesRow = !empty($servicesSanitized) ? "<p><strong>Services Requested:</strong> <span style='color: #ec1c24; font-weight: bold;'>{$servicesSanitized}</span></p>" : "";
+
             $adminBody = "
                 <h3 style='color: #090238; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px;'>New Message from Website</h3>
                 <p><strong>Name:</strong> {$name}</p>
                 <p><strong>Email:</strong> <a href='mailto:{$email}' style='color: #ec1c24; text-decoration: none;'>{$email}</a></p>
                 <p><strong>Subject:</strong> {$subject}</p>
+                {$servicesRow}
                 <div style='background: #f8f9fa; padding: 15px; border-left: 4px solid #ec1c24; margin-top: 20px; border-radius: 4px;'>
                     <p style='margin: 0; white-space: pre-wrap;'>" . nl2br($message) . "</p>
                 </div>
@@ -132,10 +145,11 @@ try {
             $mail->addAddress($email, $name);
             $mail->Subject = 'We received your message - Filao Networks Solutions';
             
+            $servicesAck = !empty($servicesSanitized) ? " for <strong>{$servicesSanitized}</strong>" : "";
             $customerBody = "
                 <h3 style='color: #090238; margin-top: 0;'>Hello {$name},</h3>
                 <p>Thank you for contacting Filao Networks Solutions.</p>
-                <p>We have successfully received your message regarding <strong>\"{$subject}\"</strong>. Our support team is reviewing your request and will get back to you shortly.</p>
+                <p>We have successfully received your message regarding <strong>\"{$subject}\"</strong>{$servicesAck}. Our support and engineering team is reviewing your requirements and will get back to you shortly.</p>
                 <br>
                 <p style='margin-bottom: 0;'>Best regards,<br><strong style='color: #ec1c24;'>Filao Networks Solutions Team</strong></p>
             ";

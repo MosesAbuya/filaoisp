@@ -56,22 +56,33 @@ include '../includes/header.php';
                             <input type="text" name="company" class="form-control" placeholder="Optional" style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
                         </div>
                         <div class="col-12">
-                            <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Service Required *</label>
-                            <select name="service" class="form-select" required style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
-                                <option value="" disabled selected>Select a service...</option>
-                                <option value="Internet Solutions (Enterprise)">Internet Solutions (Enterprise)</option>
-                                <option value="Residential Fiber">Residential Fiber</option>
-                                <option value="Wireless Internet">Wireless Internet</option>
-                                <option value="Dedicated Internet">Dedicated Internet</option>
-                                <option value="Network Design & Installation">Network Design & Installation</option>
-                                <option value="Network Security">Network Security</option>
-                                <option value="Managed Network Services">Managed Network Services</option>
-                                <option value="Cloud Network Solutions">Cloud Network Solutions</option>
-                                <option value="CCTV & Security Solutions">CCTV & Security Solutions</option>
-                                <option value="IoT Integration">IoT Integration</option>
-                                <option value="Disaster Recovery">Disaster Recovery & Business Continuity</option>
-                                <option value="Other">Other (Please specify in details)</option>
-                            </select>
+                            <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Services Required (Select One or More) *</label>
+                            <div class="dropdown custom-multiselect w-100">
+                                <button class="form-control text-start d-flex justify-content-between align-items-center multiselect-toggle" type="button" id="quoteServicesDropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" style="background:#fff; border:1px solid var(--clr-border); color:var(--text-main); padding:1rem;">
+                                    <span class="multiselect-label text-muted"><i class="fa-solid fa-layer-group text-danger me-2"></i> Select one or more services...</span>
+                                    <i class="fa-solid fa-chevron-down text-muted small ms-2"></i>
+                                </button>
+                                <ul class="dropdown-menu w-100 p-2 shadow-lg border-0 multiselect-menu" aria-labelledby="quoteServicesDropdown" style="max-height: 290px; overflow-y: auto; border-radius: 8px; z-index: 1050; border: 1px solid #e2e8f0 !important;">
+                                    <li class="px-2 py-1 mb-2 border-bottom d-flex justify-content-between align-items-center">
+                                        <span class="small fw-bold text-muted" style="font-size:0.75rem; text-transform:uppercase;">Select Multiple Services</span>
+                                        <button type="button" class="btn btn-link btn-sm text-decoration-none p-0 multiselect-clear-btn" style="font-size:0.75rem; color:var(--clr-red);">Clear all</button>
+                                    </li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Internet Solutions (Enterprise)"> <span>Internet Solutions (Enterprise)</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Residential Fiber"> <span>Residential Fiber</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Wireless Internet"> <span>Wireless Internet</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Dedicated Internet"> <span>Dedicated Internet</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Network Design & Installation"> <span>Network Design &amp; Installation</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Network Security"> <span>Network Security</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Managed Network Services"> <span>Managed Network Services</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Cloud Network Solutions"> <span>Cloud Network Solutions</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="CCTV & Security Solutions"> <span>CCTV &amp; Security Solutions</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="IoT Integration"> <span>IoT Integration</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Disaster Recovery & Business Continuity"> <span>Disaster Recovery &amp; Business Continuity</span></label></li>
+                                    <li><label class="dropdown-item d-flex align-items-center gap-2 py-2 rounded cursor-pointer"><input type="checkbox" class="form-check-input mt-0 multiselect-check" value="Other"> <span>Other (Specify in project details)</span></label></li>
+                                </ul>
+                            </div>
+                            <div class="multiselect-badges-container d-flex flex-wrap gap-2 mt-2"></div>
+                            <input type="hidden" name="service" class="multiselect-hidden-input" required value="">
                         </div>
                         <div class="col-12">
                             <label class="form-label text-steel" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.1em;">Project Details *</label>

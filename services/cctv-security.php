@@ -25,8 +25,8 @@ include "../includes/header.php";
           monitoring across Kenya.</p>
         <div class="hero-cta-group">
           <a href="../company/quote" class="btn-filao btn-primary-filao">Get a Free Quote &rarr;</a>
-          <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
-            757 139239</a>
+          <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; +254
+            790 034459</a>
         </div>
       </div>
     </div>
@@ -341,8 +341,8 @@ include "../includes/header.php";
       quotes for all services.</p>
     <div class="d-flex gap-3 justify-content-center flex-wrap">
       <a href="../company/quote" class="btn-filao btn-primary-filao">Request a Free Quote &rarr;</a>
-      <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
-        757 139239</a>
+      <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i class="fa-solid fa-phone"></i>&nbsp; Call +254
+        790 034459</a>
     </div>
   </div>
 </section>

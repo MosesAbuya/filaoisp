@@ -426,6 +426,97 @@ if (heroBg) {
 }
 
 /* =====================================================================
+   13b. CUSTOM MULTI-SELECT DROPDOWN COMPONENT
+   ===================================================================== */
+function initMultiSelects() {
+    document.querySelectorAll('.custom-multiselect').forEach(container => {
+        // Prevent duplicate initialization
+        if (container.dataset.initialized) return;
+        container.dataset.initialized = 'true';
+
+        const labelSpan = container.querySelector('.multiselect-label');
+        const checkboxes = container.querySelectorAll('.multiselect-check');
+        const clearBtn = container.querySelector('.multiselect-clear-btn');
+        const parentWrapper = container.closest('.col-12') || container.parentElement;
+        const badgesContainer = parentWrapper ? parentWrapper.querySelector('.multiselect-badges-container') : null;
+        const hiddenInput = parentWrapper ? parentWrapper.querySelector('.multiselect-hidden-input') : null;
+
+        const defaultLabel = labelSpan ? labelSpan.innerHTML : '<i class="fa-solid fa-layer-group text-danger me-2"></i> Select one or more services...';
+
+        function updateState() {
+            const selected = [];
+            checkboxes.forEach(cb => {
+                if (cb.checked) selected.push(cb.value);
+            });
+
+            // Update hidden input for form submission
+            if (hiddenInput) {
+                hiddenInput.value = selected.join(', ');
+                if (selected.length > 0) {
+                    hiddenInput.classList.remove('error');
+                }
+            }
+
+            // Update trigger label
+            if (labelSpan) {
+                if (selected.length === 0) {
+                    labelSpan.innerHTML = defaultLabel;
+                } else if (selected.length === 1) {
+                    labelSpan.innerHTML = `<span class="fw-semibold text-dark"><i class="fa-solid fa-check text-success me-1"></i> ${selected[0]}</span>`;
+                } else {
+                    labelSpan.innerHTML = `<span class="fw-semibold text-dark"><i class="fa-solid fa-check-double text-success me-1"></i> ${selected.length} Services Selected</span>`;
+                }
+            }
+
+            // Update visual removable badges
+            if (badgesContainer) {
+                badgesContainer.innerHTML = '';
+                selected.forEach(val => {
+                    const badge = document.createElement('span');
+                    badge.className = 'badge d-inline-flex align-items-center gap-1 py-2 px-3 fw-medium';
+                    badge.style.background = '#eef2ff';
+                    badge.style.color = '#090238';
+                    badge.style.border = '1px solid #c7d2fe';
+                    badge.style.borderRadius = '20px';
+                    badge.style.fontSize = '0.78rem';
+                    badge.innerHTML = `<span>${val}</span> <i class="fa-solid fa-xmark ms-1 text-danger cursor-pointer" style="cursor:pointer;" title="Remove service"></i>`;
+                    
+                    badge.querySelector('i').addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const targetCb = Array.from(checkboxes).find(c => c.value === val);
+                        if (targetCb) {
+                            targetCb.checked = false;
+                            updateState();
+                        }
+                    });
+
+                    badgesContainer.appendChild(badge);
+                });
+            }
+        }
+
+        checkboxes.forEach(cb => {
+            cb.addEventListener('change', updateState);
+        });
+
+        if (clearBtn) {
+            clearBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                checkboxes.forEach(cb => { cb.checked = false; });
+                updateState();
+            });
+        }
+    });
+}
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMultiSelects);
+} else {
+    initMultiSelects();
+}
+
+/* =====================================================================
    14. FORM VALIDATION (quote/contact forms)
    ===================================================================== */
 document.querySelectorAll('form[data-validate]').forEach(form => {
@@ -456,7 +547,16 @@ document.querySelectorAll('form[data-validate]').forEach(form => {
 
             const formData = new FormData(form);
             const dataObj = {};
-            formData.forEach((value, key) => { dataObj[key] = value; });
+            for (let [key, value] of formData.entries()) {
+                if (dataObj[key] !== undefined) {
+                    if (!Array.isArray(dataObj[key])) {
+                        dataObj[key] = [dataObj[key]];
+                    }
+                    dataObj[key].push(value);
+                } else {
+                    dataObj[key] = value;
+                }
+            }
 
             fetch(actionUrl, {
                 method: 'POST',
@@ -476,6 +576,19 @@ document.querySelectorAll('form[data-validate]').forEach(form => {
                 }
                 if (data.status === 'success') {
                     form.reset();
+                    // Reset multi-selects
+                    form.querySelectorAll('.custom-multiselect').forEach(ms => {
+                        ms.querySelectorAll('.multiselect-check').forEach(cb => { cb.checked = false; });
+                        const label = ms.querySelector('.multiselect-label');
+                        if (label) label.innerHTML = '<i class="fa-solid fa-layer-group text-danger me-2"></i> Select one or more services...';
+                        const parent = ms.closest('.col-12') || ms.parentElement;
+                        if (parent) {
+                            const badges = parent.querySelector('.multiselect-badges-container');
+                            if (badges) badges.innerHTML = '';
+                            const hidden = parent.querySelector('.multiselect-hidden-input');
+                            if (hidden) hidden.value = '';
+                        }
+                    });
                     setTimeout(() => {
                         if (msgDiv) msgDiv.style.display = 'none';
                     }, 5000);

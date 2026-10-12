@@ -22,8 +22,8 @@ include "../includes/header.php";
                     across Kenya and beyond.</p>
                 <div class="hero-cta-group">
                     <a href="../company/contact" class="btn-filao btn-primary-filao">Get in Touch &rarr;</a>
-                    <a href="tel:+254757139239" class="btn-filao btn-outline-filao"><i
-                            class="fa-solid fa-phone"></i>&nbsp; +254 757 139239</a>
+                    <a href="tel:+254790034459" class="btn-filao btn-outline-filao"><i
+                            class="fa-solid fa-phone"></i>&nbsp; +254 790 034459</a>
                 </div>
             </div>
         </div>
@@ -517,7 +517,7 @@ include "../includes/header.php";
                 <div class="col-md-3">
                     <i class="fa-solid fa-phone"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
-                    <div style="font-weight:600;color:var(--text-main);">+254 757 139239</div>
+                    <div style="font-weight:600;color:var(--text-main);">+254 790 034459</div>
                     <div style="color:var(--clr-steel);font-size:0.9rem;">Mon–Fri, 8am–6pm EAT</div>
                 </div>
                 <div class="col-md-3">
