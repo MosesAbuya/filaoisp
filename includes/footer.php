@@ -82,7 +82,7 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
                     </a>
                     <p class="footer-desc mb-4">
                         Kenya's premier provider of enterprise internet, networking, security, cloud, and IoT solutions
-                        connecting businesses and homes across East Africa since 2010.
+                        connecting businesses and homes across East Africa with over 3 years of dedicated service.
                     </p>
                     <!-- Social row -->
                     <div class="footer-socials">

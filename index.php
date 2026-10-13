@@ -75,9 +75,9 @@ include 'includes/header.php';
                     </div>
                     <div class="hero-stat">
                         <div class="hero-stat-num">
-                            <span data-counter data-target="15" data-suffix="yrs">0</span>
+                            <span data-counter data-target="3" data-suffix="+ yrs">0</span>
                         </div>
-                        <div class="hero-stat-label">Years Experience</div>
+                        <div class="hero-stat-label">Years of Service</div>
                     </div>
                     <div class="hero-stat">
                         <div class="hero-stat-num">
@@ -340,10 +340,10 @@ include 'includes/header.php';
             <div class="col-md-3 col-6">
                 <div class="stat-card reveal delay-4 text-center">
                     <div class="stat-num-display">
-                        <span data-counter data-target="15" data-suffix="yrs">0</span>
+                        <span data-counter data-target="3" data-suffix="+ yrs">0</span>
                     </div>
-                    <div class="stat-label">Years Experience</div>
-                    <p class="stat-desc">Deep expertise in Kenya's tech landscape</p>
+                    <div class="stat-label">Years of Service</div>
+                    <p class="stat-desc">Over 3 years of dedicated service across Kenya</p>
                 </div>
             </div>
         </div>

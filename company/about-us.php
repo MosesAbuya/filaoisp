@@ -1,6 +1,6 @@
 <?php
 $page_title = "Filao Networks | About Us";
-$page_desc = "Filao Networks Solutions   East Africa's premier internet, networking, security, cloud, and IoT technology company. Connecting Kenya since 2010.";
+$page_desc = "Filao Networks Solutions — East Africa's premier internet, networking, security, cloud, and IoT technology company with over 3 years of dedicated service across Kenya.";
 $page_class = "page-about";
 $root = "../";
 include "../includes/header.php";
@@ -18,7 +18,7 @@ include "../includes/header.php";
                 <div class="hero-eyebrow">About Filao Networks</div>
                 <h1 class="hero-title" style="font-size:clamp(2.5rem,6vw,5rem);">East Africa's <span
                         class="line-accent">Technology</span> Partner</h1>
-                <p class="hero-subtitle">Over a decade of connecting, securing, and empowering businesses and homes
+                <p class="hero-subtitle">Over 3 years of connecting, securing, and empowering businesses and homes
                     across Kenya and beyond.</p>
                 <div class="hero-cta-group">
                     <a href="../company/contact" class="btn-filao btn-primary-filao">Get in Touch &rarr;</a>
@@ -41,8 +41,8 @@ include "../includes/header.php";
                 </h2>
                 <p style="color:var(--clr-steel);font-size:1.05rem;line-height:1.85;">Filao Networks Solutions was
                     established in Nairobi, Kenya, with a single defining mission: to make enterprise-grade connectivity
-                    accessible to every business, institution, and household across East Africa. Over more than a decade
-                    of operations, we have grown from a small team of passionate network engineers into a full-spectrum
+                    accessible to every business, institution, and household across East Africa. With over 3 years
+                    of dedicated service, we have grown from a small team of passionate network engineers into a full-spectrum
                     ICT services company.</p>
                 <p style="color:var(--clr-steel);font-size:1rem;line-height:1.85;margin-top:1.2rem;">Today, we serve
                     thousands of clients spanning multinational corporations, government agencies, financial
@@ -59,10 +59,10 @@ include "../includes/header.php";
                         style="position:absolute;bottom:-20px;left:-20px;background:var(--clr-red);padding:1.5rem 2rem;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 100%,10px 100%);">
                         <div
                             style="font-family:var(--font-display);font-size:2rem;font-weight:900;color:var(--text-main);line-height:1;">
-                            2010</div>
+                            3+</div>
                         <div
                             style="font-size:0.7rem;color:rgba(255,255,255,0.85);text-transform:uppercase;letter-spacing:1px;">
-                            Founded</div>
+                            Years of Service</div>
                     </div>
                 </div>
             </div>
@@ -77,10 +77,10 @@ include "../includes/header.php";
                     <div class="col-6 col-md-3">
                         <div
                             style="font-family:var(--font-display);font-size:3.5rem;font-weight:900;color:var(--clr-red);line-height:1;">
-                            14+</div>
+                            3+</div>
                         <div
                             style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.15em;color:var(--clr-steel);margin-top:0.5rem;">
-                            Years in Operation</div>
+                            Years of Service</div>
                     </div>
                     <div class="col-6 col-md-3">
                         <div
