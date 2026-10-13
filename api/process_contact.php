@@ -92,10 +92,23 @@ try {
             $mail->SMTPAuth   = true;
             $mail->Username   = $smtpSettings['smtp_username'];
             $mail->Password   = $smtpSettings['smtp_password'];
-            if (!empty($smtpSettings['smtp_encryption'])) {
-                $mail->SMTPSecure = strtolower($smtpSettings['smtp_encryption']) === 'ssl' ? PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS : PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+            $enc = strtolower($smtpSettings['smtp_encryption'] ?? 'ssl');
+            if ($enc === 'ssl') {
+                $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+            } elseif ($enc === 'tls') {
+                $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
+            } else {
+                $mail->SMTPAutoTLS = false;
             }
-            $mail->Port       = (int)$smtpSettings['smtp_port'];
+            $mail->Port       = (int)($smtpSettings['smtp_port'] ?? 465);
+            $mail->Timeout    = 15;
+            $mail->SMTPOptions = [
+                'ssl' => [
+                    'verify_peer' => false,
+                    'verify_peer_name' => false,
+                    'allow_self_signed' => true
+                ]
+            ];
 
             // Shared Email Template Styles
             $emailHeader = "
@@ -110,29 +123,30 @@ try {
                 </div>
                 <div style='background: #f4f6fa; padding: 20px; text-align: center; font-size: 13px; color: #6c757d; border-top: 1px solid #e0e6ed;'>
                     &copy; " . date('Y') . " Filao Networks Solutions. All rights reserved.<br>
-                    Ambank House, Nairobi, Kenya
+                    Ambank House, Nairobi, Kenya | Phone: +254 790 034459
                 </div>
             </div>
             ";
 
             // 1. Send to Admin
-            $mail->setFrom($smtpSettings['smtp_username'], 'Filao Networks');
+            $adminSender = !empty($smtpSettings['smtp_username']) ? $smtpSettings['smtp_username'] : 'info@filaonetworks.com';
+            $mail->setFrom($adminSender, 'Filao Networks');
             $mail->addAddress('info@filaonetworks.com', 'Filao Networks'); // Always send to this email
             $mail->addReplyTo($email, $name);
 
             $mail->isHTML(true);
             $mail->Subject = 'New Contact Form Submission: ' . $subject;
             
-            $servicesRow = !empty($servicesSanitized) ? "<p><strong>Services Requested:</strong> <span style='color: #ec1c24; font-weight: bold;'>{$servicesSanitized}</span></p>" : "";
+            $servicesRow = !empty($servicesSanitized) ? "<p style='margin: 8px 0;'><strong>Services Requested:</strong> <span style='color: #ec1c24; font-weight: bold;'>{$servicesSanitized}</span></p>" : "";
 
             $adminBody = "
-                <h3 style='color: #090238; margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 10px;'>New Message from Website</h3>
-                <p><strong>Name:</strong> {$name}</p>
-                <p><strong>Email:</strong> <a href='mailto:{$email}' style='color: #ec1c24; text-decoration: none;'>{$email}</a></p>
-                <p><strong>Subject:</strong> {$subject}</p>
+                <h3 style='color: #090238; margin-top: 0; border-bottom: 2px solid #f1f1f1; padding-bottom: 10px;'>New Inquiry Received</h3>
+                <p style='margin: 8px 0;'><strong>Name:</strong> {$name}</p>
+                <p style='margin: 8px 0;'><strong>Email:</strong> <a href='mailto:{$email}' style='color: #ec1c24; text-decoration: none;'>{$email}</a></p>
+                <p style='margin: 8px 0;'><strong>Subject:</strong> {$subject}</p>
                 {$servicesRow}
-                <div style='background: #f8f9fa; padding: 15px; border-left: 4px solid #ec1c24; margin-top: 20px; border-radius: 4px;'>
-                    <p style='margin: 0; white-space: pre-wrap;'>" . nl2br($message) . "</p>
+                <div style='background: #f8f9fa; padding: 15px; border-left: 4px solid #ec1c24; margin-top: 15px; border-radius: 4px;'>
+                    <p style='margin: 0; white-space: pre-wrap; font-size: 14px;'>" . nl2br($message) . "</p>
                 </div>
             ";
             $mail->Body = $emailHeader . $adminBody . $emailFooter;
@@ -145,19 +159,24 @@ try {
             $mail->addAddress($email, $name);
             $mail->Subject = 'We received your message - Filao Networks Solutions';
             
-            $servicesAck = !empty($servicesSanitized) ? " for <strong>{$servicesSanitized}</strong>" : "";
+            $servicesAck = !empty($servicesSanitized) ? " regarding <strong>{$servicesSanitized}</strong>" : "";
             $customerBody = "
                 <h3 style='color: #090238; margin-top: 0;'>Hello {$name},</h3>
                 <p>Thank you for contacting Filao Networks Solutions.</p>
-                <p>We have successfully received your message regarding <strong>\"{$subject}\"</strong>{$servicesAck}. Our support and engineering team is reviewing your requirements and will get back to you shortly.</p>
+                <p>We have successfully received your inquiry{$servicesAck}. Our engineering and customer support team is reviewing your message and will reach out to you shortly.</p>
+                <div style='background: #f8f9fa; border-left: 4px solid #090238; padding: 15px; margin: 20px 0; border-radius: 4px;'>
+                    <p style='margin: 0; font-size: 13px; color: #555;'><strong>Subject:</strong> {$subject}</p>
+                    <p style='margin: 5px 0 0 0; font-size: 13px; color: #666;'><em>\"" . nl2br($message) . "\"</em></p>
+                </div>
+                <p>If you need urgent assistance, you can also reach our 24/7 support line at <strong style='color: #ec1c24;'>+254 790 034459</strong>.</p>
                 <br>
                 <p style='margin-bottom: 0;'>Best regards,<br><strong style='color: #ec1c24;'>Filao Networks Solutions Team</strong></p>
             ";
             $mail->Body = $emailHeader . $customerBody . $emailFooter;
             
             $mail->send();
-        } catch (Exception $e) {
-            error_log("Mailer Error: {$mail->ErrorInfo}");
+        } catch (\Exception $e) {
+            error_log("Mailer Error in process_contact.php: " . $mail->ErrorInfo . " / " . $e->getMessage());
         }
     }
     

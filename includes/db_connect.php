@@ -5,11 +5,15 @@
  */
 // Check if running on localhost (local development)
 $is_localhost = false;
-if (isset($_SERVER['HTTP_HOST'])) {
+if (php_sapi_name() === 'cli' && DIRECTORY_SEPARATOR === '\\') {
+    $is_localhost = true;
+} elseif (isset($_SERVER['HTTP_HOST'])) {
     $host = $_SERVER['HTTP_HOST'];
     if (strpos($host, 'localhost') !== false || strpos($host, '127.0.0.1') !== false) {
         $is_localhost = true;
     }
+} elseif (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1'])) {
+    $is_localhost = true;
 }
 
 if ($is_localhost) {
