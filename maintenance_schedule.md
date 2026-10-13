@@ -1,6 +1,6 @@
-# Maintenance Schedule & Ongoing Monitoring Plan: Filao Networks Solutions
+﻿# Maintenance Schedule & Ongoing Monitoring Plan: Filao Networks Solutions
 
-**Domain:** `https://filaonetworks.co.ke`  
+**Domain:** `https://filaonetworks.com`  
 **Effective Period:** 2026 – 2027  
 **Owner:** Technical SEO & Infrastructure Engineering Team  
 
@@ -22,7 +22,7 @@
 
 - **Generative Engine Citation Audit (GEO):**
   - Run the 5 priority queries in `geo_tracking.json` across ChatGPT, Perplexity, and Google AI Overviews to monitor brand citation frequency.
-  - Test `https://filaonetworks.co.ke/llms.txt` to verify crawler accessibility.
+  - Test `https://filaonetworks.com/llms.txt` to verify crawler accessibility.
 - **Top Queries & Impression Optimization:**
   - Review GSC Queries report for impressions ranking between position 8 and 20.
   - Enhance page copy and H3 subheadings with high-impression long-tail variants.
@@ -41,3 +41,4 @@
   - Monitor new competitor fiber package releases in Nairobi and adjust meta descriptions accordingly.
 - **Broken Link & Redirect Audit:**
   - Run an internal crawler sweep to ensure 0 broken internal links and 0 redirect chains.
+

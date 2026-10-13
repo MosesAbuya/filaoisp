@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Privacy Policy — Filao Networks Solutions Kenya";
 $page_desc = "Discover how Filao Networks collects, processes, and protects personal data in compliance with the Kenya Data Protection Act 2019 and global standards.";
-$canonical_url = "https://filaonetworks.co.ke/compliance/privacy-policy";
+$canonical_url = "https://filaonetworks.com/compliance/privacy-policy";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -53,7 +53,7 @@ include '../includes/header.php';
             &bull; Request deletion of false or misleading data about you.</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">5. Contacting the Data Protection Officer</h4>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions, concerns, or requests regarding your personal data, please contact our Data Protection Officer (DPO) at <strong>dpo@filaoadventures.co.ke</strong> or call us at <strong>+254 790 034459</strong>.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you have any questions, concerns, or requests regarding your personal data, please contact our Data Protection Officer (DPO) at <strong>dpo@filaonetworks.com</strong> or call us at <strong>+254 790 034459</strong>.</p>
 
         </div>
     </div>
@@ -69,4 +69,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

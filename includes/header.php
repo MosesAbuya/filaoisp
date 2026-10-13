@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Filao Networks Solutions   Header / Mega Menu
  * Include on every page: <?php include 'includes/header.php'; ?>
@@ -18,7 +18,7 @@ $page_desc = $page_desc ?? 'Filao Networks provides high-speed fiber internet, d
 $page_class = $page_class ?? '';
 $meta_robots = $meta_robots ?? 'index, follow';
 $og_type = $og_type ?? 'website';
-$og_image = $og_image ?? 'https://filaonetworks.co.ke/assets/images/logo.png';
+$og_image = $og_image ?? 'https://filaonetworks.com/assets/images/logo.png';
 
 // Determine root path (for assets and links)
 $script_name = $_SERVER['SCRIPT_NAME'] ?? '';
@@ -29,9 +29,9 @@ if (empty($canonical_url)) {
     $clean_path = preg_replace('#^/filaoisp#i', '', $script_name);
     $clean_path = preg_replace('#\.php$#i', '', $clean_path);
     if ($clean_path === '/index' || $clean_path === '' || $clean_path === '/') {
-        $canonical_url = 'https://filaonetworks.co.ke/';
+        $canonical_url = 'https://filaonetworks.com/';
     } else {
-        $canonical_url = 'https://filaonetworks.co.ke' . $clean_path;
+        $canonical_url = 'https://filaonetworks.com' . $clean_path;
     }
 }
 ?>
@@ -98,11 +98,11 @@ if (empty($canonical_url)) {
         "@graph": [
             {
                 "@type": "InternetServiceProvider",
-                "@id": "https://filaonetworks.co.ke/#organization",
+                "@id": "https://filaonetworks.com/#organization",
                 "name": "Filao Networks Solutions",
                 "alternateName": "Filao Networks",
-                "url": "https://filaonetworks.co.ke",
-                "logo": "https://filaonetworks.co.ke/assets/images/logo.png",
+                "url": "https://filaonetworks.com",
+                "logo": "https://filaonetworks.com/assets/images/logo.png",
                 "telephone": "+254790034459",
                 "email": "info@filaonetworks.com",
                 "address": {
@@ -133,15 +133,15 @@ if (empty($canonical_url)) {
             },
             {
                 "@type": "WebSite",
-                "@id": "https://filaonetworks.co.ke/#website",
-                "url": "https://filaonetworks.co.ke/",
+                "@id": "https://filaonetworks.com/#website",
+                "url": "https://filaonetworks.com/",
                 "name": "Filao Networks Solutions",
                 "publisher": {
-                    "@id": "https://filaonetworks.co.ke/#organization"
+                    "@id": "https://filaonetworks.com/#organization"
                 },
                 "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://filaonetworks.co.ke/services/internet-solutions?q={search_term_string}",
+                    "target": "https://filaonetworks.com/services/internet-solutions?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }
             }
@@ -722,4 +722,5 @@ if (empty($canonical_url)) {
             </div><!-- /.navbar-main-inner -->
         </div><!-- /.container-fluid -->
     </header><!-- /#main-navbar -->
+
 

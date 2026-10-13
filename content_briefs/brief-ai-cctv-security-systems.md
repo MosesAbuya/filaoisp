@@ -1,9 +1,9 @@
-# Content Brief: Commercial & Residential 4K AI CCTV Installation in Kenya
+﻿# Content Brief: Commercial & Residential 4K AI CCTV Installation in Kenya
 
 **Target Primary Keyword:** CCTV Installation Kenya  
 **Secondary Keywords:** 4K security camera installation Nairobi, commercial CCTV companies Kenya, IP camera installer Nairobi, smart surveillance systems  
 **Search Intent:** Commercial / Transactional  
-**Target URL:** `https://filaonetworks.co.ke/services/cctv-security`  
+**Target URL:** `https://filaonetworks.com/services/cctv-security`  
 **Word Count Target:** 1,200–1,500 words  
 
 ---
@@ -38,6 +38,7 @@ Filao Networks provides turnkey 4K AI-powered CCTV installation and 24/7 video s
 ---
 
 ## 4. Internal Link Targets
-- Access Control: [Biometric Access Control Systems](https://filaonetworks.co.ke/services/access-control)
-- Fencing: [Electric Fencing & Biometrics](https://filaonetworks.co.ke/services/biometric-fencing)
-- Quote: [Book Site Survey & Quote](https://filaonetworks.co.ke/company/quote)
+- Access Control: [Biometric Access Control Systems](https://filaonetworks.com/services/access-control)
+- Fencing: [Electric Fencing & Biometrics](https://filaonetworks.com/services/biometric-fencing)
+- Quote: [Book Site Survey & Quote](https://filaonetworks.com/company/quote)
+

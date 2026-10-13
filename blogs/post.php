@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once '../api/db.php';
 
 $slug = $_GET['slug'] ?? '';
@@ -21,9 +21,9 @@ if (!$blog) {
 $page_title = htmlspecialchars($blog['title']) . ' | Filao Networks';
 $page_desc = htmlspecialchars($blog['excerpt']);
 $page_class = 'page-blog-single';
-$canonical_url = 'https://filaonetworks.co.ke/blogs/' . urlencode($blog['slug']);
+$canonical_url = 'https://filaonetworks.com/blogs/' . urlencode($blog['slug']);
 $og_type = 'article';
-$og_image = $blog['image_url'] ?? 'https://filaonetworks.co.ke/assets/images/logo.png';
+$og_image = $blog['image_url'] ?? 'https://filaonetworks.com/assets/images/logo.png';
 
 // BlogPosting JSON-LD Schema
 $page_schema = [
@@ -41,14 +41,14 @@ $page_schema = [
     'author' => [
         '@type' => 'Organization',
         'name' => 'Filao Networks Technical Team',
-        'url' => 'https://filaonetworks.co.ke/company/about-us'
+        'url' => 'https://filaonetworks.com/company/about-us'
     ],
     'publisher' => [
         '@type' => 'Organization',
         'name' => 'Filao Networks Solutions',
         'logo' => [
             '@type' => 'ImageObject',
-            'url' => 'https://filaonetworks.co.ke/assets/images/logo.png'
+            'url' => 'https://filaonetworks.com/assets/images/logo.png'
         ]
     ]
 ];
@@ -113,3 +113,4 @@ include '../includes/header.php';
 </style>
 
 <?php include '../includes/footer.php'; ?>
+

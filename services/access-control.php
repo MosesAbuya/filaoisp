@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Access Control Systems Kenya — Biometric & Boom Gates | Filao";
 $page_desc = "Enterprise access control systems in Nairobi, Kenya: RFID keycards, biometric fingerprint & facial scanners, turnstiles, and automated boom barrier gates.";
-$canonical_url = "https://filaonetworks.co.ke/services/access-control";
+$canonical_url = "https://filaonetworks.com/services/access-control";
 $page_class = "page-access-control";
 $root = "../";
 include "../includes/header.php";
@@ -330,4 +330,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

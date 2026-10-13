@@ -1,9 +1,9 @@
-# Content Brief: Residential Fiber Internet in Kenya
+﻿# Content Brief: Residential Fiber Internet in Kenya
 
 **Target Primary Keyword:** Residential Fiber Internet Kenya  
 **Secondary Keywords:** Best home fiber Nairobi, unlimited home Wi-Fi Kenya, fiber packages Kasarani Ruiru Roysambu, 1Gbps internet Kenya  
 **Search Intent:** Commercial Investigation / Transactional  
-**Target URL:** `https://filaonetworks.co.ke/services/residential-fiber`  
+**Target URL:** `https://filaonetworks.com/services/residential-fiber`  
 **Word Count Target:** 1,200–1,600 words  
 
 ---
@@ -38,6 +38,7 @@ Filao Networks delivers enterprise-grade residential fiber optic internet across
 ---
 
 ## 4. Internal Link Targets
-- Pillar link: [Internet Solutions Kenya](https://filaonetworks.co.ke/services/internet-solutions)
-- Conversion link: [Check Coverage Map](https://filaonetworks.co.ke/company/coverage-map)
-- Inquiry link: [Request a Free Quote](https://filaonetworks.co.ke/company/quote)
+- Pillar link: [Internet Solutions Kenya](https://filaonetworks.com/services/internet-solutions)
+- Conversion link: [Check Coverage Map](https://filaonetworks.com/company/coverage-map)
+- Inquiry link: [Request a Free Quote](https://filaonetworks.com/company/quote)
+

@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "IoT Solutions & Smart Integration Kenya — Telemetry | Filao";
 $page_desc = "Connect smart sensors, facility telemetry, asset tracking, and industrial automation to a unified real-time dashboard with Filao Networks IoT in Kenya.";
-$canonical_url = "https://filaonetworks.co.ke/services/iot-integration";
+$canonical_url = "https://filaonetworks.com/services/iot-integration";
 $page_class = "page-iot-integration";
 $root = "../";
 include "../includes/header.php";
@@ -335,4 +335,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

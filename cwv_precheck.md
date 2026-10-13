@@ -1,6 +1,6 @@
-# Core Web Vitals (CWV) Precheck & Performance Optimization Report
+﻿# Core Web Vitals (CWV) Precheck & Performance Optimization Report
 
-**Audit Target:** `https://filaonetworks.co.ke`  
+**Audit Target:** `https://filaonetworks.com`  
 **Date:** 2026-10-13  
 **Audited Against:** Google Core Web Vitals March 2024+ Specification (INP officially replaces legacy FID)  
 
@@ -46,3 +46,4 @@ Header set Cache-Control "public, max-age=31536000, immutable"
    - Stylesheets append PHP `filemtime()` query parameters (`style.css?v=...`) to prevent stale caching during redeployments while serving immutable cache headers to end users.
 3. **Responsive Image Optimization:**
    - Hero background images use optimized CDN endpoints with modern compression parameters (`q=80`).
+

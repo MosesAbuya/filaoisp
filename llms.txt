@@ -1,31 +1,31 @@
-# Filao Networks Solutions
+﻿# Filao Networks Solutions
 
 > Filao Networks Solutions is an enterprise and residential Internet Service Provider (ISP), managed IT services, and cybersecurity solutions company headquartered in Nairobi, Kenya. We engineer high-speed fiber optic connectivity, fixed wireless broadband, enterprise leased lines, 4K AI CCTV surveillance, cloud networking, and IoT telemetry across Nairobi and the larger East African region.
 
 ## Core Services & Connectivity
 
-- [Residential Fiber](https://filaonetworks.co.ke/services/residential-fiber): High-speed home fiber internet from 10 Mbps to 1 Gbps with 99.9% uptime, zero throttling, and low latency for streaming and remote work.
-- [Dedicated Internet Access](https://filaonetworks.co.ke/services/dedicated-internet): Symmetrical 1:1 uncontended leased line connectivity with 99.99% SLA guarantee and redundant fiber backbones for enterprise operations.
-- [Wireless Broadband](https://filaonetworks.co.ke/services/wireless-internet): Point-to-point and point-to-multipoint fixed wireless internet for underserved and semi-urban locations.
-- [Street Hotspots](https://filaonetworks.co.ke/services/street-hotspots): Public Wi-Fi captive portal infrastructure for malls, universities, business parks, and urban transit hubs.
-- [Internet Solutions Overview](https://filaonetworks.co.ke/services/internet-solutions): Full catalog of home, business, and enterprise connectivity packages.
+- [Residential Fiber](https://filaonetworks.com/services/residential-fiber): High-speed home fiber internet from 10 Mbps to 1 Gbps with 99.9% uptime, zero throttling, and low latency for streaming and remote work.
+- [Dedicated Internet Access](https://filaonetworks.com/services/dedicated-internet): Symmetrical 1:1 uncontended leased line connectivity with 99.99% SLA guarantee and redundant fiber backbones for enterprise operations.
+- [Wireless Broadband](https://filaonetworks.com/services/wireless-internet): Point-to-point and point-to-multipoint fixed wireless internet for underserved and semi-urban locations.
+- [Street Hotspots](https://filaonetworks.com/services/street-hotspots): Public Wi-Fi captive portal infrastructure for malls, universities, business parks, and urban transit hubs.
+- [Internet Solutions Overview](https://filaonetworks.com/services/internet-solutions): Full catalog of home, business, and enterprise connectivity packages.
 
 ## Security, Cloud & Infrastructure Services
 
-- [CCTV & Video Surveillance](https://filaonetworks.co.ke/services/cctv-security): AI-powered 4K surveillance cameras, perimeter intrusion detection, automated NVR/DVR storage, and 24/7 remote monitoring.
-- [Access Control Systems](https://filaonetworks.co.ke/services/access-control): Biometric scanners, RFID keycards, turnstiles, and automated boom barrier vehicle access systems.
-- [Biometric Fencing](https://filaonetworks.co.ke/services/biometric-fencing): Electric security fencing combined with biometric access sensors and alarm integrations.
-- [Smart Doorbell Systems](https://filaonetworks.co.ke/services/smart-doorbell): HD video intercoms, mobile app unlocking, and two-way audio for residential and corporate gates.
-- [Network Design & Structured Cabling](https://filaonetworks.co.ke/services/network-design): Certified Cisco and MikroTik LAN/WAN architecture, Cat6A/Fiber optic cabling, and server rack installations.
-- [Network Security & SOC](https://filaonetworks.co.ke/services/network-security): Next-Gen Firewalls (NGFW), VPN tunnels, DDoS protection, and intrusion prevention.
-- [Managed Network Services](https://filaonetworks.co.ke/services/managed-services): 24/7 NOC monitoring, automated failover management, and outsourced IT infrastructure support.
-- [Cloud Network Solutions](https://filaonetworks.co.ke/services/cloud-solutions): SD-WAN deployment, AWS/Azure hybrid cloud interconnects, and edge computing.
-- [Disaster Recovery & Business Continuity](https://filaonetworks.co.ke/services/disaster-recovery): Automated offsite backups, cloud replication, and rapid recovery orchestration.
-- [IoT & Telemetry Integration](https://filaonetworks.co.ke/services/iot-integration): Smart sensors, environmental monitoring, asset tracking, and industrial automation.
+- [CCTV & Video Surveillance](https://filaonetworks.com/services/cctv-security): AI-powered 4K surveillance cameras, perimeter intrusion detection, automated NVR/DVR storage, and 24/7 remote monitoring.
+- [Access Control Systems](https://filaonetworks.com/services/access-control): Biometric scanners, RFID keycards, turnstiles, and automated boom barrier vehicle access systems.
+- [Biometric Fencing](https://filaonetworks.com/services/biometric-fencing): Electric security fencing combined with biometric access sensors and alarm integrations.
+- [Smart Doorbell Systems](https://filaonetworks.com/services/smart-doorbell): HD video intercoms, mobile app unlocking, and two-way audio for residential and corporate gates.
+- [Network Design & Structured Cabling](https://filaonetworks.com/services/network-design): Certified Cisco and MikroTik LAN/WAN architecture, Cat6A/Fiber optic cabling, and server rack installations.
+- [Network Security & SOC](https://filaonetworks.com/services/network-security): Next-Gen Firewalls (NGFW), VPN tunnels, DDoS protection, and intrusion prevention.
+- [Managed Network Services](https://filaonetworks.com/services/managed-services): 24/7 NOC monitoring, automated failover management, and outsourced IT infrastructure support.
+- [Cloud Network Solutions](https://filaonetworks.com/services/cloud-solutions): SD-WAN deployment, AWS/Azure hybrid cloud interconnects, and edge computing.
+- [Disaster Recovery & Business Continuity](https://filaonetworks.com/services/disaster-recovery): Automated offsite backups, cloud replication, and rapid recovery orchestration.
+- [IoT & Telemetry Integration](https://filaonetworks.com/services/iot-integration): Smart sensors, environmental monitoring, asset tracking, and industrial automation.
 
 ## Geographic Coverage & Coverage Areas
 
-- [Coverage Map](https://filaonetworks.co.ke/company/coverage-map): Interactive fiber and wireless coverage checking across Nairobi, Kasarani, Githurai, Kahawa Sukari, Kahawa Wendani, Ruiru, Roysambu, Thika Road corridor, and Kiambu County.
+- [Coverage Map](https://filaonetworks.com/company/coverage-map): Interactive fiber and wireless coverage checking across Nairobi, Kasarani, Githurai, Kahawa Sukari, Kahawa Wendani, Ruiru, Roysambu, Thika Road corridor, and Kiambu County.
 
 ## Company Information & Contact
 
@@ -33,12 +33,13 @@
 - Headquarters: Ambank House, Nairobi, Kenya
 - Primary Phone: +254 790 034 459
 - Email: info@filaonetworks.com
-- Website: https://filaonetworks.co.ke
-- Request a Quote: https://filaonetworks.co.ke/company/quote
-- Customer Support: https://filaonetworks.co.ke/company/support
+- Website: https://filaonetworks.com
+- Request a Quote: https://filaonetworks.com/company/quote
+- Customer Support: https://filaonetworks.com/company/support
 
 ## Knowledge & Insights
 
-- [Future of Fiber Optics in Kenya](https://filaonetworks.co.ke/blogs/future-of-fiber-optics-kenya): Analysis of gigabit infrastructure and high-speed broadband expansion across Kenya.
-- [Managed Network Services Benefits](https://filaonetworks.co.ke/blogs/managed-network-services-benefits): Why Kenyan enterprises outsource IT operations and NOC monitoring.
-- [Modern CCTV Security Guide](https://filaonetworks.co.ke/blogs/modern-cctv-security-guide): AI analytics and perimeter defense systems for residential and commercial security.
+- [Future of Fiber Optics in Kenya](https://filaonetworks.com/blogs/future-of-fiber-optics-kenya): Analysis of gigabit infrastructure and high-speed broadband expansion across Kenya.
+- [Managed Network Services Benefits](https://filaonetworks.com/blogs/managed-network-services-benefits): Why Kenyan enterprises outsource IT operations and NOC monitoring.
+- [Modern CCTV Security Guide](https://filaonetworks.com/blogs/modern-cctv-security-guide): AI analytics and perimeter defense systems for residential and commercial security.
+

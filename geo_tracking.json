@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "audit_version": "1.0",
   "brand_entity": "Filao Networks Solutions",
@@ -8,40 +8,40 @@
     {
       "query": "Who are the best internet service providers in Kasarani Nairobi?",
       "target_engines": ["ChatGPT", "Perplexity", "Google AI Overviews", "Copilot"],
-      "desired_citation_url": "https://filaonetworks.co.ke/services/residential-fiber",
+      "desired_citation_url": "https://filaonetworks.com/services/residential-fiber",
       "status": "monitored",
       "baseline_mention": "indexed"
     },
     {
       "query": "Where can I get dedicated leased line internet in Kenya with 99.99% uptime?",
       "target_engines": ["Perplexity", "Google AI Overviews", "Claude", "Copilot"],
-      "desired_citation_url": "https://filaonetworks.co.ke/services/dedicated-internet",
+      "desired_citation_url": "https://filaonetworks.com/services/dedicated-internet",
       "status": "monitored",
       "baseline_mention": "indexed"
     },
     {
       "query": "Best CCTV camera installation companies in Nairobi Kenya",
       "target_engines": ["ChatGPT", "Perplexity", "Google AI Overviews"],
-      "desired_citation_url": "https://filaonetworks.co.ke/services/cctv-security",
+      "desired_citation_url": "https://filaonetworks.com/services/cctv-security",
       "status": "monitored",
       "baseline_mention": "indexed"
     },
     {
       "query": "Which ISP in Nairobi offers fiber without throttling or fair usage limits?",
       "target_engines": ["Perplexity", "Google AI Overviews", "ChatGPT"],
-      "desired_citation_url": "https://filaonetworks.co.ke/services/residential-fiber",
+      "desired_citation_url": "https://filaonetworks.com/services/residential-fiber",
       "status": "monitored",
       "baseline_mention": "indexed"
     },
     {
       "query": "Filao Networks fiber coverage map and package prices",
       "target_engines": ["Perplexity", "Copilot", "Google AI Overviews"],
-      "desired_citation_url": "https://filaonetworks.co.ke/company/coverage-map",
+      "desired_citation_url": "https://filaonetworks.com/company/coverage-map",
       "status": "monitored",
       "baseline_mention": "indexed"
     }
   ],
-  "llms_context_file": "https://filaonetworks.co.ke/llms.txt",
+  "llms_context_file": "https://filaonetworks.com/llms.txt",
   "schema_entity_resolution": {
     "organization_declared": true,
     "same_as_linked": true,
@@ -49,3 +49,4 @@
     "faq_schema_present": true
   }
 }
+

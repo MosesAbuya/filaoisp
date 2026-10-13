@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Refund & Billing Policy — Filao Networks Solutions Kenya";
 $page_desc = "Read our refund policy, billing cycles, cancellation terms, and equipment return guidelines for residential and business services.";
-$canonical_url = "https://filaonetworks.co.ke/compliance/refund-policy";
+$canonical_url = "https://filaonetworks.com/compliance/refund-policy";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -41,7 +41,7 @@ include '../includes/header.php';
             <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">Pre-paid subscriptions (e.g., monthly residential packages) are generally non-refundable once the billing cycle has begun. However, if a client experiences an outage exceeding 72 continuous hours that is definitively proven to be a fault on Filao Networks' core infrastructure, a pro-rated refund or account credit may be issued upon request.</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">3. Double Billing and Errors</h4>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you are erroneously billed twice for the same billing cycle (e.g., accidental double payment via M-PESA paybill), the excess amount will automatically be credited to your account for the subsequent month. Should you prefer a cash refund, you must submit a request with the relevant transaction confirmation messages to billing@filaoadventures.co.ke. Cash refunds for billing errors will be processed within 7 working days.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">If you are erroneously billed twice for the same billing cycle (e.g., accidental double payment via M-PESA paybill), the excess amount will automatically be credited to your account for the subsequent month. Should you prefer a cash refund, you must submit a request with the relevant transaction confirmation messages to billing@filaonetworks.com. Cash refunds for billing errors will be processed within 7 working days.</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">4. Cancellation Policy</h4>
             <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">Clients on month-to-month contracts may cancel their service by providing a 30-day written notice. Clients on fixed-term Enterprise contracts (e.g., 1-year or 2-year SLAs) who terminate the agreement prior to the contract end date will be subject to early termination fees as stipulated in their specific SLA.</p>
@@ -63,4 +63,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

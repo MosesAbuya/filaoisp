@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "About Filao Networks Solutions — Premier Kenya ISP & IT";
 $page_desc = "Learn about Filao Networks Solutions, Kenya's fastest-growing ISP delivering high-performance fiber, security systems, and telecom infrastructure.";
-$canonical_url = "https://filaonetworks.co.ke/company/about-us";
+$canonical_url = "https://filaonetworks.com/company/about-us";
 $page_class = "page-about";
 $root = "../";
 include "../includes/header.php";
@@ -554,4 +554,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

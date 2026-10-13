@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Structured Cabling & Network Design Kenya — LAN/WAN | Filao";
 $page_desc = "Certified LAN/WAN structured cabling, fiber backbone installation, and server room design across Kenya by certified Cisco and MikroTik network engineers.";
-$canonical_url = "https://filaonetworks.co.ke/services/network-design";
+$canonical_url = "https://filaonetworks.com/services/network-design";
 $page_class = "page-network-design";
 $root = "../";
 include "../includes/header.php";
@@ -331,4 +331,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

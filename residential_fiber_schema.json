@@ -1,14 +1,14 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://filaonetworks.co.ke/services/residential-fiber#service",
+      "@id": "https://filaonetworks.com/services/residential-fiber#service",
       "name": "Residential Fiber Internet Kenya",
       "serviceType": "High-Speed Home Fiber Internet",
       "provider": {
         "@type": "InternetServiceProvider",
-        "@id": "https://filaonetworks.co.ke/#organization",
+        "@id": "https://filaonetworks.com/#organization",
         "name": "Filao Networks Solutions"
       },
       "areaServed": [
@@ -49,27 +49,28 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://filaonetworks.co.ke/services/residential-fiber#breadcrumb",
+      "@id": "https://filaonetworks.com/services/residential-fiber#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://filaonetworks.co.ke/"
+          "item": "https://filaonetworks.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://filaonetworks.co.ke/services/internet-solutions"
+          "item": "https://filaonetworks.com/services/internet-solutions"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Residential Fiber",
-          "item": "https://filaonetworks.co.ke/services/residential-fiber"
+          "item": "https://filaonetworks.com/services/residential-fiber"
         }
       ]
     }
   ]
 }
+

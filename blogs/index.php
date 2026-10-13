@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 $page_title = 'Telecom & Tech Insights Blog — Internet & IT Kenya | Filao';
 $page_desc = 'Read expert articles and industry analyses on fiber optics, managed IT services, cybersecurity, and smart surveillance across Kenya and East Africa.';
-$canonical_url = 'https://filaonetworks.co.ke/blogs';
+$canonical_url = 'https://filaonetworks.com/blogs';
 $page_class = 'page-blogs';
 $root = '../';
 include '../includes/header.php';
@@ -71,3 +71,4 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
 </main>
 
 <?php include '../includes/footer.php'; ?>
+

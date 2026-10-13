@@ -1,4 +1,4 @@
-# ======================================================================
+﻿# ======================================================================
 # FILAO NETWORKS SOLUTIONS - ROBOTS.TXT
 # High-Performance Crawler & Generative Engine Directives
 # Verified against Google Search Central & Bing Webmaster Specs
@@ -44,4 +44,5 @@ User-agent: Googlebot
 Allow: /
 
 # Sitemap Index Declaration
-Sitemap: https://filaonetworks.co.ke/sitemap.xml
+Sitemap: https://filaonetworks.com/sitemap.xml
+

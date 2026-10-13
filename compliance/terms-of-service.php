@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Terms of Service — Filao Networks Solutions Kenya";
 $page_desc = "Read the Terms of Service governing internet connectivity, managed IT, security systems, and digital services provided by Filao Networks in Kenya.";
-$canonical_url = "https://filaonetworks.co.ke/compliance/terms-of-service";
+$canonical_url = "https://filaonetworks.com/compliance/terms-of-service";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -66,4 +66,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

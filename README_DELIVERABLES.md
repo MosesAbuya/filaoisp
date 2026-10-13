@@ -1,6 +1,6 @@
-# SEO & GEO Optimization Deliverables: Filao Networks Solutions
+﻿# SEO & GEO Optimization Deliverables: Filao Networks Solutions
 
-This directory contains the complete technical SEO and Generative Engine Optimization (GEO) suite executed for **Filao Networks Solutions** (`https://filaonetworks.co.ke`) by the **seo-geo-optimizer** universal AI skill.
+This directory contains the complete technical SEO and Generative Engine Optimization (GEO) suite executed for **Filao Networks Solutions** (`https://filaonetworks.com`) by the **seo-geo-optimizer** universal AI skill.
 
 ---
 
@@ -43,10 +43,11 @@ filaoisp/
 1. **Google Search Console:**
    - Log into [Google Search Console](https://search.google.com/search-console/)
    - Navigate to **Sitemaps**
-   - Submit: `https://filaonetworks.co.ke/sitemap.xml`
+   - Submit: `https://filaonetworks.com/sitemap.xml`
 2. **Bing Webmaster Tools:**
    - Log into [Bing Webmaster Tools](https://www.bing.com/webmasters/)
    - Navigate to **Sitemaps**
-   - Submit: `https://filaonetworks.co.ke/sitemap.xml`
+   - Submit: `https://filaonetworks.com/sitemap.xml`
 3. **Verify AI Crawlers:**
    - Ensure your web hosting firewall (Cloudflare / Apache) does not block `GPTBot`, `PerplexityBot`, or `ClaudeBot` user-agents.
+

@@ -1,9 +1,9 @@
-# Content Brief: Enterprise Dedicated Internet & Leased Lines in Kenya
+﻿# Content Brief: Enterprise Dedicated Internet & Leased Lines in Kenya
 
 **Target Primary Keyword:** Dedicated Internet Access Kenya  
 **Secondary Keywords:** Enterprise leased line Nairobi, corporate ISP Kenya, business internet provider, 99.99% uptime SLA internet  
 **Search Intent:** Transactional / B2B Decision Maker  
-**Target URL:** `https://filaonetworks.co.ke/services/dedicated-internet`  
+**Target URL:** `https://filaonetworks.com/services/dedicated-internet`  
 **Word Count Target:** 1,200–1,500 words  
 
 ---
@@ -37,6 +37,7 @@ Filao Networks provides dedicated internet access (DIA) for corporate enterprise
 ---
 
 ## 4. Internal Link Targets
-- Network Services: [Managed Network Services](https://filaonetworks.co.ke/services/managed-services)
-- Network Security: [Enterprise Network Security](https://filaonetworks.co.ke/services/network-security)
-- Quote: [Request Enterprise Quote](https://filaonetworks.co.ke/company/quote)
+- Network Services: [Managed Network Services](https://filaonetworks.com/services/managed-services)
+- Network Security: [Enterprise Network Security](https://filaonetworks.com/services/network-security)
+- Quote: [Request Enterprise Quote](https://filaonetworks.com/company/quote)
+

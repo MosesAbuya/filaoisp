@@ -1,19 +1,19 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "InternetServiceProvider",
-      "@id": "https://filaonetworks.co.ke/#organization",
+      "@id": "https://filaonetworks.com/#organization",
       "name": "Filao Networks Solutions",
       "alternateName": "Filao Networks",
-      "url": "https://filaonetworks.co.ke",
+      "url": "https://filaonetworks.com",
       "logo": {
         "@type": "ImageObject",
-        "@id": "https://filaonetworks.co.ke/#logo",
-        "url": "https://filaonetworks.co.ke/assets/images/logo.png",
+        "@id": "https://filaonetworks.com/#logo",
+        "url": "https://filaonetworks.com/assets/images/logo.png",
         "caption": "Filao Networks Solutions Logo"
       },
-      "image": "https://filaonetworks.co.ke/assets/images/logo.png",
+      "image": "https://filaonetworks.com/assets/images/logo.png",
       "description": "Filao Networks Solutions is an enterprise and residential Internet Service Provider in Kenya offering fiber broadband, dedicated leased lines, CCTV surveillance, managed IT services, and IoT infrastructure.",
       "telephone": "+254790034459",
       "email": "info@filaonetworks.com",
@@ -75,13 +75,14 @@
     },
     {
       "@type": "WebSite",
-      "@id": "https://filaonetworks.co.ke/#website",
-      "url": "https://filaonetworks.co.ke/",
+      "@id": "https://filaonetworks.com/#website",
+      "url": "https://filaonetworks.com/",
       "name": "Filao Networks Solutions",
       "publisher": {
-        "@id": "https://filaonetworks.co.ke/#organization"
+        "@id": "https://filaonetworks.com/#organization"
       },
       "inLanguage": "en-KE"
     }
   ]
 }
+

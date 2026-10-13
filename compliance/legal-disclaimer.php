@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Legal Disclaimer — Filao Networks Solutions Kenya";
 $page_desc = "Official legal disclaimer regarding warranty limits, service liability, and general information accuracy provided by Filao Networks.";
-$canonical_url = "https://filaonetworks.co.ke/compliance/legal-disclaimer";
+$canonical_url = "https://filaonetworks.com/compliance/legal-disclaimer";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -54,4 +54,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

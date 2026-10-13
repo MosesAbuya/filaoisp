@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Residential Fiber Internet Kenya — Fast Home Wi-Fi | Filao";
 $page_desc = "Get blazing-fast residential fiber internet in Nairobi from Filao Networks. Speeds up to 1Gbps, 99.9% uptime, zero throttling, and 24/7 technical support.";
-$canonical_url = "https://filaonetworks.co.ke/services/residential-fiber";
+$canonical_url = "https://filaonetworks.com/services/residential-fiber";
 $page_class = "page-residential-fiber";
 $root = "../";
 include "../includes/header.php";
@@ -464,4 +464,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

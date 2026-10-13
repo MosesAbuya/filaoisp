@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /**
  * Filao Networks Solutions   Homepage
  * Phase 1: index.php
@@ -6,7 +6,7 @@
 
 $page_title = 'Internet Service Provider Kenya | Filao Networks Solutions';
 $page_desc  = 'Filao Networks is Kenya\'s premier ISP offering high-speed residential fiber Wi-Fi, dedicated leased lines, 4K CCTV surveillance, and managed IT services in Nairobi.';
-$canonical_url = 'https://filaonetworks.co.ke/';
+$canonical_url = 'https://filaonetworks.com/';
 $script_name = $_SERVER['SCRIPT_NAME'] ?? '';
 $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
 $is_homepage = true;
@@ -1574,3 +1574,4 @@ Notes / Preferred Date: ${formData.get('notes') || 'None'}
 </script>
 
 <?php include 'includes/footer.php'; ?>
+

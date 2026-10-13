@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Smart Video Doorbell Systems Kenya — Intercom Entry | Filao";
 $page_desc = "Upgrade your home or office security with HD smart video doorbells in Kenya. Two-way audio, remote smartphone unlocking, motion alerts, and night vision.";
-$canonical_url = "https://filaonetworks.co.ke/services/smart-doorbell";
+$canonical_url = "https://filaonetworks.com/services/smart-doorbell";
 $page_class = "page-smart-doorbell";
 $root = "../";
 include "../includes/header.php";
@@ -313,4 +313,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

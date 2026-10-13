@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Fixed Wireless Broadband Kenya — High Speed Wireless | Filao";
 $page_desc = "Reliable fixed wireless broadband for homes and commercial businesses beyond fiber reach in Nairobi and Kiambu. Rapid installation and stable uptime.";
-$canonical_url = "https://filaonetworks.co.ke/services/wireless-internet";
+$canonical_url = "https://filaonetworks.com/services/wireless-internet";
 $page_class = "page-wireless-internet";
 $root = "../";
 include "../includes/header.php";
@@ -334,4 +334,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

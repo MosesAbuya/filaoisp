@@ -1,4 +1,4 @@
-# Dedicated Internet Access in Kenya: Enterprise Leased Lines & Business Bandwidth
+﻿# Dedicated Internet Access in Kenya: Enterprise Leased Lines & Business Bandwidth
 
 Filao Networks provides dedicated internet access (DIA) for corporate enterprises across Kenya, featuring guaranteed 1:1 uncontended symmetrical bandwidth, sub-5ms local latency, and a contractually binding 99.99% SLA uptime. Backed by redundant fiber ring architecture and 24/7 proactive Network Operations Center (NOC) monitoring, we eliminate mission-critical connectivity failure.
 
@@ -49,4 +49,5 @@ Each dedicated enterprise circuit includes a clean, routable public static IPv4 
 Yes. We deploy hybrid failover solutions featuring a primary optical fiber leased line coupled with an automated microwave fixed-wireless link, switching instantaneously upon any physical line interruption.
 
 ### How do I request a dedicated circuit proposal?
-You can contact our corporate telecom team directly or submit a formal requirement sheet through our [Request a Quote](https://filaonetworks.co.ke/company/quote) portal for immediate engineering assessment.
+You can contact our corporate telecom team directly or submit a formal requirement sheet through our [Request a Quote](https://filaonetworks.com/company/quote) portal for immediate engineering assessment.
+

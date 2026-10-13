@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Fiber Coverage Map Nairobi & Kiambu — Check Wi-Fi | Filao";
 $page_desc = "Check live fiber and wireless coverage across Nairobi, Kasarani, Githurai, Kahawa, Ruiru, and Roysambu. Instant address verification for fast installation.";
-$canonical_url = "https://filaonetworks.co.ke/company/coverage-map";
+$canonical_url = "https://filaonetworks.com/company/coverage-map";
 $page_class = "page-coverage";
 $root = "../";
 include "../includes/header.php";
@@ -486,4 +486,5 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php include "../includes/footer.php"; ?>
+
 

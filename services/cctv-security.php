@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "CCTV Installation Kenya — 4K AI Security Cameras | Filao";
 $page_desc = "Professional 4K AI CCTV camera installation and 24/7 remote surveillance in Nairobi, Kenya. AI intrusion alerts, night vision, and mobile live viewing.";
-$canonical_url = "https://filaonetworks.co.ke/services/cctv-security";
+$canonical_url = "https://filaonetworks.com/services/cctv-security";
 $page_class = "page-cctv-security";
 $root = "../";
 include "../includes/header.php";
@@ -349,4 +349,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

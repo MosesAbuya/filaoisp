@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
@@ -6,7 +6,7 @@
 
     <!-- Primary Homepage -->
     <url>
-        <loc>https://filaonetworks.co.ke/</loc>
+        <loc>https://filaonetworks.com/</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.00</priority>
@@ -14,31 +14,31 @@
 
     <!-- Core Connectivity & ISP Services -->
     <url>
-        <loc>https://filaonetworks.co.ke/services/internet-solutions</loc>
+        <loc>https://filaonetworks.com/services/internet-solutions</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/residential-fiber</loc>
+        <loc>https://filaonetworks.com/services/residential-fiber</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/dedicated-internet</loc>
+        <loc>https://filaonetworks.com/services/dedicated-internet</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/wireless-internet</loc>
+        <loc>https://filaonetworks.com/services/wireless-internet</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/street-hotspots</loc>
+        <loc>https://filaonetworks.com/services/street-hotspots</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
@@ -46,25 +46,25 @@
 
     <!-- Security & Surveillance Solutions -->
     <url>
-        <loc>https://filaonetworks.co.ke/services/cctv-security</loc>
+        <loc>https://filaonetworks.com/services/cctv-security</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/access-control</loc>
+        <loc>https://filaonetworks.com/services/access-control</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/biometric-fencing</loc>
+        <loc>https://filaonetworks.com/services/biometric-fencing</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/smart-doorbell</loc>
+        <loc>https://filaonetworks.com/services/smart-doorbell</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
@@ -72,37 +72,37 @@
 
     <!-- Enterprise IT, Cloud & IoT Infrastructure -->
     <url>
-        <loc>https://filaonetworks.co.ke/services/network-design</loc>
+        <loc>https://filaonetworks.com/services/network-design</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/network-security</loc>
+        <loc>https://filaonetworks.com/services/network-security</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/managed-services</loc>
+        <loc>https://filaonetworks.com/services/managed-services</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/cloud-solutions</loc>
+        <loc>https://filaonetworks.com/services/cloud-solutions</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/disaster-recovery</loc>
+        <loc>https://filaonetworks.com/services/disaster-recovery</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/services/iot-integration</loc>
+        <loc>https://filaonetworks.com/services/iot-integration</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
@@ -110,37 +110,37 @@
 
     <!-- Company & Conversion Landing Pages -->
     <url>
-        <loc>https://filaonetworks.co.ke/company/about-us</loc>
+        <loc>https://filaonetworks.com/company/about-us</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/company/coverage-map</loc>
+        <loc>https://filaonetworks.com/company/coverage-map</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/company/quote</loc>
+        <loc>https://filaonetworks.com/company/quote</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.90</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/company/contact</loc>
+        <loc>https://filaonetworks.com/company/contact</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/company/support</loc>
+        <loc>https://filaonetworks.com/company/support</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/company/careers</loc>
+        <loc>https://filaonetworks.com/company/careers</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.60</priority>
@@ -148,25 +148,25 @@
 
     <!-- Blog & Knowledge Center -->
     <url>
-        <loc>https://filaonetworks.co.ke/blogs</loc>
+        <loc>https://filaonetworks.com/blogs</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/blogs/future-of-fiber-optics-kenya</loc>
+        <loc>https://filaonetworks.com/blogs/future-of-fiber-optics-kenya</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/blogs/managed-network-services-benefits</loc>
+        <loc>https://filaonetworks.com/blogs/managed-network-services-benefits</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/blogs/modern-cctv-security-guide</loc>
+        <loc>https://filaonetworks.com/blogs/modern-cctv-security-guide</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.75</priority>
@@ -174,57 +174,58 @@
 
     <!-- Compliance & Trust Governance -->
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/terms-of-service</loc>
+        <loc>https://filaonetworks.com/compliance/terms-of-service</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/privacy-policy</loc>
+        <loc>https://filaonetworks.com/compliance/privacy-policy</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/cookie-policy</loc>
+        <loc>https://filaonetworks.com/compliance/cookie-policy</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/sla</loc>
+        <loc>https://filaonetworks.com/compliance/sla</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.60</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/acceptable-use</loc>
+        <loc>https://filaonetworks.com/compliance/acceptable-use</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/data-protection</loc>
+        <loc>https://filaonetworks.com/compliance/data-protection</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.50</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/refund-policy</loc>
+        <loc>https://filaonetworks.com/compliance/refund-policy</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.40</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/copyright</loc>
+        <loc>https://filaonetworks.com/compliance/copyright</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.40</priority>
     </url>
     <url>
-        <loc>https://filaonetworks.co.ke/compliance/legal-disclaimer</loc>
+        <loc>https://filaonetworks.com/compliance/legal-disclaimer</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.40</priority>
     </url>
 </urlset>
+

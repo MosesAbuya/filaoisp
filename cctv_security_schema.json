@@ -1,14 +1,14 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Service",
-      "@id": "https://filaonetworks.co.ke/services/cctv-security#service",
+      "@id": "https://filaonetworks.com/services/cctv-security#service",
       "name": "CCTV Camera Installation & Surveillance Kenya",
       "serviceType": "Security Systems Installation",
       "provider": {
         "@type": "InternetServiceProvider",
-        "@id": "https://filaonetworks.co.ke/#organization",
+        "@id": "https://filaonetworks.com/#organization",
         "name": "Filao Networks Solutions"
       },
       "areaServed": {
@@ -19,27 +19,28 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://filaonetworks.co.ke/services/cctv-security#breadcrumb",
+      "@id": "https://filaonetworks.com/services/cctv-security#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://filaonetworks.co.ke/"
+          "item": "https://filaonetworks.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://filaonetworks.co.ke/services/cctv-security"
+          "item": "https://filaonetworks.com/services/cctv-security"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "CCTV Security",
-          "item": "https://filaonetworks.co.ke/services/cctv-security"
+          "item": "https://filaonetworks.com/services/cctv-security"
         }
       ]
     }
   ]
 }
+

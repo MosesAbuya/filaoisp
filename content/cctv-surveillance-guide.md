@@ -1,4 +1,4 @@
-# CCTV Camera Installation in Kenya: 4K AI Video Surveillance & Security Solutions
+﻿# CCTV Camera Installation in Kenya: 4K AI Video Surveillance & Security Solutions
 
 Filao Networks provides turnkey 4K AI-powered CCTV installation and 24/7 video surveillance solutions for residential, corporate, and commercial premises across Kenya. Our installations integrate optical facial recognition, perimeter intrusion alerts, starlight night vision, and encrypted mobile remote viewing to deliver active crime deterrence and verifiable evidence.
 
@@ -37,7 +37,7 @@ Physical digital video recorders located on-site remain vulnerable to theft duri
 
 ## How Does Integrated Perimeter Defense Protect Homes and Estates in Nairobi?
 
-Physical security achieves maximum efficacy when surveillance cameras communicate seamlessly with outer boundary barriers. Filao Networks integrates 4K AI CCTV cameras with [Biometric Access Control](https://filaonetworks.co.ke/services/access-control) and [Electric Perimeter Fencing](https://filaonetworks.co.ke/services/biometric-fencing).
+Physical security achieves maximum efficacy when surveillance cameras communicate seamlessly with outer boundary barriers. Filao Networks integrates 4K AI CCTV cameras with [Biometric Access Control](https://filaonetworks.com/services/access-control) and [Electric Perimeter Fencing](https://filaonetworks.com/services/biometric-fencing).
 
 When an intruder touches an electric fence line or crosses a virtual tripwire boundary, our AI cameras automatically:
 1. Trigger high-decibel audible sirens and strobe floodlights at the point of breach.
@@ -55,4 +55,5 @@ Yes. Our systems include secure iOS and Android applications with encrypted remo
 Cost depends on camera count, property perimeter size, resolution requirements (2MP, 4MP, or 8MP 4K), and storage duration. We conduct complimentary site evaluations across Nairobi to deliver detailed, transparent quotations.
 
 ### How do I schedule a site security assessment?
-Reach out to our security engineers through our [Contact Page](https://filaonetworks.co.ke/company/contact) or book a free on-site survey using our [Quote Request Form](https://filaonetworks.co.ke/company/quote).
+Reach out to our security engineers through our [Contact Page](https://filaonetworks.com/company/contact) or book a free on-site survey using our [Quote Request Form](https://filaonetworks.com/company/quote).
+

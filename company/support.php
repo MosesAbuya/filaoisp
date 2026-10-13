@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Customer Support Centre & Helpdesk | Filao Networks Kenya";
 $page_desc = "Need technical assistance? Access 24/7 ISP customer support, network troubleshooting, speed tests, and ticket logging with Filao Networks in Kenya.";
-$canonical_url = "https://filaonetworks.co.ke/company/support";
+$canonical_url = "https://filaonetworks.com/company/support";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -54,4 +54,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

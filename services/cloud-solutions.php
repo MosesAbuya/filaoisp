@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Cloud Solutions & SD-WAN Kenya — Hybrid Networking | Filao";
 $page_desc = "Optimize multi-branch connectivity with enterprise SD-WAN, AWS/Azure hybrid cloud interconnects, and edge computing designed for Kenyan enterprises.";
-$canonical_url = "https://filaonetworks.co.ke/services/cloud-solutions";
+$canonical_url = "https://filaonetworks.com/services/cloud-solutions";
 $page_class = "page-cloud-solutions";
 $root = "../";
 include "../includes/header.php";
@@ -320,4 +320,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 

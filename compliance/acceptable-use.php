@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Acceptable Use Policy — Filao Networks Solutions Kenya";
 $page_desc = "Review the Acceptable Use Policy for Filao Networks internet, network services, and digital infrastructure to ensure fair and legal usage.";
-$canonical_url = "https://filaonetworks.co.ke/compliance/acceptable-use";
+$canonical_url = "https://filaonetworks.com/compliance/acceptable-use";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -55,7 +55,7 @@ include '../includes/header.php';
             <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">For our unlimited residential plans, a Fair Usage Policy applies. While we do not impose hard data caps, continuous extreme utilization (e.g., running unapproved commercial servers on a residential line or heavy torrenting 24/7) that degrades the experience for other users on the shared node may result in temporary bandwidth throttling.</p>
 
             <h4 style="color:var(--text-main); margin-bottom:1rem;">5. Enforcement and Reporting</h4>
-            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">Filao Networks reserves the right to suspend or terminate services without notice if a violation of this AUP is detected. We cooperate fully with law enforcement agencies (such as the DCI Cybercrime Unit) in the investigation of suspected criminal violations. To report a violation, email <strong>abuse@filaoadventures.co.ke</strong>.</p>
+            <p style="color:var(--clr-steel); line-height:1.8; margin-bottom:1.5rem;">Filao Networks reserves the right to suspend or terminate services without notice if a violation of this AUP is detected. We cooperate fully with law enforcement agencies (such as the DCI Cybercrime Unit) in the investigation of suspected criminal violations. To report a violation, email <strong>abuse@filaonetworks.com</strong>.</p>
 
         </div>
     </div>
@@ -71,4 +71,5 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
 

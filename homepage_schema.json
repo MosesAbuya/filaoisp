@@ -1,26 +1,26 @@
-{
+﻿{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://filaonetworks.co.ke/#webpage",
-      "url": "https://filaonetworks.co.ke/",
+      "@id": "https://filaonetworks.com/#webpage",
+      "url": "https://filaonetworks.com/",
       "name": "Internet Service Provider Kenya | Filao Networks Solutions",
       "description": "Filao Networks is Kenya's top-tier ISP providing high-speed residential fiber, enterprise leased lines, 4K CCTV security, and managed IT services in Nairobi.",
       "inLanguage": "en-KE",
       "isPartOf": {
         "@type": "WebSite",
-        "@id": "https://filaonetworks.co.ke/#website",
+        "@id": "https://filaonetworks.com/#website",
         "name": "Filao Networks Solutions",
-        "url": "https://filaonetworks.co.ke/"
+        "url": "https://filaonetworks.com/"
       },
       "about": {
-        "@id": "https://filaonetworks.co.ke/#organization"
+        "@id": "https://filaonetworks.com/#organization"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://filaonetworks.co.ke/#faq",
+      "@id": "https://filaonetworks.com/#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -58,3 +58,4 @@
     }
   ]
 }
+

@@ -1,4 +1,4 @@
-# Residential Fiber Internet in Kenya: The Complete Guide to High-Speed Home Wi-Fi
+﻿# Residential Fiber Internet in Kenya: The Complete Guide to High-Speed Home Wi-Fi
 
 Filao Networks delivers enterprise-grade residential fiber optic internet across Nairobi and Kiambu County, offering uncontended speeds from 10 Mbps up to 1 Gbps with a guaranteed 99.9% network uptime. Designed for multi-device households, 4K streaming, and remote work, our fiber connects homes directly with zero data caps and 24/7 technical assistance.
 
@@ -60,4 +60,5 @@ Our technical field teams typically complete physical site surveys and fiber dro
 Yes. Every standard residential fiber installation includes a dual-band Wi-Fi optical network router pre-configured for maximum wireless coverage throughout your residence.
 
 ### Can I check coverage before requesting an installation?
-Yes. You can visit our interactive [Fiber Coverage Map](https://filaonetworks.co.ke/company/coverage-map) to verify your estate or building status, or submit a request directly through our [Quote Request Page](https://filaonetworks.co.ke/company/quote).
+Yes. You can visit our interactive [Fiber Coverage Map](https://filaonetworks.com/company/coverage-map) to verify your estate or building status, or submit a request directly through our [Quote Request Page](https://filaonetworks.com/company/quote).
+

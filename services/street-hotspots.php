@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title = "Public Wi-Fi Hotspot Solutions Kenya — Managed Hotspots | Filao";
 $page_desc = "Turnkey public Wi-Fi hotspot infrastructure with branded captive portals, voucher billing, and high user capacity for malls, campuses, and transit hubs.";
-$canonical_url = "https://filaonetworks.co.ke/services/street-hotspots";
+$canonical_url = "https://filaonetworks.com/services/street-hotspots";
 $page_class = "page-street-hotspots";
 $root = "../";
 include "../includes/header.php";
@@ -317,4 +317,5 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+
 
