@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Privacy Policy';
-$page_desc = 'Learn more about Privacy Policy provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Privacy Policy — Filao Networks Solutions Kenya";
+$page_desc = "Discover how Filao Networks collects, processes, and protects personal data in compliance with the Kenya Data Protection Act 2019 and global standards.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/privacy-policy";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -68,3 +69,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

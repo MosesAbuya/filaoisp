@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Smart Doorbell Systems";
-$page_desc = "Video intercoms, smart doorbell cameras, and remote entry management systems for homes, apartments, and office buildings.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Smart Video Doorbell Systems Kenya — Intercom Entry | Filao";
+$page_desc = "Upgrade your home or office security with HD smart video doorbells in Kenya. Two-way audio, remote smartphone unlocking, motion alerts, and night vision.";
+$canonical_url = "https://filaonetworks.co.ke/services/smart-doorbell";
 $page_class = "page-smart-doorbell";
 $root = "../";
 include "../includes/header.php";
@@ -282,7 +283,7 @@ include "../includes/header.php";
                 <div id="faq-smart-doorbell-3" class="accordion-collapse collapse" data-bs-parent="#faq-smart-doorbell">
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
-                    Depending on the model, smart doorbells can be powered via existing doorbell wiring (8–24V AC),
+                    Depending on the model, smart doorbells can be powered via existing doorbell wiring (8â€“24V AC),
                     direct mains power (220V), or a rechargeable battery. Our engineer will recommend the most suitable
                     option based on your premises during installation.</div>
                 </div>
@@ -312,3 +313,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

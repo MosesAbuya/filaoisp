@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | About Us";
-$page_desc = "Filao Networks Solutions — East Africa's premier internet, networking, security, cloud, and IoT technology company with over 3 years of dedicated service across Kenya.";
+﻿<?php
+$page_title = "About Filao Networks Solutions — Premier Kenya ISP & IT";
+$page_desc = "Learn about Filao Networks Solutions, Kenya's fastest-growing ISP delivering high-performance fiber, security systems, and telecom infrastructure.";
+$canonical_url = "https://filaonetworks.co.ke/company/about-us";
 $page_class = "page-about";
 $root = "../";
 include "../includes/header.php";
@@ -518,7 +519,7 @@ include "../includes/header.php";
                     <i class="fa-solid fa-phone"
                         style="color:var(--clr-red);font-size:1.8rem;margin-bottom:0.8rem;display:block;"></i>
                     <div style="font-weight:600;color:var(--text-main);">+254 790 034459</div>
-                    <div style="color:var(--clr-steel);font-size:0.9rem;">Mon–Fri, 8am–6pm EAT</div>
+                    <div style="color:var(--clr-steel);font-size:0.9rem;">Monâ€“Fri, 8amâ€“6pm EAT</div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa-solid fa-envelope"
@@ -553,3 +554,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Refund Policy';
-$page_desc = 'Learn more about Refund Policy provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Refund & Billing Policy — Filao Networks Solutions Kenya";
+$page_desc = "Read our refund policy, billing cycles, cancellation terms, and equipment return guidelines for residential and business services.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/refund-policy";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -62,3 +63,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

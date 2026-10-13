@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://filaonetworks.co.ke/#webpage",
+      "url": "https://filaonetworks.co.ke/",
+      "name": "Internet Service Provider Kenya | Filao Networks Solutions",
+      "description": "Filao Networks is Kenya's top-tier ISP providing high-speed residential fiber, enterprise leased lines, 4K CCTV security, and managed IT services in Nairobi.",
+      "inLanguage": "en-KE",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://filaonetworks.co.ke/#website",
+        "name": "Filao Networks Solutions",
+        "url": "https://filaonetworks.co.ke/"
+      },
+      "about": {
+        "@id": "https://filaonetworks.co.ke/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://filaonetworks.co.ke/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What internet services does Filao Networks offer in Kenya?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Filao Networks provides residential fiber broadband (10 Mbps to 1 Gbps), uncontended enterprise dedicated leased lines, fixed wireless internet, and managed public Wi-Fi hotspots across Nairobi and Kiambu."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast is Filao Networks home fiber internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Filao Networks residential fiber delivers symmetrical and high-speed bandwidth ranging from 10 Mbps for light home use up to 1 Gbps for heavy 4K streaming, gaming, and remote work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Filao Networks fiber coverage available in Nairobi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Coverage is currently active across Kasarani, Githurai, Kahawa Sukari, Kahawa Wendani, Ruiru, Roysambu, along the Thika Superhighway corridor, and surrounding Nairobi metro areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Filao Networks install CCTV cameras and security systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Filao Networks designs and installs commercial and residential 4K AI CCTV surveillance, biometric access control, smart video doorbells, and electric perimeter fencing."
+          }
+        }
+      ]
+    }
+  ]
+}

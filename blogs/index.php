@@ -1,6 +1,7 @@
 <?php
-$page_title = 'Filao Networks | Insights & News';
-$page_desc = 'Read the latest news, insights, and case studies on enterprise internet, networking, cloud, and security across Kenya.';
+$page_title = 'Telecom & Tech Insights Blog — Internet & IT Kenya | Filao';
+$page_desc = 'Read expert articles and industry analyses on fiber optics, managed IT services, cybersecurity, and smart surveillance across Kenya and East Africa.';
+$canonical_url = 'https://filaonetworks.co.ke/blogs';
 $page_class = 'page-blogs';
 $root = '../';
 include '../includes/header.php';

@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Network Security";
-$page_desc = "Military-grade network security solutions   firewalls, intrusion detection, VPNs, and 24/7 SOC monitoring for businesses of every size.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Cybersecurity & Network Security Kenya — Firewalls & SOC | Filao";
+$page_desc = "Defend your business with enterprise network security in Kenya. Next-Gen Firewalls, encrypted VPN tunnels, DDoS mitigation, and 24/7 SOC monitoring.";
+$canonical_url = "https://filaonetworks.co.ke/services/network-security";
 $page_class = "page-network-security";
 $root = "../";
 include "../includes/header.php";
@@ -334,3 +335,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

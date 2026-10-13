@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Internet Solutions Overview";
-$page_desc = "Comprehensive connectivity portfolio   from home fiber and wireless broadband to enterprise leased lines and public hotspots.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Internet Solutions Kenya — Fiber, Wireless & Leased Lines | Filao";
+$page_desc = "Explore comprehensive internet solutions by Filao Networks. From residential fiber Wi-Fi to high-capacity enterprise connectivity tailored for Kenya.";
+$canonical_url = "https://filaonetworks.co.ke/services/internet-solutions";
 $page_class = "page-internet-solutions";
 $root = "../";
 include "../includes/header.php";
@@ -334,3 +335,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

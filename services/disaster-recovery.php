@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Disaster Recovery & Business Continuity";
-$page_desc = "Automated failover, off-site backup, and tested business continuity plans to keep your operations running through any disruption.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Disaster Recovery & Business Continuity Kenya | Filao";
+$page_desc = "Automated cloud backup, instantaneous failover systems, and disaster recovery orchestration to eliminate downtime and protect critical corporate data.";
+$canonical_url = "https://filaonetworks.co.ke/services/disaster-recovery";
 $page_class = "page-disaster-recovery";
 $root = "../";
 include "../includes/header.php";
@@ -339,3 +340,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

@@ -1,0 +1,75 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://filaonetworks.co.ke/services/residential-fiber#service",
+      "name": "Residential Fiber Internet Kenya",
+      "serviceType": "High-Speed Home Fiber Internet",
+      "provider": {
+        "@type": "InternetServiceProvider",
+        "@id": "https://filaonetworks.co.ke/#organization",
+        "name": "Filao Networks Solutions"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Nairobi County"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kiambu County"
+        }
+      ],
+      "description": "Ultra-fast, uncontended fiber optic internet for homes and apartments in Kenya, delivering speeds from 10 Mbps up to 1 Gbps with 99.9% uptime and zero throttling.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Home Fiber Plans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Starter Home Fiber (10 Mbps)",
+            "priceCurrency": "KES",
+            "eligibleRegion": "KE"
+          },
+          {
+            "@type": "Offer",
+            "name": "Family Streamer Fiber (20 Mbps)",
+            "priceCurrency": "KES",
+            "eligibleRegion": "KE"
+          },
+          {
+            "@type": "Offer",
+            "name": "Ultra Gigabit Fiber (1 Gbps)",
+            "priceCurrency": "KES",
+            "eligibleRegion": "KE"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://filaonetworks.co.ke/services/residential-fiber#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://filaonetworks.co.ke/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://filaonetworks.co.ke/services/internet-solutions"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Residential Fiber",
+          "item": "https://filaonetworks.co.ke/services/residential-fiber"
+        }
+      ]
+    }
+  ]
+}

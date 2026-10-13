@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | CCTV & Security Solutions";
-$page_desc = "4K AI-powered CCTV systems, professional installation, and round-the-clock remote monitoring across Kenya.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "CCTV Installation Kenya — 4K AI Security Cameras | Filao";
+$page_desc = "Professional 4K AI CCTV camera installation and 24/7 remote surveillance in Nairobi, Kenya. AI intrusion alerts, night vision, and mobile live viewing.";
+$canonical_url = "https://filaonetworks.co.ke/services/cctv-security";
 $page_class = "page-cctv-security";
 $root = "../";
 include "../includes/header.php";
@@ -142,7 +143,7 @@ include "../includes/header.php";
               style="font-family:var(--font-heading);font-weight:700;font-size:1.15rem;color:var(--text-main);margin-bottom:0.8rem;">
               4K Ultra HD Resolution</h3>
             <p style="color:var(--clr-steel);font-size:0.93rem;line-height:1.75;">Our IP cameras capture footage in 4K
-              (3840×2160) with WDR (Wide Dynamic Range) for crisp clarity even in bright sunlight or low-light
+              (3840Ã—2160) with WDR (Wide Dynamic Range) for crisp clarity even in bright sunlight or low-light
               conditions.</p>
           </div>
         </div>
@@ -303,7 +304,7 @@ include "../includes/header.php";
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
                     Yes. All cameras supplied by Filao Networks are equipped with either infrared night vision or
-                    full-colour night vision technology. Infrared cameras can see in complete darkness up to 30–80
+                    full-colour night vision technology. Infrared cameras can see in complete darkness up to 30â€“80
                     meters. Full-colour cameras use existing ambient light to produce colour images at night.</div>
                 </div>
               </div>
@@ -319,7 +320,7 @@ include "../includes/header.php";
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
                     Yes. We recommend installing an Uninterruptible Power Supply (UPS) alongside the NVR/DVR system and
-                    cameras, which we can supply and configure. Most UPS units provide 4–8 hours of backup power
+                    cameras, which we can supply and configure. Most UPS units provide 4â€“8 hours of backup power
                     sufficient to maintain recording during most outages.</div>
                 </div>
               </div>
@@ -348,3 +349,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "generated": "2026-10-13",
+  "domain": "https://filaonetworks.co.ke",
+  "pages": {
+    "homepage": {
+      "url": "https://filaonetworks.co.ke/",
+      "target_keyword": "Internet Service Provider Kenya",
+      "title": "Internet Service Provider Kenya | Filao Networks Solutions",
+      "description": "Filao Networks is Kenya's top-tier ISP providing high-speed residential fiber, enterprise leased lines, 4K CCTV security, and managed IT services in Nairobi.",
+      "canonical": "https://filaonetworks.co.ke/",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "residential_fiber": {
+      "url": "https://filaonetworks.co.ke/services/residential-fiber",
+      "target_keyword": "Residential Fiber Internet Kenya",
+      "title": "Residential Fiber Internet Kenya — Fast Home Wi-Fi | Filao",
+      "description": "Get blazing-fast residential fiber internet in Nairobi from Filao Networks. Speeds up to 1Gbps, 99.9% uptime, zero throttling, and 24/7 technical support.",
+      "canonical": "https://filaonetworks.co.ke/services/residential-fiber",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "dedicated_internet": {
+      "url": "https://filaonetworks.co.ke/services/dedicated-internet",
+      "target_keyword": "Dedicated Internet Access Kenya",
+      "title": "Dedicated Internet Access Kenya — Enterprise Leased Line | Filao",
+      "description": "Guaranteed 1:1 symmetrical dedicated leased line internet for enterprises across Kenya. 99.99% SLA uptime, low latency, and 24/7 direct NOC monitoring.",
+      "canonical": "https://filaonetworks.co.ke/services/dedicated-internet",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "wireless_internet": {
+      "url": "https://filaonetworks.co.ke/services/wireless-internet",
+      "target_keyword": "Fixed Wireless Internet Kenya",
+      "title": "Fixed Wireless Broadband Kenya — High Speed Wireless | Filao",
+      "description": "Reliable fixed wireless broadband for homes and commercial businesses beyond fiber reach in Nairobi and Kiambu. Rapid installation and stable uptime.",
+      "canonical": "https://filaonetworks.co.ke/services/wireless-internet",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "internet_solutions": {
+      "url": "https://filaonetworks.co.ke/services/internet-solutions",
+      "target_keyword": "Internet Solutions Provider Kenya",
+      "title": "Internet Solutions Kenya — Fiber, Wireless & Leased Lines | Filao",
+      "description": "Explore comprehensive internet solutions by Filao Networks. From residential fiber Wi-Fi to high-capacity enterprise connectivity tailored for Kenya.",
+      "canonical": "https://filaonetworks.co.ke/services/internet-solutions",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "street_hotspots": {
+      "url": "https://filaonetworks.co.ke/services/street-hotspots",
+      "target_keyword": "Public Wi-Fi Hotspots Kenya",
+      "title": "Public Wi-Fi Hotspot Solutions Kenya — Managed Hotspots | Filao",
+      "description": "Turnkey public Wi-Fi hotspot infrastructure with branded captive portals, voucher billing, and high user capacity for malls, campuses, and transit hubs.",
+      "canonical": "https://filaonetworks.co.ke/services/street-hotspots",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "cctv_security": {
+      "url": "https://filaonetworks.co.ke/services/cctv-security",
+      "target_keyword": "CCTV Installation Kenya",
+      "title": "CCTV Installation Kenya — 4K AI Security Cameras | Filao",
+      "description": "Professional 4K AI CCTV camera installation and 24/7 remote surveillance in Nairobi, Kenya. AI intrusion alerts, night vision, and mobile live viewing.",
+      "canonical": "https://filaonetworks.co.ke/services/cctv-security",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "access_control": {
+      "url": "https://filaonetworks.co.ke/services/access-control",
+      "target_keyword": "Biometric Access Control Kenya",
+      "title": "Access Control Systems Kenya — Biometric & Boom Gates | Filao",
+      "description": "Enterprise access control systems in Nairobi, Kenya: RFID keycards, biometric fingerprint & facial scanners, turnstiles, and automated boom barrier gates.",
+      "canonical": "https://filaonetworks.co.ke/services/access-control",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "biometric_fencing": {
+      "url": "https://filaonetworks.co.ke/services/biometric-fencing",
+      "target_keyword": "Electric Fencing Kenya",
+      "title": "Electric Fencing & Biometrics Kenya — Perimeter Defense | Filao",
+      "description": "Integrated high-voltage electric perimeter fencing and biometric security solutions in Kenya. Deter intrusions with automated alarms and instant sirens.",
+      "canonical": "https://filaonetworks.co.ke/services/biometric-fencing",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "smart_doorbell": {
+      "url": "https://filaonetworks.co.ke/services/smart-doorbell",
+      "target_keyword": "Smart Video Doorbell Kenya",
+      "title": "Smart Video Doorbell Systems Kenya — Intercom Entry | Filao",
+      "description": "Upgrade your home or office security with HD smart video doorbells in Kenya. Two-way audio, remote smartphone unlocking, motion alerts, and night vision.",
+      "canonical": "https://filaonetworks.co.ke/services/smart-doorbell",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "network_design": {
+      "url": "https://filaonetworks.co.ke/services/network-design",
+      "target_keyword": "Structured Cabling & Network Design Kenya",
+      "title": "Structured Cabling & Network Design Kenya — LAN/WAN | Filao",
+      "description": "Certified LAN/WAN structured cabling, fiber backbone installation, and server room design across Kenya by certified Cisco and MikroTik network engineers.",
+      "canonical": "https://filaonetworks.co.ke/services/network-design",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "network_security": {
+      "url": "https://filaonetworks.co.ke/services/network-security",
+      "target_keyword": "Cybersecurity & Network Security Kenya",
+      "title": "Cybersecurity & Network Security Kenya — Firewalls & SOC | Filao",
+      "description": "Defend your business with enterprise network security in Kenya. Next-Gen Firewalls, encrypted VPN tunnels, DDoS mitigation, and 24/7 SOC monitoring.",
+      "canonical": "https://filaonetworks.co.ke/services/network-security",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "managed_services": {
+      "url": "https://filaonetworks.co.ke/services/managed-services",
+      "target_keyword": "Managed IT Services Kenya",
+      "title": "Managed IT Services Kenya — 24/7 Network Monitoring | Filao",
+      "description": "Proactive 24/7 managed IT and NOC services in Nairobi, Kenya. Outsource network operations, hardware maintenance, and rapid troubleshooting to our experts.",
+      "canonical": "https://filaonetworks.co.ke/services/managed-services",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "cloud_solutions": {
+      "url": "https://filaonetworks.co.ke/services/cloud-solutions",
+      "target_keyword": "Cloud Solutions & SD-WAN Kenya",
+      "title": "Cloud Solutions & SD-WAN Kenya — Hybrid Networking | Filao",
+      "description": "Optimize multi-branch connectivity with enterprise SD-WAN, AWS/Azure hybrid cloud interconnects, and edge computing designed for Kenyan enterprises.",
+      "canonical": "https://filaonetworks.co.ke/services/cloud-solutions",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "disaster_recovery": {
+      "url": "https://filaonetworks.co.ke/services/disaster-recovery",
+      "target_keyword": "Disaster Recovery IT Kenya",
+      "title": "Disaster Recovery & Business Continuity Kenya | Filao",
+      "description": "Automated cloud backup, instantaneous failover systems, and disaster recovery orchestration to eliminate downtime and protect critical corporate data.",
+      "canonical": "https://filaonetworks.co.ke/services/disaster-recovery",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "iot_integration": {
+      "url": "https://filaonetworks.co.ke/services/iot-integration",
+      "target_keyword": "IoT Solutions Kenya",
+      "title": "IoT Solutions & Smart Integration Kenya — Telemetry | Filao",
+      "description": "Connect smart sensors, facility telemetry, asset tracking, and industrial automation to a unified real-time dashboard with Filao Networks IoT in Kenya.",
+      "canonical": "https://filaonetworks.co.ke/services/iot-integration",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "coverage_map": {
+      "url": "https://filaonetworks.co.ke/company/coverage-map",
+      "target_keyword": "Fiber Coverage Map Nairobi",
+      "title": "Fiber Coverage Map Nairobi & Kiambu — Check Wi-Fi | Filao",
+      "description": "Check live fiber and wireless coverage across Nairobi, Kasarani, Githurai, Kahawa, Ruiru, and Roysambu. Instant address verification for fast installation.",
+      "canonical": "https://filaonetworks.co.ke/company/coverage-map",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "quote": {
+      "url": "https://filaonetworks.co.ke/company/quote",
+      "target_keyword": "Request ISP Quote Kenya",
+      "title": "Request a Quote — Internet, CCTV & IT Solutions Kenya | Filao",
+      "description": "Get a fast, transparent quote for home fiber, dedicated enterprise internet, 4K CCTV systems, or managed IT services from Filao Networks Solutions.",
+      "canonical": "https://filaonetworks.co.ke/company/quote",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "about_us": {
+      "url": "https://filaonetworks.co.ke/company/about-us",
+      "target_keyword": "About Filao Networks Solutions",
+      "title": "About Filao Networks Solutions — Premier Kenya ISP & IT",
+      "description": "Learn about Filao Networks Solutions, Kenya's fastest-growing ISP delivering high-performance fiber, security systems, and telecom infrastructure.",
+      "canonical": "https://filaonetworks.co.ke/company/about-us",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "contact": {
+      "url": "https://filaonetworks.co.ke/company/contact",
+      "target_keyword": "Contact Filao Networks Kenya",
+      "title": "Contact Us — Filao Networks Solutions Nairobi Kenya",
+      "description": "Get in touch with Filao Networks Solutions. Visit our Nairobi headquarters at Ambank House, call +254 790 034 459, or submit an online inquiry today.",
+      "canonical": "https://filaonetworks.co.ke/company/contact",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "support": {
+      "url": "https://filaonetworks.co.ke/company/support",
+      "target_keyword": "ISP Customer Support Kenya",
+      "title": "Customer Support Centre & Helpdesk | Filao Networks Kenya",
+      "description": "Need technical assistance? Access 24/7 ISP customer support, network troubleshooting, speed tests, and ticket logging with Filao Networks in Kenya.",
+      "canonical": "https://filaonetworks.co.ke/company/support",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "careers": {
+      "url": "https://filaonetworks.co.ke/company/careers",
+      "target_keyword": "Telecom & ISP Jobs Kenya",
+      "title": "Careers at Filao Networks — Telecom & IT Jobs Kenya | Filao",
+      "description": "Join Kenya's fastest growing ISP and telecom technology provider. Explore engineering, sales, customer support, and field operations job openings.",
+      "canonical": "https://filaonetworks.co.ke/company/careers",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "blogs_index": {
+      "url": "https://filaonetworks.co.ke/blogs",
+      "target_keyword": "Kenya Telecom Blog & Tech Insights",
+      "title": "Telecom & Tech Insights Blog — Internet & IT Kenya | Filao",
+      "description": "Read expert articles and industry analyses on fiber optics, managed IT services, cybersecurity, and smart surveillance across Kenya and East Africa.",
+      "canonical": "https://filaonetworks.co.ke/blogs",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "compliance_terms": {
+      "url": "https://filaonetworks.co.ke/compliance/terms-of-service",
+      "target_keyword": "Filao Networks Terms of Service",
+      "title": "Terms of Service — Filao Networks Solutions Kenya",
+      "description": "Read the Terms of Service governing internet connectivity, managed IT, security systems, and digital services provided by Filao Networks in Kenya.",
+      "canonical": "https://filaonetworks.co.ke/compliance/terms-of-service",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "compliance_privacy": {
+      "url": "https://filaonetworks.co.ke/compliance/privacy-policy",
+      "target_keyword": "Filao Networks Privacy Policy",
+      "title": "Privacy Policy — Filao Networks Solutions Kenya",
+      "description": "Discover how Filao Networks collects, processes, and protects personal data in compliance with the Kenya Data Protection Act 2019 and global standards.",
+      "canonical": "https://filaonetworks.co.ke/compliance/privacy-policy",
+      "robots": "index, follow",
+      "og_type": "website"
+    },
+    "compliance_sla": {
+      "url": "https://filaonetworks.co.ke/compliance/sla",
+      "target_keyword": "Service Level Agreement ISP Kenya",
+      "title": "Service Level Agreement (SLA) — Filao Networks Kenya",
+      "description": "Review the official Service Level Agreement guarantees for Filao Networks dedicated internet, fiber uptime, packet latency, and technical response times.",
+      "canonical": "https://filaonetworks.co.ke/compliance/sla",
+      "robots": "index, follow",
+      "og_type": "website"
+    }
+  }
+}

@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Data Protection';
-$page_desc = 'Learn more about Data Protection provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Data Protection Policy — Kenya DPA 2019 | Filao Networks";
+$page_desc = "Comprehensive data protection statement and compliance with Kenya Data Protection Act 2019 by Filao Networks Solutions.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/data-protection";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -64,3 +65,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

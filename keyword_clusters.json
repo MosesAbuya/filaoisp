@@ -1,0 +1,116 @@
+{
+  "clusters": [
+    {
+      "topic": "Residential Fiber & Home Wi-Fi",
+      "head_keyword": "residential fiber internet kenya",
+      "intent": "commercial_investigation",
+      "priority": "P0",
+      "target_url": "https://filaonetworks.co.ke/services/residential-fiber",
+      "keywords": [
+        "best home fiber in nairobi",
+        "home wifi packages kenya",
+        "unlimited fiber internet nairobi",
+        "kasarani fiber internet providers",
+        "githurai wifi connection",
+        "ruiru home fiber",
+        "fastest home fiber kenya",
+        "cheapest unlimited wifi kenya"
+      ],
+      "semantic_terms": [
+        "FTTH fiber to the home",
+        "symmetrical bandwidth",
+        "low latency gaming ping",
+        "uncontended optical fiber",
+        "no data caps zero throttling",
+        "Wi-Fi 6 gigabit router"
+      ]
+    },
+    {
+      "topic": "Enterprise Dedicated Internet & Leased Lines",
+      "head_keyword": "dedicated internet access kenya",
+      "intent": "transactional",
+      "priority": "P0",
+      "target_url": "https://filaonetworks.co.ke/services/dedicated-internet",
+      "keywords": [
+        "enterprise internet provider nairobi",
+        "leased line internet kenya",
+        "business fiber internet kenya",
+        "corporate isp nairobi",
+        "symmetrical leased line kenya",
+        "high speed office internet nairobi"
+      ],
+      "semantic_terms": [
+        "1 to 1 uncontended ratio",
+        "99.99 percent uptime SLA",
+        "BGP routing redundant upstream",
+        "metro fiber ring",
+        "dedicated NOC engineering",
+        "fixed public IP allocation"
+      ]
+    },
+    {
+      "topic": "Commercial & Residential CCTV Security",
+      "head_keyword": "cctv installation kenya",
+      "intent": "commercial_transactional",
+      "priority": "P0",
+      "target_url": "https://filaonetworks.co.ke/services/cctv-security",
+      "keywords": [
+        "cctv camera installation nairobi",
+        "best cctv companies in kenya",
+        "4k security cameras kenya",
+        "ai cctv surveillance system nairobi",
+        "commercial cctv installation cost kenya",
+        "ip camera installer nairobi"
+      ],
+      "semantic_terms": [
+        "network video recorder NVR",
+        "remote mobile phone live viewing",
+        "smart human facial detection",
+        "infrared starlight night vision",
+        "PoE Power over Ethernet cabling",
+        "perimeter breach alarm integration"
+      ]
+    },
+    {
+      "topic": "Managed IT Services & Network Infrastructure",
+      "head_keyword": "managed it services kenya",
+      "intent": "commercial",
+      "priority": "P1",
+      "target_url": "https://filaonetworks.co.ke/services/managed-services",
+      "keywords": [
+        "it support companies in nairobi",
+        "managed network services kenya",
+        "outsourced it support kenya",
+        "network maintenance nairobi",
+        "noc monitoring services east africa"
+      ],
+      "semantic_terms": [
+        "proactive remote monitoring RMM",
+        "disaster recovery planning",
+        "cisco certified network engineers",
+        "structured cabling standards Cat6A",
+        "firewall endpoint management"
+      ]
+    },
+    {
+      "topic": "Nairobi Fiber Coverage & Availability",
+      "head_keyword": "fiber coverage map nairobi",
+      "intent": "navigational_commercial",
+      "priority": "P0",
+      "target_url": "https://filaonetworks.co.ke/company/coverage-map",
+      "keywords": [
+        "is fiber available in my area nairobi",
+        "kasarani wifi coverage",
+        "kahawa wendani wifi providers",
+        "roysambu home fiber coverage",
+        "thika road fiber connection"
+      ],
+      "semantic_terms": [
+        "fiber coverage pin checker",
+        "last mile fiber distribution",
+        "optical distribution frame ODF",
+        "free site survey booking"
+      ]
+    }
+  ]
+}

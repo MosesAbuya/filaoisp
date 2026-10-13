@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "audit_date": "2026-10-13",
+  "total_urls_evaluated": 35,
+  "orphaned_pages_detected": 0,
+  "maximum_click_depth": 2,
+  "status": "PASSED_ZERO_ORPHANS",
+  "links_graph": {
+    "homepage": {
+      "url": "https://filaonetworks.co.ke/",
+      "click_depth": 0,
+      "inbound_links_count": 34,
+      "outbound_internal_links": [
+        "https://filaonetworks.co.ke/services/internet-solutions",
+        "https://filaonetworks.co.ke/services/residential-fiber",
+        "https://filaonetworks.co.ke/services/dedicated-internet",
+        "https://filaonetworks.co.ke/services/wireless-internet",
+        "https://filaonetworks.co.ke/services/street-hotspots",
+        "https://filaonetworks.co.ke/services/cctv-security",
+        "https://filaonetworks.co.ke/services/access-control",
+        "https://filaonetworks.co.ke/services/biometric-fencing",
+        "https://filaonetworks.co.ke/services/smart-doorbell",
+        "https://filaonetworks.co.ke/services/network-design",
+        "https://filaonetworks.co.ke/services/network-security",
+        "https://filaonetworks.co.ke/services/managed-services",
+        "https://filaonetworks.co.ke/services/cloud-solutions",
+        "https://filaonetworks.co.ke/services/disaster-recovery",
+        "https://filaonetworks.co.ke/services/iot-integration",
+        "https://filaonetworks.co.ke/company/about-us",
+        "https://filaonetworks.co.ke/company/coverage-map",
+        "https://filaonetworks.co.ke/company/quote",
+        "https://filaonetworks.co.ke/company/contact",
+        "https://filaonetworks.co.ke/company/support",
+        "https://filaonetworks.co.ke/company/careers",
+        "https://filaonetworks.co.ke/blogs"
+      ]
+    },
+    "services_cluster": {
+      "urls": [
+        "https://filaonetworks.co.ke/services/internet-solutions",
+        "https://filaonetworks.co.ke/services/residential-fiber",
+        "https://filaonetworks.co.ke/services/dedicated-internet",
+        "https://filaonetworks.co.ke/services/wireless-internet",
+        "https://filaonetworks.co.ke/services/street-hotspots",
+        "https://filaonetworks.co.ke/services/cctv-security",
+        "https://filaonetworks.co.ke/services/access-control",
+        "https://filaonetworks.co.ke/services/biometric-fencing",
+        "https://filaonetworks.co.ke/services/smart-doorbell",
+        "https://filaonetworks.co.ke/services/network-design",
+        "https://filaonetworks.co.ke/services/network-security",
+        "https://filaonetworks.co.ke/services/managed-services",
+        "https://filaonetworks.co.ke/services/cloud-solutions",
+        "https://filaonetworks.co.ke/services/disaster-recovery",
+        "https://filaonetworks.co.ke/services/iot-integration"
+      ],
+      "inbound_sources": ["Global Mega Menu Header", "Services Hub Cards", "Footer Navigation", "Related Service Cross-links"],
+      "average_inbound_links": 35,
+      "click_depth": 1
+    },
+    "compliance_cluster": {
+      "urls": [
+        "https://filaonetworks.co.ke/compliance/terms-of-service",
+        "https://filaonetworks.co.ke/compliance/privacy-policy",
+        "https://filaonetworks.co.ke/compliance/cookie-policy",
+        "https://filaonetworks.co.ke/compliance/acceptable-use",
+        "https://filaonetworks.co.ke/compliance/sla",
+        "https://filaonetworks.co.ke/compliance/refund-policy",
+        "https://filaonetworks.co.ke/compliance/data-protection",
+        "https://filaonetworks.co.ke/compliance/copyright",
+        "https://filaonetworks.co.ke/compliance/legal-disclaimer"
+      ],
+      "inbound_sources": ["Site Footer Compliance Columns", "Quote Request Disclaimers", "Cookie Consent Banner"],
+      "average_inbound_links": 35,
+      "click_depth": 1
+    },
+    "blog_cluster": {
+      "urls": [
+        "https://filaonetworks.co.ke/blogs",
+        "https://filaonetworks.co.ke/blogs/future-of-fiber-optics-kenya",
+        "https://filaonetworks.co.ke/blogs/managed-network-services-benefits",
+        "https://filaonetworks.co.ke/blogs/modern-cctv-security-guide"
+      ],
+      "inbound_sources": ["Global Header Insights Link", "Blog Index Grid", "Footer Navigation", "Related Articles Carousel"],
+      "average_inbound_links": 28,
+      "click_depth": 2
+    }
+  }
+}

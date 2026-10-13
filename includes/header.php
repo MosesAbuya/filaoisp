@@ -3,18 +3,37 @@
  * Filao Networks Solutions   Header / Mega Menu
  * Include on every page: <?php include 'includes/header.php'; ?>
  *
- * $page_title  (string)   Set before including this file
- * $page_desc   (string)   Meta description
- * $page_class  (string)   Body class
+ * $page_title      (string)   Page <title> tag (50-60 chars)
+ * $page_desc       (string)   Meta description (150-160 chars)
+ * $page_class      (string)   Body CSS class
+ * $canonical_url   (string)   Optional canonical URL override
+ * $meta_robots     (string)   Optional robots directive (default: 'index, follow')
+ * $og_type         (string)   Optional OG type (default: 'website')
+ * $og_image        (string)   Optional social share image URL
+ * $page_schema     (string|array) Optional JSON-LD schema markup
  */
 
-$page_title = $page_title ?? 'Filao Networks Solutions   Connecting Kenya at Speed';
-$page_desc = $page_desc ?? 'Filao Networks Solutions provides enterprise-grade internet, networking, CCTV security, cloud, and IoT services across Kenya.';
+$page_title = $page_title ?? 'Internet Service Provider Kenya | Filao Networks Solutions';
+$page_desc = $page_desc ?? 'Filao Networks provides high-speed fiber internet, dedicated leased lines, CCTV surveillance, and managed IT services across Nairobi and Kenya.';
 $page_class = $page_class ?? '';
+$meta_robots = $meta_robots ?? 'index, follow';
+$og_type = $og_type ?? 'website';
+$og_image = $og_image ?? 'https://filaonetworks.co.ke/assets/images/logo.png';
 
 // Determine root path (for assets and links)
 $script_name = $_SERVER['SCRIPT_NAME'] ?? '';
 $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
+
+// Dynamic Canonical URL Resolution
+if (empty($canonical_url)) {
+    $clean_path = preg_replace('#^/filaoisp#i', '', $script_name);
+    $clean_path = preg_replace('#\.php$#i', '', $clean_path);
+    if ($clean_path === '/index' || $clean_path === '' || $clean_path === '/') {
+        $canonical_url = 'https://filaonetworks.co.ke/';
+    } else {
+        $canonical_url = 'https://filaonetworks.co.ke' . $clean_path;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,15 +44,33 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
     <meta name="theme-color" content="#090238">
     <title><?= htmlspecialchars($page_title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
+    <meta name="robots" content="<?= htmlspecialchars($meta_robots) ?>">
 
-    <!-- Open Graph -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="Filao Networks Solutions">
     <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
     <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80">
+    <meta property="og:type" content="<?= htmlspecialchars($og_type) ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($canonical_url) ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>">
+    <meta property="og:locale" content="en_KE">
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://filaonetworks.co.ke/">
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@filaonetworks">
+    <meta name="twitter:creator" content="@filaonetworks">
+    <meta name="twitter:title" content="<?= htmlspecialchars($page_title) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($page_desc) ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($og_image) ?>">
+
+    <!-- Geo Meta Tags (Local SEO: Nairobi, Kenya) -->
+    <meta name="geo.region" content="KE-30">
+    <meta name="geo.placename" content="Nairobi, Kenya">
+    <meta name="geo.position" content="-1.286389;36.817223">
+    <meta name="ICBM" content="-1.286389, 36.817223">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?= $root ?>assets/images/favicon/apple-touch-icon.png">
@@ -50,33 +87,73 @@ $root = (strpos($script_name, '/filaoisp/') === 0) ? '/filaoisp/' : '/';
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="<?= $root ?>assets/css/style.css?v=<?= filemtime(__DIR__ . '/../assets/css/style.css') ?>">
 
-    <!-- Preconnect to Google Fonts (already embedded via CSS @import) -->
+    <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org JSON-LD Global Entity Graph -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Filao Networks Solutions",
-        "url": "https://filaonetworks.co.ke",
-        "logo": "https://filaonetworks.co.ke/assets/images/logo.png",
-        "telephone": "+254790034459",
-        "email": "info@filaonetworks.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Ambank House",
-            "addressLocality": "Nairobi",
-            "addressCountry": "KE"
-        },
-        "sameAs": [
-            "https://facebook.com/filaonetworks",
-            "https://twitter.com/filaonetworks",
-            "https://linkedin.com/company/filaonetworks"
+        "@graph": [
+            {
+                "@type": "InternetServiceProvider",
+                "@id": "https://filaonetworks.co.ke/#organization",
+                "name": "Filao Networks Solutions",
+                "alternateName": "Filao Networks",
+                "url": "https://filaonetworks.co.ke",
+                "logo": "https://filaonetworks.co.ke/assets/images/logo.png",
+                "telephone": "+254790034459",
+                "email": "info@filaonetworks.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Ambank House, University Way",
+                    "addressLocality": "Nairobi",
+                    "addressRegion": "Nairobi County",
+                    "postalCode": "00100",
+                    "addressCountry": "KE"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -1.286389,
+                    "longitude": 36.817223
+                },
+                "sameAs": [
+                    "https://facebook.com/filaonetworks",
+                    "https://twitter.com/filaonetworks",
+                    "https://linkedin.com/company/filaonetworks"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+254790034459",
+                    "contactType": "customer service",
+                    "email": "info@filaonetworks.com",
+                    "areaServed": "KE"
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://filaonetworks.co.ke/#website",
+                "url": "https://filaonetworks.co.ke/",
+                "name": "Filao Networks Solutions",
+                "publisher": {
+                    "@id": "https://filaonetworks.co.ke/#organization"
+                },
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://filaonetworks.co.ke/services/internet-solutions?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            }
         ]
     }
     </script>
+<?php if (!empty($page_schema)): ?>
+    <!-- Page Specific Schema.org Structured Data -->
+    <script type="application/ld+json">
+    <?= is_array($page_schema) ? json_encode($page_schema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) : $page_schema ?>
+    </script>
+<?php endif; ?>
 </head>
 
 <body class="<?= htmlspecialchars($page_class) ?>">

@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Residential Fiber Internet";
-$page_desc = "Ultra-fast, uncontended fiber optic internet for homes and apartments   speeds from 10Mbps right up to 1Gbps.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Residential Fiber Internet Kenya — Fast Home Wi-Fi | Filao";
+$page_desc = "Get blazing-fast residential fiber internet in Nairobi from Filao Networks. Speeds up to 1Gbps, 99.9% uptime, zero throttling, and 24/7 technical support.";
+$canonical_url = "https://filaonetworks.co.ke/services/residential-fiber";
 $page_class = "page-residential-fiber";
 $root = "../";
 include "../includes/header.php";
@@ -387,7 +388,7 @@ include "../includes/header.php";
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
                     For most residential premises, installation is completed within 24 hours of confirming your order,
                     provided the building already has fiber ducting in place. For new buildings or those requiring
-                    outdoor cable laying, installation typically takes 2–3 business days.</div>
+                    outdoor cable laying, installation typically takes 2â€“3 business days.</div>
                 </div>
               </div>
               <div style="border:1px solid var(--clr-border);margin-bottom:0.75rem;background:var(--clr-bg-dark);">
@@ -463,3 +464,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

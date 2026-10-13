@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Dedicated Internet Access";
-$page_desc = "Uncontended, symmetrical leased-line internet access with guaranteed SLAs for mission-critical business operations.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Dedicated Internet Access Kenya — Enterprise Leased Line | Filao";
+$page_desc = "Guaranteed 1:1 symmetrical dedicated leased line internet for enterprises across Kenya. 99.99% SLA uptime, low latency, and 24/7 direct NOC monitoring.";
+$canonical_url = "https://filaonetworks.co.ke/services/dedicated-internet";
 $page_class = "page-dedicated-internet";
 $root = "../";
 include "../includes/header.php";
@@ -315,3 +316,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Service Level Agreement';
-$page_desc = 'Learn more about Service Level Agreement provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Service Level Agreement (SLA) — Filao Networks Kenya";
+$page_desc = "Review the official Service Level Agreement guarantees for Filao Networks dedicated internet, fiber uptime, packet latency, and technical response times.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/sla";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -69,3 +70,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

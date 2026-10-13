@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Wireless Internet";
-$page_desc = "Fixed wireless broadband delivering reliable connectivity to homes and businesses beyond fiber coverage areas.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Fixed Wireless Broadband Kenya — High Speed Wireless | Filao";
+$page_desc = "Reliable fixed wireless broadband for homes and commercial businesses beyond fiber reach in Nairobi and Kiambu. Rapid installation and stable uptime.";
+$canonical_url = "https://filaonetworks.co.ke/services/wireless-internet";
 $page_class = "page-wireless-internet";
 $root = "../";
 include "../includes/header.php";
@@ -304,7 +305,7 @@ include "../includes/header.php";
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
                     Our technician installs a small outdoor radio antenna on your rooftop or external wall, connected by
-                    an ethernet cable to your router indoors. The entire installation typically takes 2–4 hours and does
+                    an ethernet cable to your router indoors. The entire installation typically takes 2â€“4 hours and does
                     not require any significant structural modification.</div>
                 </div>
               </div>
@@ -333,3 +334,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

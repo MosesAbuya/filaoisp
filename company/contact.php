@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Contact Us';
-$page_desc = 'Learn more about Contact Us provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Contact Us — Filao Networks Solutions Nairobi Kenya";
+$page_desc = "Get in touch with Filao Networks Solutions. Visit our Nairobi headquarters at Ambank House, call +254 790 034 459, or submit an online inquiry today.";
+$canonical_url = "https://filaonetworks.co.ke/company/contact";
 $page_class = 'page-contact';
 $root = '../';
 include '../includes/header.php';
@@ -128,3 +129,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

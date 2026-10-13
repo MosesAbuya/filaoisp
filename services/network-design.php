@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Network Design & Installation";
-$page_desc = "Complete LAN/WAN network design, structured cabling, and installation by certified Cisco, Mikrotik, and Ubiquiti engineers.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Structured Cabling & Network Design Kenya — LAN/WAN | Filao";
+$page_desc = "Certified LAN/WAN structured cabling, fiber backbone installation, and server room design across Kenya by certified Cisco and MikroTik network engineers.";
+$canonical_url = "https://filaonetworks.co.ke/services/network-design";
 $page_class = "page-network-design";
 $root = "../";
 include "../includes/header.php";
@@ -268,8 +269,8 @@ include "../includes/header.php";
                 <div id="faq-network-design-2" class="accordion-collapse collapse" data-bs-parent="#faq-network-design">
                   <div
                     style="padding:0 1.8rem 1.6rem;color:var(--clr-steel);line-height:1.85;font-size:0.97rem;border-top:1px solid var(--clr-border);">
-                    For a small office (under 50 users), installation typically takes 1–3 days. For larger deployments
-                    with structured cabling, multiple floors, and complex routing, projects can take 1–4 weeks. We
+                    For a small office (under 50 users), installation typically takes 1â€“3 days. For larger deployments
+                    with structured cabling, multiple floors, and complex routing, projects can take 1â€“4 weeks. We
                     provide a detailed project timeline during the scoping phase.</div>
                 </div>
               </div>
@@ -330,3 +331,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

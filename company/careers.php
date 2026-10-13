@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Careers';
-$page_desc = 'Learn more about Careers provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Careers at Filao Networks — Telecom & IT Jobs Kenya | Filao";
+$page_desc = "Join Kenya's fastest growing ISP and telecom technology provider. Explore engineering, sales, customer support, and field operations job openings.";
+$canonical_url = "https://filaonetworks.co.ke/company/careers";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -53,3 +54,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

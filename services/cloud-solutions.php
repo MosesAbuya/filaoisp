@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Cloud Network Solutions";
-$page_desc = "SD-WAN, hybrid cloud, multi-cloud networking and edge computing solutions built for modern East African enterprises.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Cloud Solutions & SD-WAN Kenya — Hybrid Networking | Filao";
+$page_desc = "Optimize multi-branch connectivity with enterprise SD-WAN, AWS/Azure hybrid cloud interconnects, and edge computing designed for Kenyan enterprises.";
+$canonical_url = "https://filaonetworks.co.ke/services/cloud-solutions";
 $page_class = "page-cloud-solutions";
 $root = "../";
 include "../includes/header.php";
@@ -319,3 +320,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

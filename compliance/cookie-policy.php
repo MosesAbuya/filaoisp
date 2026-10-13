@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Cookie Policy';
-$page_desc = 'Learn more about Cookie Policy provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Cookie Policy — Filao Networks Solutions Kenya";
+$page_desc = "Learn about how Filao Networks uses browser cookies, analytics tokens, and session trackers to enhance your web browsing experience.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/cookie-policy";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -64,3 +65,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+

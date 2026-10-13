@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Biometric Fencing";
-$page_desc = "Advanced fingerprint, iris, and facial recognition systems integrated with electric fencing and perimeter security for ultimate protection.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Electric Fencing & Biometrics Kenya — Perimeter Defense | Filao";
+$page_desc = "Integrated high-voltage electric perimeter fencing and biometric security solutions in Kenya. Deter intrusions with automated alarms and instant sirens.";
+$canonical_url = "https://filaonetworks.co.ke/services/biometric-fencing";
 $page_class = "page-biometric-fencing";
 $root = "../";
 include "../includes/header.php";
@@ -318,3 +319,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

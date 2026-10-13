@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Request a Quote';
-$page_desc = 'Request a customized quotation for enterprise internet, networking, cloud, security, or IoT solutions from Filao Networks.';
+﻿<?php
+$page_title = "Request a Quote — Internet, CCTV & IT Solutions Kenya | Filao";
+$page_desc = "Get a fast, transparent quote for home fiber, dedicated enterprise internet, 4K CCTV systems, or managed IT services from Filao Networks Solutions.";
+$canonical_url = "https://filaonetworks.co.ke/company/quote";
 $page_class = 'page-quote';
 $root = '../';
 include '../includes/header.php';
@@ -102,3 +103,4 @@ include '../includes/header.php';
 </main>
 
 <?php include '../includes/footer.php'; ?>
+

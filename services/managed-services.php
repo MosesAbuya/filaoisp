@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Managed Network Services";
-$page_desc = "Proactive 24/7 network monitoring, management, and support   letting you focus on business while we manage your IT infrastructure.   Filao Networks Solutions, Kenya.";
+﻿<?php
+$page_title = "Managed IT Services Kenya — 24/7 Network Monitoring | Filao";
+$page_desc = "Proactive 24/7 managed IT and NOC services in Nairobi, Kenya. Outsource network operations, hardware maintenance, and rapid troubleshooting to our experts.";
+$canonical_url = "https://filaonetworks.co.ke/services/managed-services";
 $page_class = "page-managed-services";
 $root = "../";
 include "../includes/header.php";
@@ -333,3 +334,4 @@ include "../includes/header.php";
 </section>
 
 <?php include "../includes/footer.php"; ?>
+

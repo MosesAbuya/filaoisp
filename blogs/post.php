@@ -21,6 +21,38 @@ if (!$blog) {
 $page_title = htmlspecialchars($blog['title']) . ' | Filao Networks';
 $page_desc = htmlspecialchars($blog['excerpt']);
 $page_class = 'page-blog-single';
+$canonical_url = 'https://filaonetworks.co.ke/blogs/' . urlencode($blog['slug']);
+$og_type = 'article';
+$og_image = $blog['image_url'] ?? 'https://filaonetworks.co.ke/assets/images/logo.png';
+
+// BlogPosting JSON-LD Schema
+$page_schema = [
+    '@context' => 'https://schema.org',
+    '@type' => 'BlogPosting',
+    'headline' => mb_substr($blog['title'], 0, 110),
+    'description' => mb_substr($blog['excerpt'], 0, 160),
+    'image' => [$blog['image_url']],
+    'datePublished' => date('Y-m-d', strtotime($blog['created_at'])),
+    'dateModified' => date('Y-m-d', strtotime($blog['created_at'])),
+    'mainEntityOfPage' => [
+        '@type' => 'WebPage',
+        '@id' => $canonical_url
+    ],
+    'author' => [
+        '@type' => 'Organization',
+        'name' => 'Filao Networks Technical Team',
+        'url' => 'https://filaonetworks.co.ke/company/about-us'
+    ],
+    'publisher' => [
+        '@type' => 'Organization',
+        'name' => 'Filao Networks Solutions',
+        'logo' => [
+            '@type' => 'ImageObject',
+            'url' => 'https://filaonetworks.co.ke/assets/images/logo.png'
+        ]
+    ]
+];
+
 $root = '../';
 include '../includes/header.php';
 ?>

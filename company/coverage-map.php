@@ -1,6 +1,7 @@
-<?php
-$page_title = "Filao Networks | Nairobi Region Fiber & Wireless Coverage Map";
-$page_desc = "Explore Filao Networks Solutions' live high-speed fiber and wireless coverage map across Kasarani, Githurai, Kahawa, Ruiru, Roysambu, and the Nairobi region.";
+﻿<?php
+$page_title = "Fiber Coverage Map Nairobi & Kiambu — Check Wi-Fi | Filao";
+$page_desc = "Check live fiber and wireless coverage across Nairobi, Kasarani, Githurai, Kahawa, Ruiru, and Roysambu. Instant address verification for fast installation.";
+$canonical_url = "https://filaonetworks.co.ke/company/coverage-map";
 $page_class = "page-coverage";
 $root = "../";
 include "../includes/header.php";
@@ -201,7 +202,7 @@ include "../includes/header.php";
                     High-Speed Fiber in <span class="line-accent">Your Neighborhood</span>
                 </h1>
                 <p class="hero-desc mt-3" style="max-width:700px;">
-                    Filao Networks is dedicated to serving the Nairobi Metropolitan Region—including Kasarani, Githurai, Kahawa West, Kahawa Wendani, Ruiru, Roysambu, and CBD corridors.
+                    Filao Networks is dedicated to serving the Nairobi Metropolitan Regionâ€”including Kasarani, Githurai, Kahawa West, Kahawa Wendani, Ruiru, Roysambu, and CBD corridors.
                 </p>
             </div>
         </div>
@@ -369,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div style="min-width: 230px; padding: 4px;">
                     <div class="coverage-popup-title">${pin.name}</div>
                     <div class="coverage-popup-region"><i class="fa-solid fa-location-dot me-1"></i> ${pin.region}</div>
-                    <div><span class="coverage-badge ${badgeClass}">● ${pin.status}</span></div>
+                    <div><span class="coverage-badge ${badgeClass}">â— ${pin.status}</span></div>
                     <div style="font-size: 0.8rem; color: #fff; margin-bottom: 0.5rem; font-weight: 600;">
                         <i class="fa-solid fa-bolt me-1" style="color:var(--clr-red);"></i> ${pin.speed}
                     </div>
@@ -427,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3 class="coverage-card-title">${pin.name}</h3>
                         </div>
                         <div class="coverage-card-sub">${pin.region}</div>
-                        <div><span class="coverage-badge ${badgeClass}">● ${pin.status}</span></div>
+                        <div><span class="coverage-badge ${badgeClass}">â— ${pin.status}</span></div>
                         <p class="coverage-card-desc mt-2">${pin.description || 'High-speed fiber and networking available.'}</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-between pt-3" style="border-top: 1px solid var(--clr-border);">
@@ -485,3 +486,4 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <?php include "../includes/footer.php"; ?>
+

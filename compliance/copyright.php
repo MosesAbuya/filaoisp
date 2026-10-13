@@ -1,6 +1,7 @@
-<?php
-$page_title = 'Filao Networks | Copyright';
-$page_desc = 'Learn more about Copyright provided by Filao Networks Solutions across Kenya.';
+﻿<?php
+$page_title = "Copyright Notice & Intellectual Property | Filao Networks";
+$page_desc = "Official copyright notice and intellectual property protection terms governing all logos, media, and text on Filao Networks Solutions.";
+$canonical_url = "https://filaonetworks.co.ke/compliance/copyright";
 $page_class = 'page-generic';
 $root = '../';
 include '../includes/header.php';
@@ -53,3 +54,4 @@ include '../includes/header.php';
 </section>
 
 <?php include '../includes/footer.php'; ?>
+
