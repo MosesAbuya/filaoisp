@@ -29,9 +29,9 @@ if ($stmt->fetchColumn() == 0) {
 }
 
 // 3. Check authentication status
-$current_page = basename($_SERVER['PHP_SELF']);
-if ($current_page !== 'login.php' && (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true)) {
-    header('Location: login.php');
+$current_page = basename($_SERVER['PHP_SELF'], '.php');
+if ($current_page !== 'login' && (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== true)) {
+    header('Location: login');
     exit;
 }
 ?>

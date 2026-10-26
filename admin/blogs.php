@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $stmt = $pdo->prepare("DELETE FROM blogs WHERE id = ?");
     $stmt->execute([$blog_id]);
     $_SESSION['msg'] = "Blog deleted successfully.";
-    header("Location: blogs.php");
+    header("Location: blogs");
     exit;
 }
 
@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     } else {
         $_SESSION['err'] = "All fields are required.";
     }
-    header("Location: blogs.php");
+    header("Location: blogs");
     exit;
 }
 
@@ -49,7 +49,7 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
                 <span><i class="fa-solid fa-pen-to-square me-2" style="color:var(--clr-red);"></i>Publish New Blog Post</span>
             </div>
             <div class="p-4">
-                <form method="POST" action="blogs.php">
+                <form method="POST" action="blogs">
                     <input type="hidden" name="action" value="add_blog">
                     <div class="mb-3">
                         <label class="form-label fw-bold small">Blog Title <span class="text-danger">*</span></label>
@@ -106,10 +106,10 @@ $blogs = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC")->fetchAll()
                                     </td>
                                     <td class="small text-muted"><?= htmlspecialchars(date('M j, Y', strtotime($blog['created_at']))) ?></td>
                                     <td class="text-end">
-                                        <a href="../blogs/post.php?slug=<?= urlencode($blog['slug']) ?>" target="_blank" class="btn btn-sm btn-outline-secondary me-1" title="View Blog">
+                                        <a href="../blogs/<?= urlencode($blog['slug']) ?>" target="_blank" class="btn btn-sm btn-outline-secondary me-1" title="View Blog">
                                             <i class="fa-solid fa-eye"></i>
                                         </a>
-                                        <form method="POST" action="blogs.php" onsubmit="return confirm('Are you sure you want to delete this blog post?');" style="display:inline;">
+                                        <form method="POST" action="blogs" data-confirm="Are you sure you want to delete the blog post '<?= htmlspecialchars(addslashes($blog['title'])) ?>'?" style="display:inline;">
                                             <input type="hidden" name="action" value="delete_blog">
                                             <input type="hidden" name="blog_id" value="<?= (int)$blog['id'] ?>">
                                             <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete">

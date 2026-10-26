@@ -19,7 +19,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
 <!-- Statistics Overview Cards -->
 <div class="row g-4 mb-4">
     <div class="col-12 col-sm-6 col-xl-4">
-        <a href="coverage.php" class="stat-card">
+        <a href="coverage" class="stat-card">
             <div>
                 <div class="text-muted small fw-semibold text-uppercase">Coverage Pins</div>
                 <h2 class="fw-bold mb-0 mt-1"><?= (int)$total_pins ?></h2>
@@ -32,7 +32,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
     </div>
 
     <div class="col-12 col-sm-6 col-xl-4">
-        <a href="blogs.php" class="stat-card">
+        <a href="blogs" class="stat-card">
             <div>
                 <div class="text-muted small fw-semibold text-uppercase">Published Blogs</div>
                 <h2 class="fw-bold mb-0 mt-1"><?= (int)$total_blogs ?></h2>
@@ -45,7 +45,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
     </div>
 
     <div class="col-12 col-sm-6 col-xl-4">
-        <a href="quotes.php" class="stat-card">
+        <a href="quotes" class="stat-card">
             <div>
                 <div class="text-muted small fw-semibold text-uppercase">Quote Requests</div>
                 <h2 class="fw-bold mb-0 mt-1"><?= (int)$total_quotes ?></h2>
@@ -58,7 +58,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
     </div>
 
     <div class="col-12 col-sm-6 col-xl-6">
-        <a href="contacts.php" class="stat-card">
+        <a href="contacts" class="stat-card">
             <div>
                 <div class="text-muted small fw-semibold text-uppercase">Contact Messages</div>
                 <h2 class="fw-bold mb-0 mt-1"><?= (int)$total_contacts ?></h2>
@@ -71,7 +71,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
     </div>
 
     <div class="col-12 col-sm-6 col-xl-6">
-        <a href="newsletters.php" class="stat-card">
+        <a href="newsletters" class="stat-card">
             <div>
                 <div class="text-muted small fw-semibold text-uppercase">Newsletter Subscribers</div>
                 <h2 class="fw-bold mb-0 mt-1"><?= (int)$total_subscribers ?></h2>
@@ -92,9 +92,9 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
             <p class="text-white-50 mb-0">Select a module from the sidebar or jump directly to manage your website content below.</p>
         </div>
         <div class="d-flex flex-wrap gap-2">
-            <a href="coverage.php" class="btn btn-filao btn-sm"><i class="fa-solid fa-map-pin me-1"></i> Manage Pins</a>
-            <a href="blogs.php" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-plus me-1"></i> Add Blog Post</a>
-            <a href="quotes.php" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-eye me-1"></i> View Quotes</a>
+            <a href="coverage" class="btn btn-filao btn-sm"><i class="fa-solid fa-map-pin me-1"></i> Manage Pins</a>
+            <a href="blogs" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-plus me-1"></i> Add Blog Post</a>
+            <a href="quotes" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-eye me-1"></i> View Quotes</a>
         </div>
     </div>
 </div>
@@ -105,7 +105,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
         <div class="card-modern">
             <div class="card-modern-header">
                 <span><i class="fa-solid fa-file-invoice-dollar me-2" style="color:var(--clr-red);"></i>Recent Quote Requests</span>
-                <a href="quotes.php" class="btn btn-sm btn-outline-dark">View All</a>
+                <a href="quotes" class="btn btn-sm btn-outline-dark">View All</a>
             </div>
             <div class="p-0 table-responsive">
                 <table class="table table-hover align-middle mb-0">
@@ -141,7 +141,7 @@ $recent_contacts = $pdo->query("SELECT * FROM contact_messages ORDER BY created_
         <div class="card-modern">
             <div class="card-modern-header">
                 <span><i class="fa-solid fa-comments me-2" style="color:var(--clr-red);"></i>Recent Contact Messages</span>
-                <a href="contacts.php" class="btn btn-sm btn-outline-dark">View All</a>
+                <a href="contacts" class="btn btn-sm btn-outline-dark">View All</a>
             </div>
             <div class="p-0 table-responsive">
                 <table class="table table-hover align-middle mb-0">

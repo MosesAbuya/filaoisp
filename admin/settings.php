@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["update_settings"])) {
         $stmt->execute([trim($v), $k]);
     }
     $_SESSION["msg"] = "SMTP settings saved successfully!";
-    header("Location: settings.php");
+    header("Location: settings");
     exit;
 }
 
@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["send_test_email"])) {
             $_SESSION["err"] = "SMTP Test Failed: " . htmlspecialchars($mail->ErrorInfo ?: $e->getMessage());
         }
     }
-    header("Location: settings.php");
+    header("Location: settings");
     exit;
 }
 
@@ -131,7 +131,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 <span class="badge bg-success-subtle text-success border border-success-subtle">Active Engine</span>
             </div>
             <div class="card-body p-4">
-                <form method="POST" action="settings.php">
+                <form method="POST" action="settings">
                     <div class="row g-4">
                         <div class="col-md-6">
                             <label class="form-label fw-bold">SMTP Host (Outgoing Server)</label>
@@ -183,7 +183,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 <p class="small text-muted mb-3">
                     Verify that your mail server credentials are working by dispatching a test email instantly.
                 </p>
-                <form method="POST" action="settings.php">
+                <form method="POST" action="settings">
                     <div class="mb-3">
                         <label class="form-label fw-bold small">Recipient Email</label>
                         <input type="email" name="test_email" class="form-control" placeholder="your-email@example.com" value="<?= htmlspecialchars($settings["smtp_username"] ?? "info@filaonetworks.com") ?>" required>

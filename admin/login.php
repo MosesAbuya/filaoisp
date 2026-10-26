@@ -10,7 +10,7 @@ require_once 'auth.php';
 
 // Redirect if already logged in
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
-    header('Location: index.php');
+    header('Location: index');
     exit;
 }
 
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($user && password_verify($password, $user['password_hash'])) {
             $_SESSION['admin_logged_in'] = true;
             $_SESSION['admin_username'] = $user['username'];
-            header('Location: index.php');
+            header('Location: index');
             exit;
         } else {
             $error = 'Invalid username or password.';
@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     <?php endif; ?>
 
-    <form method="POST" action="login.php">
+    <form method="POST" action="login">
         <div class="mb-3">
             <label class="form-label small fw-semibold text-white-50"><i class="fa-solid fa-user me-1"></i> Username</label>
             <input type="text" name="username" class="form-control" placeholder="Enter username" required autofocus>

@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $stmt = $pdo->prepare("DELETE FROM coverage_areas WHERE id = ?");
     $stmt->execute([$pin_id]);
     $_SESSION['msg'] = "Coverage pin deleted successfully.";
-    header("Location: coverage.php");
+    header("Location: coverage");
     exit;
 }
 
@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     } else {
         $_SESSION['err'] = "Please provide valid Name, Region, Latitude and Longitude coordinates.";
     }
-    header("Location: coverage.php");
+    header("Location: coverage");
     exit;
 }
 
@@ -90,7 +90,7 @@ $coverage_pins = $pdo->query("SELECT * FROM coverage_areas ORDER BY id DESC")->f
                 <span><i class="fa-solid fa-plus-circle me-2" style="color:var(--clr-red);"></i>Add Coverage Pin</span>
             </div>
             <div class="p-4">
-                <form method="POST" action="coverage.php">
+                <form method="POST" action="coverage">
                     <input type="hidden" name="action" value="add_coverage_pin">
                     
                     <div class="mb-3">
@@ -184,7 +184,7 @@ $coverage_pins = $pdo->query("SELECT * FROM coverage_areas ORDER BY id DESC")->f
                             </td>
                             <td class="small"><?= htmlspecialchars($pin['speed']) ?></td>
                             <td class="text-end">
-                                <form method="POST" action="coverage.php" onsubmit="return confirm('Are you sure you want to permanently delete <?= htmlspecialchars(addslashes($pin['name'])) ?> from the map?');" style="display:inline;">
+                                <form method="POST" action="coverage" data-confirm="Are you sure you want to permanently delete <?= htmlspecialchars(addslashes($pin['name'])) ?> from the map?" style="display:inline;">
                                     <input type="hidden" name="action" value="delete_coverage_pin">
                                     <input type="hidden" name="pin_id" value="<?= (int)$pin['id'] ?>">
                                     <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete Pin">

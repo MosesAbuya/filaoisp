@@ -24,7 +24,32 @@ Options -MultiViews
     RewriteRule ^blog/([a-zA-Z0-9_-]+)/?$ blogs/post.php?slug=$1 [L,QSA]
 
     # ----------------------------------------------------------------------
-    # 2. REMOVE .php EXTENSIONS (Clean WordPress-style URLs)
+    # 2. CANONICAL REDIRECT: STRIP .php EXTENSION FROM DIRECT BROWSER REQUESTS
+    # ----------------------------------------------------------------------
+    # Redirect root /index.php to /
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(?:filaoisp/)?index\.php[\s?] [NC]
+    RewriteRule ^index\.php$ ./ [R=301,L]
+
+    # Redirect /admin/index.php to /admin/
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(?:filaoisp/)?admin/index\.php[\s?] [NC]
+    RewriteRule ^admin/index\.php$ admin/ [R=301,L]
+
+    # Redirect /page.php or /admin/page.php to clean URL /page or /admin/page
+    RewriteCond %{REQUEST_METHOD} !POST
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.?]+)\.php[\s?] [NC]
+    RewriteCond %{REQUEST_URI} !^/api/ [NC]
+    RewriteRule ^ %1 [R=301,L,NE]
+
+    # ----------------------------------------------------------------------
+    # 3. REMOVE TRAILING SLASH FROM NON-DIRECTORIES
+    # ----------------------------------------------------------------------
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)/$ $1 [R=301,L]
+
+    # ----------------------------------------------------------------------
+    # 4. INTERNAL REWRITE: MAP EXTENSIONLESS URLS TO .php FILES
     # ----------------------------------------------------------------------
     # Internally rewrite clean URLs back to matching .php files if they exist
     RewriteCond %{REQUEST_FILENAME} !-f

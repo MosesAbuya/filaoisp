@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $stmt = $pdo->prepare("DELETE FROM newsletter_subscribers WHERE id = ?");
     $stmt->execute([$sub_id]);
     $_SESSION['msg'] = "Subscriber removed successfully.";
-    header("Location: newsletters.php");
+    header("Location: newsletters");
     exit;
 }
 
@@ -50,7 +50,7 @@ $subscribers = $pdo->query("SELECT * FROM newsletter_subscribers ORDER BY subscr
                                 <a href="mailto:<?= htmlspecialchars($s['email']) ?>" class="btn btn-sm btn-outline-secondary me-1" title="Send Email">
                                     <i class="fa-solid fa-paper-plane"></i> Email
                                 </a>
-                                <form method="POST" action="newsletters.php" onsubmit="return confirm('Remove subscriber?');" style="display:inline;">
+                                <form method="POST" action="newsletters" data-confirm="Are you sure you want to remove subscriber <?= htmlspecialchars(addslashes($s['email'])) ?>?" style="display:inline;">
                                     <input type="hidden" name="action" value="delete_subscriber">
                                     <input type="hidden" name="subscriber_id" value="<?= (int)$s['id'] ?>">
                                     <button type="submit" class="btn btn-sm btn-outline-danger" title="Remove Subscriber">

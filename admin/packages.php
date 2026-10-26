@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $stmt = $pdo->prepare("DELETE FROM wifi_packages WHERE id = ?");
     $stmt->execute([$package_id]);
     $_SESSION['msg'] = "Package deleted successfully.";
-    header("Location: packages.php");
+    header("Location: packages");
     exit;
 }
 
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && in_array
     } else {
         $_SESSION['err'] = "Please provide all required fields.";
     }
-    header("Location: packages.php");
+    header("Location: packages");
     exit;
 }
 
@@ -110,7 +110,7 @@ $packages = $pdo->query("SELECT * FROM wifi_packages ORDER BY sort_order ASC, id
                                 </td>
                                 <td class="text-end">
                                     <button class="btn btn-sm btn-outline-primary me-1" onclick='editPackage(<?= json_encode($pkg) ?>)' title="Edit"><i class="fa-solid fa-pen"></i></button>
-                                    <form method="POST" action="packages.php" style="display:inline-block;" onsubmit="return confirm('Are you sure you want to delete this package?');">
+                                    <form method="POST" action="packages" style="display:inline-block;" data-confirm="Are you sure you want to delete this package?">
                                         <input type="hidden" name="action" value="delete_package">
                                         <input type="hidden" name="package_id" value="<?= $pkg['id'] ?>">
                                         <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete"><i class="fa-solid fa-trash"></i></button>
@@ -131,7 +131,7 @@ $packages = $pdo->query("SELECT * FROM wifi_packages ORDER BY sort_order ASC, id
                 <span id="form-title"><i class="fa-solid fa-plus-circle me-2" style="color:var(--clr-red);"></i>Add New Package</span>
             </div>
             <div class="p-4">
-                <form method="POST" action="packages.php" id="packageForm">
+                <form method="POST" action="packages" id="packageForm">
                     <input type="hidden" name="action" id="form-action" value="add_package">
                     <input type="hidden" name="package_id" id="package_id" value="">
                     

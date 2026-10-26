@@ -16,6 +16,8 @@ $page_title = $page_title ?? 'Dashboard';
     <title><?= htmlspecialchars($page_title) ?> - Filao Admin</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <?php if (isset($extra_css)) echo $extra_css; ?>
     <style>
         :root {
@@ -216,6 +218,39 @@ $page_title = $page_title ?? 'Dashboard';
                 padding: 1.25rem;
             }
         }
+
+        /* SweetAlert2 Filao Theme Customizations */
+        .swal2-popup {
+            border-radius: 16px !important;
+            font-family: inherit !important;
+            padding: 2rem 1.75rem !important;
+            box-shadow: 0 20px 45px rgba(9, 2, 56, 0.25) !important;
+        }
+        .swal2-title {
+            font-weight: 700 !important;
+            color: var(--clr-dark) !important;
+            font-size: 1.35rem !important;
+        }
+        .swal2-html-container {
+            color: #4a5568 !important;
+            font-size: 0.95rem !important;
+            line-height: 1.5 !important;
+        }
+        .swal2-confirm {
+            background: var(--clr-red) !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.6rem 1.5rem !important;
+            box-shadow: 0 4px 12px rgba(236, 28, 36, 0.3) !important;
+        }
+        .swal2-confirm:hover {
+            background: var(--clr-red-hover) !important;
+        }
+        .swal2-cancel {
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            padding: 0.6rem 1.5rem !important;
+        }
     </style>
 </head>
 <body>
@@ -239,7 +274,7 @@ $page_title = $page_title ?? 'Dashboard';
                 <a href="../" target="_blank" class="btn btn-outline-dark btn-sm d-none d-sm-inline-flex align-items-center">
                     <i class="fa-solid fa-globe me-1"></i> Live Site
                 </a>
-                <a href="logout.php" class="btn btn-danger btn-sm d-inline-flex align-items-center">
+                <a href="logout" class="btn btn-danger btn-sm d-inline-flex align-items-center">
                     <i class="fa-solid fa-right-from-bracket me-1"></i> Logout
                 </a>
             </div>
@@ -253,6 +288,21 @@ $page_title = $page_title ?? 'Dashboard';
                     <div><?= htmlspecialchars($_SESSION['msg']) ?></div>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (typeof Swal !== 'undefined') {
+                        Swal.fire({
+                            toast: true,
+                            position: 'top-end',
+                            icon: 'success',
+                            title: <?= json_encode($_SESSION['msg']) ?>,
+                            showConfirmButton: false,
+                            timer: 3500,
+                            timerProgressBar: true
+                        });
+                    }
+                });
+                </script>
                 <?php unset($_SESSION['msg']); ?>
             <?php endif; ?>
 
@@ -262,5 +312,20 @@ $page_title = $page_title ?? 'Dashboard';
                     <div><?= htmlspecialchars($_SESSION['err']) ?></div>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    if (typeof Swal !== 'undefined') {
+                        Swal.fire({
+                            toast: true,
+                            position: 'top-end',
+                            icon: 'error',
+                            title: <?= json_encode($_SESSION['err']) ?>,
+                            showConfirmButton: false,
+                            timer: 4000,
+                            timerProgressBar: true
+                        });
+                    }
+                });
+                </script>
                 <?php unset($_SESSION['err']); ?>
             <?php endif; ?>

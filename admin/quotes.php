@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $stmt = $pdo->prepare("DELETE FROM quote_requests WHERE id = ?");
     $stmt->execute([$quote_id]);
     $_SESSION['msg'] = "Quote request deleted successfully.";
-    header("Location: quotes.php");
+    header("Location: quotes");
     exit;
 }
 
@@ -61,7 +61,7 @@ $quotes = $pdo->query("SELECT * FROM quote_requests ORDER BY created_at DESC")->
                             <td><?= htmlspecialchars($q['location'] ?? 'N/A') ?></td>
                             <td class="small text-muted"><?= htmlspecialchars(date('M j, Y H:i', strtotime($q['created_at']))) ?></td>
                             <td class="text-end">
-                                <form method="POST" action="quotes.php" onsubmit="return confirm('Delete this quote request?');" style="display:inline;">
+                                <form method="POST" action="quotes" data-confirm="Are you sure you want to delete this quote request from <?= htmlspecialchars(addslashes($q['name'])) ?>?" style="display:inline;">
                                     <input type="hidden" name="action" value="delete_quote">
                                     <input type="hidden" name="quote_id" value="<?= (int)$q['id'] ?>">
                                     <button type="submit" class="btn btn-sm btn-outline-danger" title="Delete Quote">
